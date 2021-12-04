@@ -1,0 +1,19 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+login:
+  path: /login
+  controller : App\Controller\SeConnecterController::login
+
+signoff:
+  path: /signoff
+  controller : App\Controller\SeConnecterController::signoff
+
+visiteur:
+  path: /visiteur/espace
+  controller : App\Controller\VisiteurController::espace
+
+comptable:
+  path: /comptable/espace
+  controller : App\Controller\ComptableController::espace

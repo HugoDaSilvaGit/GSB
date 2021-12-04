@@ -1,0 +1,191 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}GSB Espace Visiteur{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="columns is-10 is-centered is-multiline">
+        <div class="column is-12">
+            <div class="box is-transparent animate__animated animate__fadeInDown">
+            <p><strong>{{annee}}</strong></p>
+            </div>
+        </div>
+    </div>
+    <div class="columns is-10 is-centered is-multiline">
+        <div class="column is-12">
+            <div class="columns is-multiline">
+                <div class="column is-3-desktop is-6-tablet is-12-mobile">
+                    <div class="box grow-smaller is-smooth is-transparent is-like-une-fiche-frais animate__animated animate__fadeIn">
+                        <div class="column is-smooth has-background-transparent">
+                            <div class="columns is is-multiline">
+                                <div class="column">
+                                    <div class="column is-12 has-no-padding-bottom">
+                                        <strong>Ajouter une nouvelle</strong>
+                                    </div>
+                                    <div class="column is-12 has-2px-padding-top">
+                                        <strong>fiche de frais</strong>
+                                    </div>
+                                    <div class="column is-12">
+                                        <span class="icon is-insane is-left">
+                                            <i class="fas fa-plus fa-7x"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% for unefichefrais in fichesfrais %}
+                <div class="column is-3-desktop is-6-tablet is-12-mobile">
+                    <div id="box{{unefichefrais.number}}" class="box is-smooth is-transparent is-like-une-fiche-frais animate__animated animate__fadeIn">
+                        <div class="column is-smooth has-background-transparent">
+                            <div class="columns">
+                                <div class="column has-no-padding-bottom has-2px-padding-top">
+                                    <p><strong>{{unefichefrais.date | format_datetime(pattern="MMMM YYYY",locale="fr") | upper}}</strong></p>
+                                </div>
+                            </div>
+                            <div class="columns is-centered">
+                                <div class="column has-2px-padding-top">
+                                    <div class="buttons has-addons">
+                                            <button class="button is-half is-small is-rounded is-success">MODIFIER</button>
+                                            <button class="button is-half is-small is-rounded is-danger">SUPPRIMER</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="columns">
+                                <div class="column has-no-padding-bottom has-2px-padding-top">
+                                    <div class="tags has-addons">
+                                        <span class="tag has-text-bigger has-no-border-radius-top-left is-a-bit-transparent">Votre numéro</span>
+                                        <span class="tag has-text-bigger has-no-border-radius-top-right is-a-lot-transparent">{{unefichefrais.idvisiteur}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="columns">
+                                <div class="column has-no-padding-bottom has-2px-padding-top">
+                                    <div class="tags has-addons">
+                                        <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">Période</span>
+                                        <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">{{unefichefrais.date | date("m/Y")}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="columns">
+                                <div class="column has-no-padding-bottom has-2px-padding-top">
+                                    <div class="tags has-addons">
+                                        <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">Justificatifs</span>
+                                        <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">{{unefichefrais.nbjustificatifs | default("aucuns")}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="columns">
+                                <div class="column has-no-padding-bottom has-2px-padding-top">
+                                    <div class="tags has-addons">
+                                        <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">Montant validé</span>
+                                        <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">{{unefichefrais.montantvalide | default("0")}} €</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="columns">
+                                <div class="column has-no-padding-bottom has-2px-padding-top">
+                                    <div class="tags has-addons">
+                                        <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">État</span>
+                                        <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">{{unefichefrais.idetat}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="columns">
+                                <div class="column has-no-padding-bottom has-2px-padding-top">
+                                    <div class="tags has-addons">
+                                        <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">N° FICHE</span>
+                                        <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">{{unefichefrais.idfichefrais}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="columns">
+                                <div class="column has-no-padding-bottom has-2px-padding-top">
+                                    <div class="tags has-addons">
+                                        <span class="tag has-text-bigger is-dark has-no-border-radius">Frais</span>
+                                        <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent"><strong>{{unefichefrais.montantTotalFraisForfait| default("0")}} €</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="columns">
+                                <div class="column has-2px-padding-top">
+                                    <div class="tags has-addons">
+                                        <span class="tag has-text-bigger is-dark has-no-border-radius-bottom-left">Hors frais</span>
+                                        <span class="tag has-text-bigger has-no-border-radius-bottom-right is-a-lot-transparent"><strong>{{unefichefrais.montantTotalFraisHorsForfait| default("0")}} €</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="columns">
+                                <div class="column has-no-padding-bottom has-2px-padding-top has-6px-padding-top-on-mobile">
+                                    <span class="icon is-small is-left">
+                                    <i id="arrow{{unefichefrais.number}}" onclick="openBox{{unefichefrais.number}}(this)" class="fas fa-chevron-down fa-lg grow cursor-pointer animate__animated"></i>
+                                    </span>
+                                    <script>
+                                    function openBox{{unefichefrais.number}}(elem){
+                                        const theBox = document.getElementById("box{{ unefichefrais.number }}");
+                                        const arrow = document.getElementById("arrow{{ unefichefrais.number }}");
+                                        const allBoxesDown = document.getElementsByClassName("box is-smooth is-transparent is-like-une-fiche-frais is-asked-to-be-modified");
+                                        const allArrowsUp = document.getElementsByClassName("fas fa-chevron-up fa-lg grow");
+                                        if(arrow.classList.contains("fa-chevron-down")){
+                                            [].forEach.call(allBoxesDown, function(oneBoxDown){
+                                                oneBoxDown.classList.remove("is-asked-to-be-modified");
+                                                oneBoxDown.classList.add("is-like-une-fiche-frais")
+                                                oneBoxDown.classList.add("is-transparent")
+                                            });
+                                            [].forEach.call(allArrowsUp,function(oneArrowUp){
+                                                setTimeout(() => {
+                                                    oneArrowUp.classList.remove("fa-chevron-up");
+                                                }, 200);
+                                                setTimeout(() => {
+                                                    oneArrowUp.classList.add("fa-chevron-down");
+                                                    oneArrowUp.classList.add("fadeIn");
+                                                }, 300);
+                                                });
+                                            theBox.classList.remove("is-transparent")
+                                            theBox.classList.add("is-asked-to-be-modified");
+                                            setTimeout(() => {
+                                                arrow.classList.remove("fa-chevron-down");
+                                                arrow.classList.remove("fadeIn");
+                                            }, 200);
+                                            setTimeout(() => {
+                                                arrow.classList.add("fa-chevron-up");
+                                            }, 300);
+                                        }
+                                        else{
+                                            theBox.classList.remove("is-asked-to-be-modified");
+                                            theBox.classList.remove("is-like-une-fiche-frais")
+                                            theBox.classList.add("is-transparent")
+                                            setTimeout(() => {
+                                                arrow.classList.remove("fa-chevron-up");
+                                            }, 200);
+                                            setTimeout(() => {
+                                                arrow.classList.add("fa-chevron-down");
+                                                arrow.classList.add("fadeIn");
+                                            }, 300);
+                                        }
+                                    }
+                                    </script>
+                                </div>
+                            </div>
+                            <div class="columns">
+                                <div class="column has-no-padding-bottom has-2px-padding-top">
+                                    <span>
+                                    That error occurs when you try to convert an array into a string check wheater you print your output is not an array if this then you have convert this into a string first. 
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+{% endblock %}

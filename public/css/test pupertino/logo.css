@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.gsb-logo-long{
+    background: transparent url(../images/gsb.png) top center no-repeat;
+    background-size: auto 34px;
+    width: 129px;
+    height: 38px;
+    display: block;
+}
+.gsb-logo{
+    margin: 0 auto 20px;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}

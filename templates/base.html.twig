@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {# Run `composer require symfony/webpack-encore-bundle`
+           and uncomment the following Encore helpers to start using Symfony UX #}
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{asset('css/bulma.css')}}"/>
+            <link rel="stylesheet" href="{{asset('css/bulmamodif.css')}}"/>
+            <link rel="stylesheet" href="{{asset('css/style.css')}}"/>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+            <link rel="stylesheet" href="{{asset('css/bulma-collapsible.min.css')}}"/>
+        {% endblock %}
+
+        {% block javascripts %}
+            <script>
+            if (CSS && 'paintWorklet' in CSS) CSS.paintWorklet.addModule('https://unpkg.com/smooth-corners')
+            </script>
+            <script src="{{asset('js/toggle.js')}}"></script>
+            <script src="https://kit.fontawesome.com/76fcf77af4.js" crossorigin="anonymous"></script>
+            <script src="{{asset('js/bulma-collapsible.min.js')}}"></script>
+        {% endblock %}
+        <section class="hero is-gsb is-fullheight">
+            <div class="hero-head">
+                <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                    <a class="navbar-item">
+                        <p role="img" class="gsb-logo is-bright"></p>
+                    </a>
+                    </div>
+                </div>
+                </nav>
+            </div>
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <body>
+                        {% block body %}
+                        {% endblock %}
+                    </body>
+                </div>
+            </div>
+            <div class="hero-foot">
+                <div class="container has-text-centered">
+                    <div class="content is-small">
+                        <p>
+                        <strong>GSB</strong> par <a>Hugo Da Silva.</a> TS2SIO 2021-2022 - Louis Armand Nogent-sur-Marne, 94130.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="block"></div>
+        </section>
+    </head>
+</html>
