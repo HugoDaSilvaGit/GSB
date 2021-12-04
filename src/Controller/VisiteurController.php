@@ -26,15 +26,16 @@ class VisiteurController extends AbstractController
             $repositoryFichefrais =$entityManager->getRepository(Entity\Fichefrais::class);
             $fichesfrais=$repositoryFichefrais->findFicheFraisByIdVisiteurAndAnnee($idVisiteur,$annee);
             $fichesfrais = json_decode( json_encode($fichesfrais), false);
-            $test=[];
+            $fichesfraiscompletes=[];
             foreach($fichesfrais as $unefichefrais ){
                 $repositoryLignefraisforfait =$entityManager->getRepository(Entity\Lignefraisforfait::class);
                 $fraisforfaits=$repositoryLignefraisforfait->findFraisForfaitsByIdFicheFrais($unefichefrais->idfichefrais);
                 $unefichefrais = (array) $unefichefrais;
                 $unefichefrais["fraisforfait"]=$fraisforfaits;
-                dump($unefichefrais);
-                $test=array_merge($test,$unefichefrais);
+                array_push($fichesfraiscompletes,$unefichefrais);
             }
+            $fichesfraiscompletes = json_decode( json_encode($fichesfraiscompletes), false);
+            dump($fichesfraiscompletes);
             $devise =' €';
             return $this->render('visiteur/espace.html.twig', [
                 'session' => $session,
