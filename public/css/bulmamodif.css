@@ -155,7 +155,7 @@
     box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
 }
 .button-animation.color-11 {
-       background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+       background-image: linear-gradient(to right, rgb(235, 57, 65), #f15e64, #e14e53, #e2373f);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
 }
 
 /*  ---------- table ---------- */
@@ -166,78 +166,38 @@
   border-collapse: inherit;
 }
 
-/*  ---------- box ---------- */
-
-
-.is-smooth {
-  --smooth-corners: 5;
-  mask-image: paint(smooth-corners);
-  -moz-osx-mask-image: paint(--smooth-corners);
-  -webkit-mask-image: paint(smooth-corners);
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 30px;
-  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
-  color: #4a4a4a;
-  display: block;
-  padding: 0.9rem;
- }
-
 /*  ---------- tag ---------- */
 .tags.has-addons .tag:not(:first-child) {
   margin-left: 0;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
+  border-radius: 0 50px 50px 0;
 }
 .tags.has-addons .tag.has-no-border-radius:not(:first-child) {
   margin-left: 0;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  border-radius: 0;
 }
 
 .tags.has-addons .tag.has-no-border-radius-bottom-right:not(:first-child) {
   margin-left: 0;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 50px;
+  border-radius: 0 0 50px 0;
 }
 .tags.has-addons .tag.has-no-border-radius-top-right:not(:first-child) {
   margin-left: 0;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 0;
+  border-radius: 0 50px 0 0;
 }
 
 
 .tags.has-addons .tag:not(:last-child) {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
+  border-radius: 50px 0 0 50px;
 }
 .tags.has-addons .tag.has-no-border-radius:not(:last-child) {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  border-radius: 0;
 }
 
 .tags.has-addons .tag.has-no-border-radius-bottom-left:not(:last-child) {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 50px;
+  border-radius: 0 0 0 50px;
 }
 .tags.has-addons .tag.has-no-border-radius-top-left:not(:last-child) {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 0;
+  border-radius: 50px 0 0 0;
 }
 
 
@@ -286,8 +246,7 @@ background-color: rgba(255,255,255,0.4);
   line-height: 21;
 }
 .column.is-on-middle-of-fichefrais{
-  margin: auto;
-  margin-top: 14%;
+  margin: 14% auto auto;
 }
 .column.is-smooth {
   --smooth-corners: 5;
@@ -311,6 +270,18 @@ background-color: rgba(255,255,255,0.4);
 }
 
 /*  ---------- box ---------- */
+.is-smooth {
+  --smooth-corners: 5;
+  mask-image: paint(smooth-corners);
+  -moz-osx-mask-image: paint(--smooth-corners);
+  -webkit-mask-image: paint(smooth-corners);
+  border-radius: 30px;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.02);
+  color: #4a4a4a;
+  display: block;
+  padding: 0.9rem;
+}
+
 .box{
   overflow: hidden;
   animation: zoomIn 0.3s;
@@ -335,8 +306,11 @@ background-color: rgba(255,255,255,0.4);
   height: 340px;
 }
 .box.is-asked-to-be-modified{
-  background-color:rgba(0,0,0,0.05);
+  background-color:rgba(255,255,255,0.15);
   height: 500px;
+}
+.is-on-front{
+  z-index: 99 !important;
 }
 
 /*  ---------- fontawesome ---------- */
@@ -407,7 +381,7 @@ background-color: rgba(255,255,255,0.4);
 /*  ---------- media changes ---------- */
 @media screen and (max-width: 768px) {
   .tags .tag {
-    margin-bottom: 0rem;
+    margin-bottom: 0;
   }
   .column.has-6px-padding-top-on-mobile {
     padding-top: 6px;

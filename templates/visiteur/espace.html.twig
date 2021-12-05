@@ -124,13 +124,14 @@
                                     <script>
                                     function openBox{{unefichefrais.number}}(elem){
                                         const theBox = document.getElementById("box{{ unefichefrais.number }}");
-                                        const arrow = document.getElementById("arrow{{ unefichefrais.number }}");
-                                        const allBoxesDown = document.getElementsByClassName("box is-smooth is-transparent is-like-une-fiche-frais is-asked-to-be-modified");
+                                        const theArrow = document.getElementById("arrow{{ unefichefrais.number }}");
+                                        const theModifyingColumn = document.getElementById("column{{unefichefrais.number}}")
+                                        const allModifyingColumnsShown = document.getElementsByClassName() ("column is-12")
+                                        const allBoxesDown = document.getElementsByClassName("box is-smooth is-like-une-fiche-frais is-asked-to-be-modified");
                                         const allArrowsUp = document.getElementsByClassName("fas fa-chevron-up fa-lg grow");
-                                        if(arrow.classList.contains("fa-chevron-down")){
+                                        if(theArrow.classList.contains("fa-chevron-down")){
                                             [].forEach.call(allBoxesDown, function(oneBoxDown){
                                                 oneBoxDown.classList.remove("is-asked-to-be-modified");
-                                                oneBoxDown.classList.add("is-like-une-fiche-frais")
                                                 oneBoxDown.classList.add("is-transparent")
                                             });
                                             [].forEach.call(allArrowsUp,function(oneArrowUp){
@@ -142,26 +143,34 @@
                                                     oneArrowUp.classList.add("fadeIn");
                                                 }, 300);
                                                 });
+                                            [].forEach.call(allModifyingColumnsShown,function(oneModifyingColumnDown){
+                                                oneModifyingColumnDown.classList.add("is-hidden");
+                                            });
                                             theBox.classList.remove("is-transparent")
                                             theBox.classList.add("is-asked-to-be-modified");
                                             setTimeout(() => {
-                                                arrow.classList.remove("fa-chevron-down");
-                                                arrow.classList.remove("fadeIn");
+                                                theArrow.classList.remove("fa-chevron-down");
+                                                theArrow.classList.remove("fadeIn");
                                             }, 200);
                                             setTimeout(() => {
-                                                arrow.classList.add("fa-chevron-up");
+                                                theArrow.classList.add("fa-chevron-up");
+                                                theModifyingColumn.classList.remove("is-hidden")
                                             }, 300);
                                         }
                                         else{
-                                            theBox.classList.remove("is-asked-to-be-modified");
-                                            theBox.classList.remove("is-like-une-fiche-frais")
-                                            theBox.classList.add("is-transparent")
+                                            theModifyingColumn.classList.add("fadeOut")
+                                            setTimeout(()=>{
+                                                theModifyingColumn.classList.remove("fadeOut")
+                                                theBox.classList.remove("is-asked-to-be-modified");
+                                                theBox.classList.add("is-transparent")
+                                                theModifyingColumn.classList.add("is-hidden")
+                                            }, 100)
                                             setTimeout(() => {
-                                                arrow.classList.remove("fa-chevron-up");
+                                                theArrow.classList.remove("fa-chevron-up");
                                             }, 200);
                                             setTimeout(() => {
-                                                arrow.classList.add("fa-chevron-down");
-                                                arrow.classList.add("fadeIn");
+                                                theArrow.classList.add("fa-chevron-down");
+                                                theArrow.classList.add("fadeIn");
                                             }, 300);
                                         }
                                     }
@@ -177,6 +186,12 @@
                             </div>
                             <div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="column{{unefichefrais.number}}" class="column is-12 is-hidden">
+                    <div class="box is-smooth is-transparent animate__animated animate__fadeIn">
+                        <div class="column is-smooth has-background-transparent">
                         </div>
                     </div>
                 </div>
