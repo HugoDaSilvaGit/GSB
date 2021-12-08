@@ -26,12 +26,12 @@ class LignefraisforfaitRepository extends ServiceEntityRepository
         $rsm->addEntityResult('App\Entity\Lignefraisforfait', 'lff');
         $rsm->addScalarResult('idfraisforfait', 'idfraisforfait');
         $rsm->addScalarResult('quantite', 'quantite');
-        $rsm->addScalarResult('montantTotalDuFraisForfait', 'montantTotalDuFraisForfait');
+        $rsm->addScalarResult('montanttotaldufraisforfait', 'montanttotaldufraisforfait');
 
-        $sql="SELECT lff.idFraisForfait as idfraisforfait, lff.quantite as quantite, lff.quantite*frf.montantFraisForfait as montantTotalDuFraisForfait
-            FROM LigneFraisForfait AS lff
-            INNER JOIN FraisForfait AS frf ON lff.idFraisForfait = frf.idFRaisForfait
-            WHERE lff.idFicheFrais=?";
+        $sql="SELECT lff.idfraisforfait as idfraisforfait, lff.quantite as quantite, lff.quantite*frf.montantfraisforfait as montanttotaldufraisforfait
+            FROM Lignefraisforfait AS lff
+            INNER JOIN Fraisforfait AS frf ON lff.idfraisforfait = frf.idfraisforfait
+            WHERE lff.idfichefrais=?";
 
         return $selectFrais = $this->_em->createNativeQuery($sql, $rsm)
         ->setParameter(1, $idfichefrais)

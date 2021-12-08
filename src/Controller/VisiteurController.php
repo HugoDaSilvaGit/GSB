@@ -31,7 +31,7 @@ class VisiteurController extends AbstractController
                 $repositoryLignefraisforfait =$entityManager->getRepository(Entity\Lignefraisforfait::class);
                 $fraisforfaits=$repositoryLignefraisforfait->findFraisForfaitsByIdFicheFrais($unefichefrais->idfichefrais);
                 $unefichefrais = (array) $unefichefrais;
-                $unefichefrais["fraisforfait"]=$fraisforfaits;
+                $unefichefrais['fraisforfait']=$fraisforfaits;
                 array_push($fichesfraiscompletes,$unefichefrais);
             }
             $fichesfraiscompletes = json_decode( json_encode($fichesfraiscompletes), false);
