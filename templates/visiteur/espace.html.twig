@@ -44,7 +44,7 @@
                                     <p><strong>{{unefichefrais.date | format_datetime(pattern="MMMM YYYY",locale="fr") | upper}}</strong></p>
                                 </div>
                             </div>
-                            <div class="columns is-centered">
+                            <div class="columns">
                                 <div class="column has-2px-padding-top">
                                     <div class="buttons has-addons">
                                             <button class="button is-half is-small is-rounded is-success">MODIFIER</button>
@@ -117,81 +117,132 @@
                                 </div>
                             </div>
                             <div class="columns">
-                                <div class="column has-no-padding-bottom has-2px-padding-top has-6px-padding-top-on-mobile">
-                                    <span class="icon is-small is-left">
-                                    <i id="arrow{{unefichefrais.number}}" onclick="openBox{{unefichefrais.number}}(this)" class="fas fa-chevron-down fa-lg grow cursor-pointer animate__animated"></i>
-                                    </span>
-                                    <script>
-                                    function openBox{{unefichefrais.number}}(elem){
-                                        const theBox = document.getElementById("box{{ unefichefrais.number }}");
-                                        const theArrow = document.getElementById("arrow{{ unefichefrais.number }}");
-                                        const theModifyingColumn = document.getElementById("column{{unefichefrais.number}}")
-                                        const allModifyingColumnsShown = document.getElementsByClassName() ("column is-12")
-                                        const allBoxesDown = document.getElementsByClassName("box is-smooth is-like-une-fiche-frais is-asked-to-be-modified");
-                                        const allArrowsUp = document.getElementsByClassName("fas fa-chevron-up fa-lg grow");
-                                        if(theArrow.classList.contains("fa-chevron-down")){
-                                            [].forEach.call(allBoxesDown, function(oneBoxDown){
-                                                oneBoxDown.classList.remove("is-asked-to-be-modified");
-                                                oneBoxDown.classList.add("is-transparent")
-                                            });
-                                            [].forEach.call(allArrowsUp,function(oneArrowUp){
-                                                setTimeout(() => {
-                                                    oneArrowUp.classList.remove("fa-chevron-up");
-                                                }, 200);
-                                                setTimeout(() => {
-                                                    oneArrowUp.classList.add("fa-chevron-down");
-                                                    oneArrowUp.classList.add("fadeIn");
-                                                }, 300);
-                                                });
-                                            [].forEach.call(allModifyingColumnsShown,function(oneModifyingColumnDown){
-                                                oneModifyingColumnDown.classList.add("is-hidden");
-                                            });
-                                            theBox.classList.remove("is-transparent")
-                                            theBox.classList.add("is-asked-to-be-modified");
-                                            setTimeout(() => {
-                                                theArrow.classList.remove("fa-chevron-down");
-                                                theArrow.classList.remove("fadeIn");
-                                            }, 200);
-                                            setTimeout(() => {
-                                                theArrow.classList.add("fa-chevron-up");
-                                                theModifyingColumn.classList.remove("is-hidden")
-                                            }, 300);
-                                        }
-                                        else{
-                                            theModifyingColumn.classList.add("fadeOut")
-                                            setTimeout(()=>{
-                                                theModifyingColumn.classList.remove("fadeOut")
-                                                theBox.classList.remove("is-asked-to-be-modified");
-                                                theBox.classList.add("is-transparent")
-                                                theModifyingColumn.classList.add("is-hidden")
-                                            }, 100)
-                                            setTimeout(() => {
-                                                theArrow.classList.remove("fa-chevron-up");
-                                            }, 200);
-                                            setTimeout(() => {
-                                                theArrow.classList.add("fa-chevron-down");
-                                                theArrow.classList.add("fadeIn");
-                                            }, 300);
-                                        }
-                                    }
-                                    </script>
+                                <div id="column{{unefichefrais.number}}" class="column is-12 is-hidden content-fichefrais">
+                                    <div class="box is-smooth is-transparent animate__animated animate__fadeIn">
+                                        <div class="column is-smooth has-background-transparent">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies imperdiet turpis, sagittis semper turpis bibendum eu. Sed eu tempor tellus. Vivamus fermentum lacinia orci, at pellentesque magna sagittis nec. Pellentesque pulvinar tincidunt rhoncus. Cras at tristique lorem. Aliquam tempus leo at iaculis gravida. Aliquam ultrices in erat at hendrerit. Sed blandit finibus tortor. Mauris purus leo, molestie non libero eu, elementum dignissim dui. Maecenas gravida nunc non neque pellentesque luctus. Praesent et sem mauris. Maecenas pulvinar ultricies tristique. Vivamus et maximus lectus.
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="columns">
-                                <div class="column has-no-padding-bottom has-2px-padding-top">
-                                    <span>
-                                    That error occurs when you try to convert an array into a string check wheater you print your output is not an array if this then you have convert this into a string first. 
+                                <div class="column has-no-padding-bottom has-2px-padding-top has-6px-padding-top-on-mobile">
+                                    <span class="icon is-small is-left">
+                                    <i id="arrow{{unefichefrais.number}}" class="fas fa-chevron-down fa-lg grow cursor-pointer"></i>
                                     </span>
+                                    <script>
+                                        $(document).ready(function() {
+                                            $("#arrow{{ unefichefrais.number }}").click(function (event) {
+                                                if ($("#arrow{{ unefichefrais.number }}").hasClass("fa-chevron-down")) {
+
+                                                    $("#arrow{{ unefichefrais.number }}").addClass("unique");
+                                                    $('#box{{unefichefrais.number}}').addClass('unique');
+                                                    $('#column{{unefichefrais.number}}').addClass('unique');
+
+                                                    if($('i[id*="arrow"]').not("unique").hasClass('fa-chevron-up')){
+
+                                                        $('i[id*="arrow"]').not("unique").fadeOut(150, function () {
+                                                            $('i[id*="arrow"]').not("unique").removeClass('fa-chevron-up');
+                                                            $('div[id*="box"]').not("unique").addClass('is-transparent').removeClass('is-asked-to-be-modified');
+
+                                                            $('div[id*="column"]').not(".unique").fadeOut(150, function () {
+                                                                $('div[id*="column"]').not(".unique").addClass('is-hidden');
+
+                                                                $('i[id*="arrow"]').not(".unique").fadeIn(150, function () {
+                                                                    $('i[id*="arrow"]').not(".unique").addClass('fa-chevron-down');
+                                                                });
+                                                            });
+                                                        });
+                                                    }
+
+                                                    $('#arrow{{ unefichefrais.number }}').fadeOut(150, function () {
+                                                        $('#arrow{{ unefichefrais.number }}').removeClass('fa-chevron-down');
+
+                                                        $('#column{{unefichefrais.number}}').fadeIn(150, function (){
+                                                            $('#column{{unefichefrais.number}}').removeClass('is-hidden');
+
+                                                            $('#arrow{{ unefichefrais.number }}').fadeIn(150, function () {
+                                                                $('#arrow{{ unefichefrais.number }}').addClass('fa-chevron-up');
+                                                                $('#box{{unefichefrais.number}}').addClass('is-asked-to-be-modified').removeClass('is-transparent');
+
+                                                                $("#arrow{{ unefichefrais.number }}").removeClass("unique");
+                                                                $('#box{{unefichefrais.number}}').removeClass('unique');
+                                                                $('#column{{unefichefrais.number}}').removeClass('unique');
+                                                            });
+                                                        });
+                                                    });
+                                                } else {
+
+                                                    $('#arrow{{ unefichefrais.number }}').fadeOut(150, function () {
+                                                        $('#arrow{{ unefichefrais.number }}').removeClass('fa-chevron-up');
+                                                        $('#box{{unefichefrais.number}}').addClass('is-transparent').removeClass('is-asked-to-be-modified');
+
+                                                        $('#column{{unefichefrais.number}}').fadeOut(150, function () {
+                                                            $('#column{{ unefichefrais.number }}').addClass('is-hidden');
+
+                                                            $('#arrow{{ unefichefrais.number }}').fadeIn(150, function () {
+                                                                $('#arrow{{ unefichefrais.number }}').addClass('fa-chevron-down');
+                                                            });
+                                                        });
+                                                    });
+                                                }
+                                            });
+                                        });
+                                        /*function openBox""""(){
+                                            const theBox = document.getElementById("box"""");
+                                            const theArrow = document.getElementById("arrow""""");
+                                            const theModifyingColumn = document.getElementById("column"""")
+                                            const allModifyingColumnsShown = document.getElementsByClassName("id_modfyingColumns column is-12")
+                                            const allBoxesDown = document.getElementsByClassName("id-boxes box is-smooth is-like-une-fiche-frais is-asked-to-be-modified");
+                                            const allArrowsUp = document.getElementsByClassName("id_arrows fas fa-chevron-up fa-lg grow");
+                                            if(theArrow.classList.contains("fa-chevron-down")){
+                                                [].forEach.call(allBoxesDown, function(oneBoxDown){
+                                                    oneBoxDown.classList.remove("is-asked-to-be-modified");
+                                                    oneBoxDown.classList.add("is-transparent")
+                                                });
+                                                [].forEach.call(allArrowsUp,function(oneArrowUp){
+                                                    setTimeout(() => {
+                                                        oneArrowUp.classList.remove("fa-chevron-up");
+                                                    }, 200);
+                                                    setTimeout(() => {
+                                                        oneArrowUp.classList.add("fa-chevron-down");
+                                                        oneArrowUp.classList.add("fadeIn");
+                                                    }, 300);
+                                                    });
+                                                [].forEach.call(allModifyingColumnsShown,function(oneModifyingColumnDown){
+                                                    oneModifyingColumnDown.classList.add("is-hidden");
+                                                });
+                                                theBox.classList.remove("is-transparent")
+                                                theBox.classList.add("is-asked-to-be-modified");
+                                                setTimeout(() => {
+                                                    theArrow.classList.remove("fa-chevron-down");
+                                                    theArrow.classList.remove("fadeIn");
+                                                }, 200);
+                                                setTimeout(() => {
+                                                    theArrow.classList.add("fa-chevron-up");
+                                                    theModifyingColumn.classList.remove("is-hidden")
+                                                }, 300);
+                                            }
+                                            else{
+                                                theModifyingColumn.classList.add("fadeOut")
+                                                setTimeout(()=>{
+                                                    theModifyingColumn.classList.remove("fadeOut")
+                                                    theBox.classList.remove("is-asked-to-be-modified");
+                                                    theBox.classList.add("is-transparent")
+                                                    theModifyingColumn.classList.add("is-hidden")
+                                                }, 300)
+                                                setTimeout(() => {
+                                                    theArrow.classList.remove("fa-chevron-up");
+                                                }, 500);
+                                                setTimeout(() => {
+                                                    theArrow.classList.add("fa-chevron-down");
+                                                    theArrow.classList.add("fadeIn");
+                                                }, 500);
+                                            }
+                                        }*/
+                                    </script>
                                 </div>
                             </div>
-                            <div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="column{{unefichefrais.number}}" class="column is-12 is-hidden">
-                    <div class="box is-smooth is-transparent animate__animated animate__fadeIn">
-                        <div class="column is-smooth has-background-transparent">
                         </div>
                     </div>
                 </div>

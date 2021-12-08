@@ -250,10 +250,18 @@ background-color: rgba(255,255,255,0.4);
 }
 .column.is-smooth {
   --smooth-corners: 5;
-  mask-image: paint(smooth-corners);
+ /* mask-image: paint(smooth-corners);
   -moz-osx-mask-image: paint(--smooth-corners);
-  -webkit-mask-image: paint(smooth-corners);
+  -webkit-mask-image: paint(smooth-corners);*/
  }
+.column.content-fichefrais{
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  padding-right: 0;
+  padding-left: 0;
+  margin-top: 40;
+}
 
 /*  ---------- button ---------- */
 .buttons.has-addons .button:not(:first-child) {
@@ -272,24 +280,19 @@ background-color: rgba(255,255,255,0.4);
 /*  ---------- box ---------- */
 .is-smooth {
   --smooth-corners: 5;
-  mask-image: paint(smooth-corners);
+  /*mask-image: paint(smooth-corners);
   -moz-osx-mask-image: paint(--smooth-corners);
-  -webkit-mask-image: paint(smooth-corners);
+ -webkit-mask-image: paint(smooth-corners);*/
   border-radius: 30px;
-  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.02);
+  box-shadow: none;
   color: #4a4a4a;
   display: block;
   padding: 0.9rem;
 }
 
 .box{
-  overflow: hidden;
-  animation: zoomIn 0.3s;
-  -webkit-animation: zoomIn 0.3s;
-  -moz-animation: zoomIn 0.3s;
-  -ms-animation: zoomIn 0.3s;
-  -o-animation: zoomIn 0.3s;
-
+  border-radius: 60px;
+  overflow: visible;
   animation-delay: 0.3s;
   animation-duration: 0.3s;
 
@@ -308,9 +311,6 @@ background-color: rgba(255,255,255,0.4);
 .box.is-asked-to-be-modified{
   background-color:rgba(255,255,255,0.15);
   height: 500px;
-}
-.is-on-front{
-  z-index: 99 !important;
 }
 
 /*  ---------- fontawesome ---------- */
