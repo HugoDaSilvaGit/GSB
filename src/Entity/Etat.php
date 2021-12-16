@@ -28,6 +28,12 @@ class Etat
      */
     private $libelleetat = 'NULL';
 
+    /** TO STRING FOR ID */
+    public function __toString()
+    {
+        return (string) $this->getIdetat();
+    }
+
     public function getIdetat(): ?string
     {
         return $this->idetat;
