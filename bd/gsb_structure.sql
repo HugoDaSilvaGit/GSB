@@ -92,6 +92,7 @@ CREATE TABLE IF NOT EXISTS `Visiteur` (
 --
 
 CREATE TABLE IF NOT EXISTS `FicheFrais` (
+  `number` int(2) NOT NULL,
   `idFicheFrais` char(12) NOT NULL UNIQUE,
   `idVisiteur` char(4) NOT NULL,
   `date` date NOT NULL,

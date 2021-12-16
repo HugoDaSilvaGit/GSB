@@ -45,3 +45,9 @@ where lff.idFicheFrais = fif.idFicheFrais
 and  lff.idFraisForfait = frf.idFraisForfait
 and fif.idFicheFrais = lfhf.idFicheFrais
 AND fif.idFicheFrais='a131-202110';
+
+{% for unfraisforfait in unefichefrais.fraisforfait%}
+                                                    {% if unefichefrais.unfraisforfait.quantite  %}
+                                                        <td>{{unefichefrais.unfraisforfait.quantite}}</td>
+                                                    {% endif %}
+                                                {% endfor %}
