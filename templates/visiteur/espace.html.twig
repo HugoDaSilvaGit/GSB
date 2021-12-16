@@ -7,7 +7,7 @@
     <div class="columns is-10 is-centered is-multiline">
         <div class="column is-12">
             <div class="box is-transparent animate__animated animate__fadeInDown">
-            <p><strong>{{annee}}</strong></p>
+            <p><strong>{{year}}</strong></p>
             </div>
         </div>
     </div>
@@ -120,7 +120,10 @@
                                 <div id="column{{unefichefrais.number}}" class="column is-12 is-hidden content-fichefrais">
                                     <div class="box is-smooth is-transparent animate__animated animate__fadeIn">
                                         <div class="column is-smooth has-background-transparent">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies imperdiet turpis, sagittis semper turpis bibendum eu. Sed eu tempor tellus. Vivamus fermentum lacinia orci, at pellentesque magna sagittis nec. Pellentesque pulvinar tincidunt rhoncus. Cras at tristique lorem. Aliquam tempus leo at iaculis gravida. Aliquam ultrices in erat at hendrerit. Sed blandit finibus tortor. Mauris purus leo, molestie non libero eu, elementum dignissim dui. Maecenas gravida nunc non neque pellentesque luctus. Praesent et sem mauris. Maecenas pulvinar ultricies tristique. Vivamus et maximus lectus.
+                                            {{ unefichefrais.ETP.idfraisforfait.libellefraisforfait ~ unefichefrais.ETP.quantite * unefichefrais.ETP.idfraisforfait.montantfraisforfait }}
+                                            {{ unefichefrais.KM.idfraisforfait.libellefraisforfait ~ unefichefrais.KM.quantite * unefichefrais.KM.idfraisforfait.montantfraisforfait }}
+                                            {{ unefichefrais.NUI.idfraisforfait.libellefraisforfait ~ unefichefrais.NUI.quantite * unefichefrais.NUI.idfraisforfait.montantfraisforfait }}
+                                            {{ unefichefrais.REP.idfraisforfait.libellefraisforfait ~ unefichefrais.REP.quantite * unefichefrais.REP.idfraisforfait.montantfraisforfait }}
                                         </div>
                                     </div>
                                 </div>
