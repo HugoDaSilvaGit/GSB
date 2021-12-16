@@ -13,7 +13,7 @@
 
 >credentials are necessary to connect, you can find credentials profils in the SQL file:
 ```Shell
-cd bd/gsb_insert_tables_statiques_visiteurs.sql
+cd bd/gsb_peupler.sql
 ```
 
 **Prerequisites**
