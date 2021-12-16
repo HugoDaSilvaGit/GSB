@@ -80,5 +80,10 @@ class Lignefraisforfait
         return $this;
     }
 
+    static function convertObjectClass($array, $final_class) {
+        return unserialize(sprintf('O:%d:"%s"%s', strlen($final_class), $final_class, strstr(serialize($array), ':')
+        ));
+    }
+
 
 }
