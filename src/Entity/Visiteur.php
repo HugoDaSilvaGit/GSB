@@ -77,6 +77,12 @@ class Visiteur
      */
     private $dateembauche = 'NULL';
 
+    /** TO STRING FOR ID */
+    public function __toString()
+    {
+        return (string) $this->getIdvisiteur();
+    }
+
     public function getIdvisiteur(): ?string
     {
         return $this->idvisiteur;
