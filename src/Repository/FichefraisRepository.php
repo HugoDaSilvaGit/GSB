@@ -26,7 +26,7 @@ class FichefraisRepository extends ServiceEntityRepository
     public function findFicheFraisByIdVisiteurAndAnnee($idvisiteur, $annee): array
     {
         $rsm = new ResultSetMapping();
-        $rsm->addEntityResult('App\Entity\Fichefrais', 'fif');
+        $rsm->addEntityResult('App\Entity\FicheFrais', 'fif');
         $rsm->addScalarResult('number', 'number');
         $rsm->addScalarResult('idfichefrais', 'idfichefrais');
         $rsm->addScalarResult('date', 'date');
@@ -38,7 +38,7 @@ class FichefraisRepository extends ServiceEntityRepository
         $rsm->addScalarResult('montantTotalFraisForfait', 'montantTotalFraisForfait');
         $rsm->addScalarResult('montantTotalFraisHorsForfait', 'montantTotalFraisHorsForfait');
          
-        $sql=" SELECT DISTINCT ROW_NUMBER() OVER (ORDER BY fif.idfichefrais) AS number, fif.idfichefrais AS idfichefrais , fif.date AS date, fif.nbjustificatifs AS nbjustificatifs, fif.montantvalide AS montantvalide, fif.datemodif AS datemodif, fif.idetat AS idetat, fif.idvisiteur AS idvisiteur, montantTotalFraisForfait, montantTotalFraisHorsForfait
+        $sql= ' SELECT DISTINCT ROW_NUMBER() OVER (ORDER BY fif.idfichefrais) AS number, fif.idfichefrais AS idfichefrais , fif.date AS date, fif.nbjustificatifs AS nbjustificatifs, fif.montantvalide AS montantvalide, fif.datemodif AS datemodif, fif.idetat AS idetat, fif.idvisiteur AS idvisiteur, montantTotalFraisForfait, montantTotalFraisHorsForfait
             FROM FicheFrais fif
             INNER JOIN (SELECT lff.idfichefrais, SUM(frf.montantFraisForfait*lff.quantite) AS montantTotalFraisForfait
                         FROM LigneFraisForfait AS lff
@@ -51,7 +51,7 @@ class FichefraisRepository extends ServiceEntityRepository
                         GROUP BY lfhf.idfichefrais) c USING (idfichefrais)
             WHERE fif.idvisiteur =?
             AND YEAR(fif.date) =?
-            ORDER BY MONTH(fif.date) DESC";
+            ORDER BY MONTH(fif.date) DESC';
          
         return $selectFicheFrais = $this->_em->createNativeQuery($sql, $rsm)
         ->setParameter(1, $idvisiteur)
