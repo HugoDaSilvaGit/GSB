@@ -18,6 +18,13 @@ use Doctrine\ORM\Mapping as ORM;
 class Fichefrais
 {
     /**
+     * @var int|null
+     *
+     * @ORM\Column(name="number", type="integer", length=2, nullable=false, options={"fixed"=true})
+     */
+    private $number;
+
+    /**
      * @var string
      *
      * @ORM\Column(name="idFicheFrais", type="string", length=12, nullable=false, options={"fixed"=true})
@@ -74,16 +81,28 @@ class Fichefrais
      */
     private $idvisiteur;
 
-    private $montanttotalfraisforfait;
-
-    private $montanttotalfraishorsforfait;
-
     /**
      * Constructor
      */
     public function __construct()
     {
         $this->idfraisforfait = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    public function getNumber(): ?int
+    {
+        return $this->number;
+    }
+
+    public function setNumber(?int $number): void
+    {
+        $this->number = $number;
+    }
+
+    /** TO STRING FOR ID */
+    public function __toString()
+    {
+        return (string) $this->getIdfichefrais();
     }
 
     public function getIdfichefrais(): ?string
@@ -186,13 +205,11 @@ class Fichefrais
 
         return $this;
     }
-    public function getMontanttotalfraisforfait(): ?string
-    {
-        return $this->montanttotalfraisforfait;
+
+    static function convertObjectClass($array, $final_class) {
+        return unserialize(sprintf('O:%d:"%s"%s', strlen($final_class), $final_class, strstr(serialize($array), ':')
+        ));
     }
-    public function getMontanttotalfraishorsforfait(): ?string
-    {
-        return $this->montanttotalfraisforfait;
-    }
+
 
 }
