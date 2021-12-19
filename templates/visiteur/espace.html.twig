@@ -14,9 +14,10 @@
     <div class="columns is-10 is-centered is-multiline">
         <div class="column is-12">
             <div class="columns is-multiline">
+                {% if ajouterfichefrais %}
                 <div class="column is-3-desktop is-6-tablet is-12-mobile">
-                    <div class="box grow-smaller is-smooth is-transparent is-like-une-fiche-frais animate__animated animate__fadeIn">
-                        <div class="column is-smooth has-background-transparent">
+                    <div class="box grow-smaller is-transparent is-like-une-fiche-frais animate__animated animate__fadeIn">
+                        <div class="column has-background-transparent">
                             <div class="columns is is-multiline">
                                 <div class="column">
                                     <div class="column is-12 has-no-padding-bottom">
@@ -35,91 +36,165 @@
                         </div>
                     </div>
                 </div>
+                {% endif %}
                 {% for unefichefrais in fichesfrais %}
+                {% if unefichefrais.date | format_datetime(pattern="YYYY-MM") == yearmonth %}
                 <div class="column is-3-desktop is-6-tablet is-12-mobile">
-                    <div id="box{{unefichefrais.number}}" class="box is-smooth is-transparent is-like-une-fiche-frais animate__animated animate__fadeIn">
-                        <div class="column is-smooth has-background-transparent">
+                    <div id="box{{loop.index}}" class="box is-transparent is-like-une-fiche-frais animate__animated animate__fadeIn">
+                        <div class="column has-background-transparent">
                             <div class="columns">
-                                <div class="column has-no-padding-bottom has-2px-padding-top">
-                                    <p><strong>{{unefichefrais.date | format_datetime(pattern="MMMM YYYY",locale="fr") | upper}}</strong></p>
+                                <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px is-month-bar has-background-success">
+                                    <span class="icon">
+                                        <i class="fas fa-file-invoice"></i>
+                                    </span>
+                                    <span>
+                                        <strong>{{unefichefrais.date | format_datetime(pattern="MMMM YYYY",locale="fr") | upper}}</strong>
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fas fa-lock-open"></i>
+                                    </span>
                                 </div>
                             </div>
                             <div class="columns">
-                                <div class="column has-2px-padding-top">
-                                    <div class="buttons has-addons">
-                                            <button class="button is-half is-small is-rounded is-success">MODIFIER</button>
-                                            <button class="button is-half is-small is-rounded is-danger">SUPPRIMER</button>
-                                    </div>
+                                <div class="column has-finest-padding-1024px has-6px-margin-right is-bigger-for-button-1024px">
+                                    <button id="modify{{loop.index}}" class="button is-fullwidth is-small is-success has-border-radius-40">
+                                        <span class="icon">
+                                            <i class="fas fa-edit"></i>
+                                        </span>
+                                        <span>MODIFIER</span>
+                                    </button>
+                                </div>
+                                <div class="column has-finest-padding-1024px has-6px-margin-left is-bigger-for-button-1024px">
+                                    <button class="button is-fullwidth is-small is-danger has-border-radius-40">
+                                        <span>SUPPRIMER</span>
+                                        <span class="icon">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </span>
+                                    </button>
                                 </div>
                             </div>
                             <div class="columns">
-                                <div class="column has-no-padding-bottom has-2px-padding-top">
+                                <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
                                     <div class="tags has-addons">
-                                        <span class="tag has-text-bigger has-no-border-radius-top-left is-a-bit-transparent">Votre numéro</span>
-                                        <span class="tag has-text-bigger has-no-border-radius-top-right is-a-lot-transparent">{{unefichefrais.idvisiteur}}</span>
+                                    <span class="tag has-text-bigger has-no-border-radius-top-left is-a-bit-transparent">
+                                        <span class="icon">
+                                            <i class="fas fa-calendar-alt"></i>
+                                        </span>
+                                        <span>Période</span>
+                                    </span>
+                                        <span class="tag has-text-bigger has-no-border-radius-top-right is-a-lot-transparent">
+                                        {{unefichefrais.date | date("m/Y")}}
+                                    </span>
                                     </div>
                                 </div>
                             </div>
                             <div class="columns">
-                                <div class="column has-no-padding-bottom has-2px-padding-top">
+                                <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
                                     <div class="tags has-addons">
-                                        <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">Période</span>
-                                        <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">{{unefichefrais.date | date("m/Y")}}</span>
+                                    <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
+                                        <span class="icon">
+                                            <i class="fas fa-money-check"></i>
+                                        </span>
+                                        <span>Justificatifs</span>
+                                    </span>
+                                    <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">
+                                        {{unefichefrais.nbjustificatifs | default("aucuns")}}
+                                    </span>
                                     </div>
                                 </div>
                             </div>
                             <div class="columns">
-                                <div class="column has-no-padding-bottom has-2px-padding-top">
+                                <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
                                     <div class="tags has-addons">
-                                        <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">Justificatifs</span>
-                                        <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">{{unefichefrais.nbjustificatifs | default("aucuns")}}</span>
+                                    <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
+                                        <span class="icon">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>
+                                        <span>Montant validé</span>
+                                    </span>
+                                    <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">
+                                        {{unefichefrais.montantvalide | default(0)}} €
+                                    </span>
                                     </div>
                                 </div>
                             </div>
                             <div class="columns">
-                                <div class="column has-no-padding-bottom has-2px-padding-top">
+                                <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
                                     <div class="tags has-addons">
-                                        <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">Montant validé</span>
-                                        <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">{{unefichefrais.montantvalide | default("0")}} €</span>
+                                    <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
+                                        <span class="icon">
+                                            <i class="fas fa-hourglass-half"></i>
+                                        </span>
+                                        <span>État</span>
+                                    </span>
+                                    <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">
+                                        {{unefichefrais.idetat}}
+                                    </span>
                                     </div>
                                 </div>
                             </div>
                             <div class="columns">
-                                <div class="column has-no-padding-bottom has-2px-padding-top">
+                                <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
                                     <div class="tags has-addons">
-                                        <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">État</span>
-                                        <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">{{unefichefrais.idetat}}</span>
+                                    <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
+                                        <span class="icon">
+                                            <i class="fas fa-file-alt"></i>
+                                        </span>
+                                        <span>N° Fiche</span>
+                                    </span>
+                                    <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">
+                                        {{unefichefrais.idfichefrais}}
+                                    </span>
                                     </div>
                                 </div>
                             </div>
                             <div class="columns">
-                                <div class="column has-no-padding-bottom has-2px-padding-top">
+                                <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
                                     <div class="tags has-addons">
-                                        <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">N° FICHE</span>
-                                        <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">{{unefichefrais.idfichefrais}}</span>
+                                    <span class="tag has-text-bigger is-dark has-no-border-radius">
+                                        <span class="icon">
+                                            <i class="fas fa-money-bill"></i>
+                                        </span>
+                                        <span>Frais</span>
+                                    </span>
+                                    <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">
+                                        <strong>
+                                        {{ unefichefrais.ETP.quantite * unefichefrais.ETP.idfraisforfait.montantfraisforfait +
+                                        unefichefrais.KM.quantite * unefichefrais.KM.idfraisforfait.montantfraisforfait +
+                                        unefichefrais.NUI.quantite * unefichefrais.NUI.idfraisforfait.montantfraisforfait +
+                                        unefichefrais.REP.quantite * unefichefrais.REP.idfraisforfait.montantfraisforfait }} €
+                                        </strong>
+                                    </span>
                                     </div>
                                 </div>
                             </div>
                             <div class="columns">
-                                <div class="column has-no-padding-bottom has-2px-padding-top">
+                                <div class="column has-2px-padding-top has-finest-padding-1024px">
                                     <div class="tags has-addons">
-                                        <span class="tag has-text-bigger is-dark has-no-border-radius">Frais</span>
-                                        <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent"><strong>{{unefichefrais.montantTotalFraisForfait| default("0")}} €</strong></span>
+                                    <span class="tag has-text-bigger is-dark has-no-border-radius-bottom-left">
+                                        <span class="icon">
+                                            <i class="fas fa-money-bill"></i>
+                                        </span>
+                                        <span>Hors frais</span>
+                                    </span>
+                                    <span class="tag has-text-bigger has-no-border-radius-bottom-right is-a-lot-transparent">
+                                        <strong>
+                                            {% if unefichefrais.lignesfraishorsforfait is null %}
+                                                {{ 0 }} €
+                                            {% else %}
+                                                {% for unelignefraishorsforfait in unefichefrais.lignesfraishorsforfait %}
+                                                    {{ unelignefraishorsforfait.montant }}
+                                                {% endfor %}
+                                            {% endif %}
+                                        </strong>
+                                    </span>
                                     </div>
                                 </div>
                             </div>
                             <div class="columns">
-                                <div class="column has-2px-padding-top">
-                                    <div class="tags has-addons">
-                                        <span class="tag has-text-bigger is-dark has-no-border-radius-bottom-left">Hors frais</span>
-                                        <span class="tag has-text-bigger has-no-border-radius-bottom-right is-a-lot-transparent"><strong>{{unefichefrais.montantTotalFraisHorsForfait| default("0")}} €</strong></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="columns">
-                                <div id="column{{unefichefrais.number}}" class="column is-12 is-hidden content-fichefrais">
-                                    <div class="box is-smooth is-transparent animate__animated animate__fadeIn">
-                                        <div class="column is-smooth has-background-transparent">
+                                <div id="column{{loop.index}}" class="column is-12 is-hidden content-fichefrais">
+                                    <div class="box is-transparent animate__animated animate__fadeIn">
+                                        <div class="column has-background-transparent">
                                             {{ unefichefrais.ETP.idfraisforfait.libellefraisforfait ~ unefichefrais.ETP.quantite * unefichefrais.ETP.idfraisforfait.montantfraisforfait }}
                                             {{ unefichefrais.KM.idfraisforfait.libellefraisforfait ~ unefichefrais.KM.quantite * unefichefrais.KM.idfraisforfait.montantfraisforfait }}
                                             {{ unefichefrais.NUI.idfraisforfait.libellefraisforfait ~ unefichefrais.NUI.quantite * unefichefrais.NUI.idfraisforfait.montantfraisforfait }}
@@ -130,23 +205,23 @@
                             </div>
                             <div class="columns">
                                 <div class="column has-no-padding-bottom has-2px-padding-top has-6px-padding-top-on-mobile">
-                                    <span class="icon is-small is-left">
-                                    <i id="arrow{{unefichefrais.number}}" class="fas fa-chevron-down fa-lg grow cursor-pointer"></i>
-                                    </span>
+                                <span class="icon is-small is-left">
+                                <i id="arrow{{loop.index}}" class="fas fa-chevron-down fa-lg grow cursor-pointer"></i>
+                                </span>
                                     <script>
                                         $(document).ready(function() {
-                                            $("#arrow{{ unefichefrais.number }}").click(function (event) {
-                                                if ($("#arrow{{ unefichefrais.number }}").hasClass("fa-chevron-down")) {
+                                            $("#arrow{{loop.index}},#modify{{loop.index}}").click(function () {
+                                                if ($("#arrow{{loop.index}}").hasClass("fa-chevron-down")) {
 
-                                                    $("#arrow{{ unefichefrais.number }}").addClass("unique");
-                                                    $('#box{{unefichefrais.number}}').addClass('unique');
-                                                    $('#column{{unefichefrais.number}}').addClass('unique');
+                                                    $("#arrow{{loop.index}}").addClass("unique");
+                                                    $('#box{{loop.index}}').addClass('unique');
+                                                    $('#column{{loop.index}}').addClass('unique');
 
                                                     if($('i[id*="arrow"]').not("unique").hasClass('fa-chevron-up')){
 
                                                         $('i[id*="arrow"]').not("unique").fadeOut(150, function () {
                                                             $('i[id*="arrow"]').not("unique").removeClass('fa-chevron-up');
-                                                            $('div[id*="box"]').not("unique").addClass('is-transparent').removeClass('is-asked-to-be-modified');
+                                                            $('div[id*="box"]').not("unique").addClass('is-transparent').removeClass('is-asked-to-be-modified-current').removeClass('is-asked-to-be-modified-past');
 
                                                             $('div[id*="column"]').not(".unique").fadeOut(150, function () {
                                                                 $('div[id*="column"]').not(".unique").addClass('is-hidden');
@@ -158,33 +233,33 @@
                                                         });
                                                     }
 
-                                                    $('#arrow{{ unefichefrais.number }}').fadeOut(150, function () {
-                                                        $('#arrow{{ unefichefrais.number }}').removeClass('fa-chevron-down');
+                                                    $('#arrow{{loop.index}}').fadeOut(150, function () {
+                                                        $('#arrow{{loop.index}}').removeClass('fa-chevron-down');
 
-                                                        $('#column{{unefichefrais.number}}').fadeIn(150, function (){
-                                                            $('#column{{unefichefrais.number}}').removeClass('is-hidden');
+                                                        $('#column{{loop.index}}').fadeIn(150, function (){
+                                                            $('#column{{loop.index}}').removeClass('is-hidden');
 
-                                                            $('#arrow{{ unefichefrais.number }}').fadeIn(150, function () {
-                                                                $('#arrow{{ unefichefrais.number }}').addClass('fa-chevron-up');
-                                                                $('#box{{unefichefrais.number}}').addClass('is-asked-to-be-modified').removeClass('is-transparent');
+                                                            $('#arrow{{loop.index}}').fadeIn(150, function () {
+                                                                $('#arrow{{loop.index}}').addClass('fa-chevron-up');
+                                                                $('#box{{loop.index}}').addClass('is-asked-to-be-modified-current').removeClass('is-transparent');
 
-                                                                $("#arrow{{ unefichefrais.number }}").removeClass("unique");
-                                                                $('#box{{unefichefrais.number}}').removeClass('unique');
-                                                                $('#column{{unefichefrais.number}}').removeClass('unique');
+                                                                $("#arrow{{loop.index}}").removeClass("unique");
+                                                                $('#box{{loop.index}}').removeClass('unique');
+                                                                $('#column{{loop.index}}').removeClass('unique');
                                                             });
                                                         });
                                                     });
                                                 } else {
 
-                                                    $('#arrow{{ unefichefrais.number }}').fadeOut(150, function () {
-                                                        $('#arrow{{ unefichefrais.number }}').removeClass('fa-chevron-up');
-                                                        $('#box{{unefichefrais.number}}').addClass('is-transparent').removeClass('is-asked-to-be-modified');
+                                                    $('#arrow{{loop.index}}').fadeOut(150, function () {
+                                                        $('#arrow{{loop.index}}').removeClass('fa-chevron-up');
+                                                        $('#box{{loop.index}}').addClass('is-transparent').removeClass('is-asked-to-be-modified-current');
 
-                                                        $('#column{{unefichefrais.number}}').fadeOut(150, function () {
-                                                            $('#column{{ unefichefrais.number }}').addClass('is-hidden');
+                                                        $('#column{{loop.index}}').fadeOut(150, function () {
+                                                            $('#column{{loop.index}}').addClass('is-hidden');
 
-                                                            $('#arrow{{ unefichefrais.number }}').fadeIn(150, function () {
-                                                                $('#arrow{{ unefichefrais.number }}').addClass('fa-chevron-down');
+                                                            $('#arrow{{loop.index}}').fadeIn(150, function () {
+                                                                $('#arrow{{loop.index}}').addClass('fa-chevron-down');
                                                             });
                                                         });
                                                     });
@@ -196,7 +271,7 @@
                                             const theArrow = document.getElementById("arrow""""");
                                             const theModifyingColumn = document.getElementById("column"""")
                                             const allModifyingColumnsShown = document.getElementsByClassName("id_modfyingColumns column is-12")
-                                            const allBoxesDown = document.getElementsByClassName("id-boxes box is-smooth is-like-une-fiche-frais is-asked-to-be-modified");
+                                            const allBoxesDown = document.getElementsByClassName("id-boxes box is-like-une-fiche-frais is-asked-to-be-modified");
                                             const allArrowsUp = document.getElementsByClassName("id_arrows fas fa-chevron-up fa-lg grow");
                                             if(theArrow.classList.contains("fa-chevron-down")){
                                                 [].forEach.call(allBoxesDown, function(oneBoxDown){
@@ -249,6 +324,293 @@
                         </div>
                     </div>
                 </div>
+                {% else %}
+                <div class="column is-3-desktop is-6-tablet is-12-mobile">
+                    <div id="box{{loop.index}}" class="box is-transparent is-like-une-fiche-frais animate__animated animate__fadeIn">
+                        <div class="column has-background-transparent">
+                            <div class="columns">
+                                <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px is-month-bar has-background-warning">
+                                    <span class="icon">
+                                        <i class="fas fa-file-invoice"></i>
+                                    </span>
+                                    <span>
+                                        <strong>{{unefichefrais.date | format_datetime(pattern="MMMM YYYY",locale="fr") | upper}}</strong>
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fas fa-lock"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="columns">
+                                <div class="column has-finest-padding-1024px has-6px-margin-right is-bigger-for-button-1024px">
+                                    <button id="add{{loop.index}}" class="button is-fullwidth is-small is-info has-border-radius-40">
+                                        <span class="icon is-on-left">
+                                            <i class="fas fa-plus-square"></i>
+                                        </span>
+                                        <span>AJOUTER</span>
+                                    </button>
+                                </div>
+                                <div class="column has-finest-padding-1024px has-6px-margin-left is-bigger-for-button-1024px">
+                                    <button id="consult{{loop.index}}" class="button is-fullwidth is-small is-carefull is-dark has-border-radius-40">
+                                        <span>CONSULTER</span>
+                                        <span class="icon">
+                                            <i class="fas fa-eye"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="columns">
+                                <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
+                                    <div class="tags has-addons">
+                                        <span class="tag has-text-bigger has-no-border-radius-top-left is-a-bit-transparent">
+                                            <span class="icon">
+                                                <i class="fas fa-calendar-alt"></i>
+                                            </span>
+                                            <span>Période</span>
+                                        </span>
+                                        <span class="tag has-text-bigger has-no-border-radius-top-right is-a-lot-transparent">
+                                            {{unefichefrais.date | date("m/Y")}}
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="columns">
+                                <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
+                                    <div class="tags has-addons">
+                                        <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
+                                            <span class="icon">
+                                                <i class="fas fa-money-check"></i>
+                                            </span>
+                                            <span>Justificatifs</span>
+                                        </span>
+                                        <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">
+                                            {{unefichefrais.nbjustificatifs | default("aucuns")}}
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="columns">
+                                <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
+                                    <div class="tags has-addons">
+                                        <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
+                                            <span class="icon">
+                                                <i class="fas fa-check-square"></i>
+                                            </span>
+                                            <span>Montant validé</span>
+                                        </span>
+                                        <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">
+                                            {{unefichefrais.montantvalide | default(0)}} €
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="columns">
+                                <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
+                                    <div class="tags has-addons">
+                                        <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
+                                            <span class="icon">
+                                                <i class="fas fa-hourglass-half"></i>
+                                            </span>
+                                            <span>État</span>
+                                        </span>
+                                        <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">
+                                            {{unefichefrais.idetat}}
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="columns">
+                                <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
+                                    <div class="tags has-addons">
+                                        <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
+                                            <span class="icon">
+                                                <i class="fas fa-file-alt"></i>
+                                            </span>
+                                            <span>N° Fiche</span>
+                                        </span>
+                                        <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">
+                                            {{unefichefrais.idfichefrais}}
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="columns">
+                                <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
+                                    <div class="tags has-addons">
+                                        <span class="tag has-text-bigger is-dark has-no-border-radius">
+                                            <span class="icon">
+                                                <i class="fas fa-money-bill"></i>
+                                            </span>
+                                            <span>Frais</span>
+                                        </span>
+                                        <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">
+                                            <strong>
+                                            {{ unefichefrais.ETP.quantite * unefichefrais.ETP.idfraisforfait.montantfraisforfait +
+                                             unefichefrais.KM.quantite * unefichefrais.KM.idfraisforfait.montantfraisforfait +
+                                             unefichefrais.NUI.quantite * unefichefrais.NUI.idfraisforfait.montantfraisforfait +
+                                             unefichefrais.REP.quantite * unefichefrais.REP.idfraisforfait.montantfraisforfait }} €
+                                            </strong>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="columns">
+                                <div class="column has-2px-padding-top has-finest-padding-1024px">
+                                    <div class="tags has-addons">
+                                        <span class="tag has-text-bigger is-dark has-no-border-radius-bottom-left">
+                                            <span class="icon">
+                                                <i class="fas fa-money-bill"></i>
+                                            </span>
+                                            <span>Hors frais</span>
+                                        </span>
+                                        <span class="tag has-text-bigger has-no-border-radius-bottom-right is-a-lot-transparent">
+                                            <strong>
+                                                {% if unefichefrais.lignesfraishorsforfait is null %}
+                                                    {{ 0 }} €
+                                                {% else %}
+                                                    {% for unelignefraishorsforfait in unefichefrais.lignesfraishorsforfait %}
+                                                        {{ unelignefraishorsforfait.montant }}
+                                                    {% endfor %}
+                                                {% endif %}
+                                            </strong>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="columns">
+                                <div id="column{{loop.index}}" class="column is-12 is-hidden content-fichefrais">
+                                    <div class="box is-transparent animate__animated animate__fadeIn">
+                                        <div class="column has-background-transparent">
+                                            {{ unefichefrais.ETP.idfraisforfait.libellefraisforfait ~ unefichefrais.ETP.quantite * unefichefrais.ETP.idfraisforfait.montantfraisforfait }}
+                                            {{ unefichefrais.KM.idfraisforfait.libellefraisforfait ~ unefichefrais.KM.quantite * unefichefrais.KM.idfraisforfait.montantfraisforfait }}
+                                            {{ unefichefrais.NUI.idfraisforfait.libellefraisforfait ~ unefichefrais.NUI.quantite * unefichefrais.NUI.idfraisforfait.montantfraisforfait }}
+                                            {{ unefichefrais.REP.idfraisforfait.libellefraisforfait ~ unefichefrais.REP.quantite * unefichefrais.REP.idfraisforfait.montantfraisforfait }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="columns">
+                                <div class="column has-no-padding-bottom has-2px-padding-top has-6px-padding-top-on-mobile">
+                                    <span class="icon is-small is-left">
+                                    <i id="arrow{{loop.index}}" class="fas fa-chevron-down fa-lg grow cursor-pointer"></i>
+                                    </span>
+                                    <script>
+                                        $(document).ready(function() {
+                                            $("#arrow{{loop.index}},#add{{ loop.index }},#consult{{loop.index}}").click(function () {
+                                                if ($("#arrow{{loop.index}}").hasClass("fa-chevron-down")) {
+
+                                                    $("#arrow{{loop.index}}").addClass("unique");
+                                                    $('#box{{loop.index}}').addClass('unique');
+                                                    $('#column{{loop.index}}').addClass('unique');
+
+                                                    if($('i[id*="arrow"]').not("unique").hasClass('fa-chevron-up')){
+
+                                                        $('i[id*="arrow"]').not("unique").fadeOut(150, function () {
+                                                            $('i[id*="arrow"]').not("unique").removeClass('fa-chevron-up');
+                                                            $('div[id*="box"]').not("unique").addClass('is-transparent').removeClass('is-asked-to-be-modified-past').removeClass('is-asked-to-be-modified-current');
+
+                                                            $('div[id*="column"]').not(".unique").fadeOut(150, function () {
+                                                                $('div[id*="column"]').not(".unique").addClass('is-hidden');
+
+                                                                $('i[id*="arrow"]').not(".unique").fadeIn(150, function () {
+                                                                    $('i[id*="arrow"]').not(".unique").addClass('fa-chevron-down');
+                                                                });
+                                                            });
+                                                        });
+                                                    }
+
+                                                    $('#arrow{{loop.index}}').fadeOut(150, function () {
+                                                        $('#arrow{{loop.index}}').removeClass('fa-chevron-down');
+
+                                                        $('#column{{loop.index}}').fadeIn(150, function (){
+                                                            $('#column{{loop.index}}').removeClass('is-hidden');
+
+                                                            $('#arrow{{loop.index}}').fadeIn(150, function () {
+                                                                $('#arrow{{loop.index}}').addClass('fa-chevron-up');
+                                                                $('#box{{loop.index}}').addClass('is-asked-to-be-modified-past').removeClass('is-transparent');
+
+                                                                $("#arrow{{loop.index}}").removeClass("unique");
+                                                                $('#box{{loop.index}}').removeClass('unique');
+                                                                $('#column{{loop.index}}').removeClass('unique');
+                                                            });
+                                                        });
+                                                    });
+                                                } else {
+
+                                                    $('#arrow{{loop.index}}').fadeOut(150, function () {
+                                                        $('#arrow{{loop.index}}').removeClass('fa-chevron-up');
+                                                        $('#box{{loop.index}}').addClass('is-transparent').removeClass('is-asked-to-be-modified-past');
+
+                                                        $('#column{{loop.index}}').fadeOut(150, function () {
+                                                            $('#column{{loop.index}}').addClass('is-hidden');
+
+                                                            $('#arrow{{loop.index}}').fadeIn(150, function () {
+                                                                $('#arrow{{loop.index}}').addClass('fa-chevron-down');
+                                                            });
+                                                        });
+                                                    });
+                                                }
+                                            });
+                                        });
+                                        /*function openBox""""(){
+                                            const theBox = document.getElementById("box"""");
+                                            const theArrow = document.getElementById("arrow""""");
+                                            const theModifyingColumn = document.getElementById("column"""")
+                                            const allModifyingColumnsShown = document.getElementsByClassName("id_modfyingColumns column is-12")
+                                            const allBoxesDown = document.getElementsByClassName("id-boxes box is-like-une-fiche-frais is-asked-to-be-modified");
+                                            const allArrowsUp = document.getElementsByClassName("id_arrows fas fa-chevron-up fa-lg grow");
+                                            if(theArrow.classList.contains("fa-chevron-down")){
+                                                [].forEach.call(allBoxesDown, function(oneBoxDown){
+                                                    oneBoxDown.classList.remove("is-asked-to-be-modified");
+                                                    oneBoxDown.classList.add("is-transparent")
+                                                });
+                                                [].forEach.call(allArrowsUp,function(oneArrowUp){
+                                                    setTimeout(() => {
+                                                        oneArrowUp.classList.remove("fa-chevron-up");
+                                                    }, 200);
+                                                    setTimeout(() => {
+                                                        oneArrowUp.classList.add("fa-chevron-down");
+                                                        oneArrowUp.classList.add("fadeIn");
+                                                    }, 300);
+                                                    });
+                                                [].forEach.call(allModifyingColumnsShown,function(oneModifyingColumnDown){
+                                                    oneModifyingColumnDown.classList.add("is-hidden");
+                                                });
+                                                theBox.classList.remove("is-transparent")
+                                                theBox.classList.add("is-asked-to-be-modified");
+                                                setTimeout(() => {
+                                                    theArrow.classList.remove("fa-chevron-down");
+                                                    theArrow.classList.remove("fadeIn");
+                                                }, 200);
+                                                setTimeout(() => {
+                                                    theArrow.classList.add("fa-chevron-up");
+                                                    theModifyingColumn.classList.remove("is-hidden")
+                                                }, 300);
+                                            }
+                                            else{
+                                                theModifyingColumn.classList.add("fadeOut")
+                                                setTimeout(()=>{
+                                                    theModifyingColumn.classList.remove("fadeOut")
+                                                    theBox.classList.remove("is-asked-to-be-modified");
+                                                    theBox.classList.add("is-transparent")
+                                                    theModifyingColumn.classList.add("is-hidden")
+                                                }, 300)
+                                                setTimeout(() => {
+                                                    theArrow.classList.remove("fa-chevron-up");
+                                                }, 500);
+                                                setTimeout(() => {
+                                                    theArrow.classList.add("fa-chevron-down");
+                                                    theArrow.classList.add("fadeIn");
+                                                }, 500);
+                                            }
+                                        }*/
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
                 {% endfor %}
             </div>
         </div>
