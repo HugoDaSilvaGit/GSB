@@ -80,5 +80,6 @@
     <orderEntry type="library" name="76fcf77af4" level="application" />
     <orderEntry type="library" name="animate.css" level="application" />
     <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="less" level="application" />
   </component>
 </module>

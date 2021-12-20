@@ -16,9 +16,9 @@ class Lignefraisforfait
     /**
      * @var string|null
      *
-     * @ORM\Column(name="quantite", type="integer", nullable=true, options={"default"="NULL"})
+     * @ORM\Column(name="quantite", type="integer", nullable=false, options={"default"="0"})
      */
-    private $quantite = 'NULL';
+    private $quantite = 0;
 
     /**
      * @var \Fichefrais
