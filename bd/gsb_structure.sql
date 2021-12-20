@@ -92,7 +92,6 @@ CREATE TABLE IF NOT EXISTS `Visiteur` (
 --
 
 CREATE TABLE IF NOT EXISTS `FicheFrais` (
-  `number` int(2) NOT NULL,
   `idFicheFrais` char(12) NOT NULL UNIQUE,
   `idVisiteur` char(4) NOT NULL,
   `date` date NOT NULL,
@@ -115,7 +114,7 @@ CREATE TABLE IF NOT EXISTS `FicheFrais` (
 CREATE TABLE IF NOT EXISTS `LigneFraisForfait` (
   `idFicheFrais` char(12) NOT NULL,
   `idFraisForfait` char(3) NOT NULL,
-  `quantite` int(11) DEFAULT NULL,
+  `quantite` int(11) NOT NULL DEFAULT 0,
   PRIMARY KEY (`idFraisForfait`,`idFicheFrais`),
   FOREIGN KEY (`idFicheFrais`) REFERENCES FicheFrais(`idFicheFrais`),
   FOREIGN KEY (`idFraisForfait`) REFERENCES FraisForfait(`idFraisForfait`)
