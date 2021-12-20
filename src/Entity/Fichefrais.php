@@ -17,12 +17,6 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Fichefrais
 {
-    /**
-     * @var int|null
-     *
-     * @ORM\Column(name="number", type="integer", length=2, nullable=false, options={"fixed"=true})
-     */
-    private $number;
 
     /**
      * @var string
@@ -80,6 +74,16 @@ class Fichefrais
      * })
      */
     private $idvisiteur;
+
+    /**
+     * @var \Listelignesfraishorsforfait
+     */
+    private $lignesfraishorsforfait;
+
+    public function getlignesfraishorsforfait(): ?Listelignesfraishorsforfait{
+        return $this->lignesfraishorsforfait;
+    }
+
 
     /**
      * Constructor
