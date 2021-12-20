@@ -58,8 +58,8 @@
     <inspection_tool class="AngularUndefinedTag" enabled="false" level="TYPO" enabled_by_default="false">
       <scope name="Project Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="ComposerJsonFileReferencesInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="ComposerJsonFileReferencesInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
     <inspection_tool class="CssBrowserCompatibilityForProperties" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="CssInvalidFunction" enabled="false" level="ERROR" enabled_by_default="false" />
@@ -83,925 +83,926 @@
     <inspection_tool class="CssUnusedSymbol" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="GrazieInspection" enabled="false" level="TYPO" enabled_by_default="false" />
     <inspection_tool class="LanguageDetectionInspection" enabled="false" level="WARNING" enabled_by_default="false" />
-    <inspection_tool class="MessDetectorValidationInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="MessDetectorValidationInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpAbstractStaticMethodInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpAbstractStaticMethodInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpAccessingStaticMembersOnTraitInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpAccessingStaticMembersOnTraitInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpApplyingEmptyIndexOperatorOnStringInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpApplyingEmptyIndexOperatorOnStringInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpArgumentWithoutNamedIdentifierInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpArgumentWithoutNamedIdentifierInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpArithmeticTypeCheckInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpArithmeticTypeCheckInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpArrayAccessCanBeReplacedWithForeachValueInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpArrayAccessCanBeReplacedWithForeachValueInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpArrayAccessOnIllegalTypeInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpArrayAccessOnIllegalTypeInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpArrayFillCanBeConvertedToLoopInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpArrayFillCanBeConvertedToLoopInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpArrayFilterCanBeConvertedToLoopInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpArrayFilterCanBeConvertedToLoopInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpArrayIndexImmediatelyRewrittenInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpArrayIndexImmediatelyRewrittenInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpArrayIndexResetIsUnnecessaryInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpArrayIndexResetIsUnnecessaryInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpArrayIsAlwaysEmptyInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpArrayIsAlwaysEmptyInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpArrayKeyDoesNotMatchArrayShapeInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpArrayKeyDoesNotMatchArrayShapeInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpArrayMapCanBeConvertedToLoopInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpArrayMapCanBeConvertedToLoopInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpArrayPushWithOneElementInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpArrayPushWithOneElementInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpArraySearchInBooleanContextInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpArraySearchInBooleanContextInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpArrayShapeAttributeCanBeAddedInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpArrayShapeAttributeCanBeAddedInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpArrayToStringConversionInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpArrayToStringConversionInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpArrayUsedOnlyForWriteInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpArrayUsedOnlyForWriteInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpArrayWriteIsNotUsedInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpArrayWriteIsNotUsedInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpAssignmentInConditionInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpAssignmentInConditionInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpAssignmentReplaceableWithOperatorAssignmentInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpAssignmentReplaceableWithOperatorAssignmentInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpAssignmentReplaceableWithPrefixExpressionInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpAssignmentReplaceableWithPrefixExpressionInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpAttributeCanBeAddedToOverriddenMemberInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpAttributeCanBeAddedToOverriddenMemberInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpAttributeIsNotRepeatableInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpAttributeIsNotRepeatableInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpAutovivificationOnFalseValuesInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpAutovivificationOnFalseValuesInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpBooleanCanBeSimplifiedInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpBooleanCanBeSimplifiedInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpCSFixerValidationInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpCSFixerValidationInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpCSValidationInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true">
+    <inspection_tool class="PhpCSValidationInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false">
         <option name="EXTENSIONS" value="php,js,css,inc" />
       </scope>
+      <option name="EXTENSIONS" value="php,js,css,inc" />
     </inspection_tool>
-    <inspection_tool class="PhpCaseWithValueNotFoundInEnumInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpCaseWithValueNotFoundInEnumInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpCastIsEvaluableInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpCastIsEvaluableInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpCastIsUnnecessaryInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpCastIsUnnecessaryInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpClassCantBeUsedAsAttributeInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpClassCantBeUsedAsAttributeInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpClassConstantAccessedViaChildClassInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpClassConstantAccessedViaChildClassInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpClassHasTooManyDeclaredMembersInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpClassHasTooManyDeclaredMembersInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpClassImplementsSolelyTraversableInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpClassImplementsSolelyTraversableInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
     <inspection_tool class="PhpClassNamingConventionInspection" enabled="false" level="TYPO" enabled_by_default="false">
       <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpClosureCanBeConvertedToFirstClassCallableInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpClosureCanBeConvertedToFirstClassCallableInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpClosureCanBeConvertedToShortArrowFunctionInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpClosureCanBeConvertedToShortArrowFunctionInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpCommentCanBeReplacedWithNamedArgumentInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpCommentCanBeReplacedWithNamedArgumentInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpComplexClassInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpComplexClassInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpComplexFunctionInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpComplexFunctionInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpComposerDuplicatedRequirementInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpComposerDuplicatedRequirementInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpComposerExtensionStubsInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpComposerExtensionStubsInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpCompoundNamespaceDepthInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpCompoundNamespaceDepthInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpConcatenationWithArithmeticInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpConcatenationWithArithmeticInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpConcatenationWithEmptyStringCanBeInlinedInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpConcatenationWithEmptyStringCanBeInlinedInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpConditionAlreadyCheckedInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpConditionAlreadyCheckedInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpConditionCanBeReplacedWithMinMaxCallInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpConditionCanBeReplacedWithMinMaxCallInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpConditionCheckedByNextConditionInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpConditionCheckedByNextConditionInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
     <inspection_tool class="PhpConstantNamingConventionInspection" enabled="false" level="TYPO" enabled_by_default="false">
       <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpConstantReassignmentInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpConstantReassignmentInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpConstructorStyleInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpConstructorStyleInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpContinueTargetingSwitchInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpContinueTargetingSwitchInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpCoveredCharacterInClassInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpCoveredCharacterInClassInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpCurlyBraceAccessSyntaxUsageInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpCurlyBraceAccessSyntaxUsageInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpDangerousArrayInitializationInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpDangerousArrayInitializationInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpDefineCanBeReplacedWithConstInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpDefineCanBeReplacedWithConstInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpDefineConstantNameStartsWithLeadingSlashInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpDefineConstantNameStartsWithLeadingSlashInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpDeprecatedCastInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpDeprecatedCastInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpDeprecatedImplodeUsageInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpDeprecatedImplodeUsageInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpDeprecatedSerializableUsageInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpDeprecatedSerializableUsageInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpDeprecatedStdLibCallInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpDeprecatedStdLibCallInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpDeprecationInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpDeprecationInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpDisabledExtensionStubsInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpDisabledExtensionStubsInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpDisabledQualityToolComposerInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpDisabledQualityToolComposerInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpDivisionByZeroInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpDivisionByZeroInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpDocDuplicateTypeInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpDocDuplicateTypeInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpDocFieldTypeMismatchInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpDocFieldTypeMismatchInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpDocMissingThrowsInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpDocMissingThrowsInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpDocRedundantThrowsInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpDocRedundantThrowsInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpDocSignatureInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpDocSignatureInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpDocSignatureIsNotCompleteInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpDocSignatureIsNotCompleteInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpDuplicateArrayKeysInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpDuplicateArrayKeysInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpDuplicateCaseInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpDuplicateCaseInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpDuplicateCatchBodyInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpDuplicateCatchBodyInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpDuplicateMatchArmBodyInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpDuplicateMatchArmBodyInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpDuplicateMatchConditionInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpDuplicateMatchConditionInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpDuplicateSwitchCaseBodyInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpDuplicateSwitchCaseBodyInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpDuplicatedCharacterInStrFunctionCallInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpDuplicatedCharacterInStrFunctionCallInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpDynamicAsStaticMethodCallInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpDynamicAsStaticMethodCallInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpElementIsNotAvailableInCurrentPhpVersionInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpElementIsNotAvailableInCurrentPhpVersionInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpEnforceDocCommentInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpEnforceDocCommentInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpExceptionImmediatelyRethrownInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpExceptionImmediatelyRethrownInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpExpectedValuesShouldBeUsedInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpExpectedValuesShouldBeUsedInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpExpressionAlwaysNullInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpExpressionAlwaysNullInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpExpressionResultUnusedInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpExpressionResultUnusedInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpExpressionWithSameOperandsInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpExpressionWithSameOperandsInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpExpressionWithoutClarifyingParenthesesInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpExpressionWithoutClarifyingParenthesesInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpFeatureEnvyLocalInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpFeatureEnvyLocalInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpFieldAssignmentTypeMismatchInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpFieldAssignmentTypeMismatchInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpFieldCanBePromotedInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpFieldCanBePromotedInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpFieldImmediatelyRewrittenInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpFieldImmediatelyRewrittenInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpForeachArrayIsUsedAsValueInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpForeachArrayIsUsedAsValueInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpForeachNestedOuterKeyValueVariablesConflictInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpForeachNestedOuterKeyValueVariablesConflictInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpForeachOverSingleElementArrayLiteralInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpForeachOverSingleElementArrayLiteralInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpForeachVariableOverwritesAlreadyDefinedVariableInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpForeachVariableOverwritesAlreadyDefinedVariableInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpFormatCallWithSingleArgumentInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpFormatCallWithSingleArgumentInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpFormatFunctionParametersMismatchInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpFormatFunctionParametersMismatchInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpFullyQualifiedNameUsageInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpFullyQualifiedNameUsageInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpFuncGetArgCanBeReplacedWithParamInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpFuncGetArgCanBeReplacedWithParamInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpFunctionCyclomaticComplexityInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpFunctionCyclomaticComplexityInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
     <inspection_tool class="PhpFunctionNamingConventionInspection" enabled="false" level="TYPO" enabled_by_default="false">
       <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpGetClassCanBeReplacedWithClassNameLiteralInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpGetClassCanBeReplacedWithClassNameLiteralInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpGotoIntoLoopInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpGotoIntoLoopInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpHalsteadMetricInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpHalsteadMetricInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpHierarchyChecksInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpHierarchyChecksInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpIdempotentOperationInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpIdempotentOperationInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpIfCanBeMergedWithSequentialConditionInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpIfCanBeMergedWithSequentialConditionInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpIfWithCommonPartsInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpIfWithCommonPartsInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpIgnoredClassAliasDeclaration" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpIgnoredClassAliasDeclaration" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpIllegalArrayKeyTypeInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpIllegalArrayKeyTypeInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpIllegalPsrClassPathInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpIllegalPsrClassPathInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpIllegalStringOffsetInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpIllegalStringOffsetInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpImmutablePropertyIsWrittenInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpImmutablePropertyIsWrittenInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpImplicitOctalLiteralUsageInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpImplicitOctalLiteralUsageInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpInArrayCanBeReplacedWithComparisonInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpInArrayCanBeReplacedWithComparisonInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpInapplicableAttributeTargetDeclarationInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpInapplicableAttributeTargetDeclarationInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpInappropriateInheritDocUsageInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpInappropriateInheritDocUsageInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpIncludeInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpIncludeInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpIncompatibleReturnTypeInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpIncompatibleReturnTypeInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpInconsistentReturnPointsInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpInconsistentReturnPointsInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpIncorrectMagicMethodSignatureInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpIncorrectMagicMethodSignatureInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpInstanceofIsAlwaysTrueInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpInstanceofIsAlwaysTrueInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpInternalEntityUsedInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpInternalEntityUsedInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpInvalidInstanceofInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpInvalidInstanceofInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpInvalidMagicMethodModifiersInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpInvalidMagicMethodModifiersInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpInvalidStringOffsetUsageInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpInvalidStringOffsetUsageInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpIssetCanBeReplacedWithCoalesceInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpIssetCanBeReplacedWithCoalesceInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpLackOfCohesionInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpLackOfCohesionInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpLanguageLevelInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpLanguageLevelInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpLineCommentWillBeParsedAsAttributeInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpLineCommentWillBeParsedAsAttributeInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpLongTypeFormInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpLongTypeFormInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpLoopCanBeConvertedToArrayFillInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpLoopCanBeConvertedToArrayFillInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpLoopCanBeConvertedToArrayFilterInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpLoopCanBeConvertedToArrayFilterInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpLoopCanBeConvertedToArrayMapInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpLoopCanBeConvertedToArrayMapInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpLoopCanBeReplacedWithImplodeInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpLoopCanBeReplacedWithImplodeInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpLoopCanBeReplacedWithStrRepeatInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpLoopCanBeReplacedWithStrRepeatInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpLoopNeverIteratesInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpLoopNeverIteratesInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpMatchCanBeReplacedWithSwitchStatementInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpMatchCanBeReplacedWithSwitchStatementInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpMatchExpressionCanBeReplacedWithTernaryInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpMatchExpressionCanBeReplacedWithTernaryInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpMatchExpressionWithOnlyDefaultArmInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpMatchExpressionWithOnlyDefaultArmInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpMemberCanBePulledUpInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpMemberCanBePulledUpInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpMethodMayBeStaticInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpMethodMayBeStaticInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
     <inspection_tool class="PhpMethodNamingConventionInspection" enabled="false" level="TYPO" enabled_by_default="false">
       <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpMethodOrClassCallIsNotCaseSensitiveInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpMethodOrClassCallIsNotCaseSensitiveInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpMethodParametersCountMismatchInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpMethodParametersCountMismatchInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpMissingBreakStatementInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpMissingBreakStatementInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpMissingDocCommentInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpMissingDocCommentInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpMissingFieldTypeInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpMissingFieldTypeInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpMissingParamTypeInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpMissingParamTypeInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpMissingParentCallCommonInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpMissingParentCallCommonInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpMissingParentCallMagicInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpMissingParentCallMagicInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpMissingParentConstructorInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpMissingParentConstructorInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpMissingReturnTypeInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpMissingReturnTypeInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpMissingStrictTypesDeclarationInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpMissingStrictTypesDeclarationInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpMissingVisibilityInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpMissingVisibilityInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpMixedReturnTypeCanBeReducedInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpMixedReturnTypeCanBeReducedInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpModifierOrderInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpModifierOrderInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpModuloByOneInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpModuloByOneInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpMultipleClassDeclarationsInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpMultipleClassDeclarationsInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpMultipleClassesDeclarationsInOneFile" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpMultipleClassesDeclarationsInOneFile" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpNamedArgumentMightBeUnresolvedInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpNamedArgumentMightBeUnresolvedInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpNamedArgumentUsageInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpNamedArgumentUsageInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpNamedArgumentsWithChangedOrderInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpNamedArgumentsWithChangedOrderInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpNestedDirNameCallsCanBeReplacedWithLevelParameterInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpNestedDirNameCallsCanBeReplacedWithLevelParameterInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpNestedMinMaxCallInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpNestedMinMaxCallInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpNestedTernaryExpressionUsageInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpNestedTernaryExpressionUsageInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpNeverTypedFunctionReturnViolationInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpNeverTypedFunctionReturnViolationInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpNewClassMissingParameterListInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpNewClassMissingParameterListInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpNoReturnAttributeCanBeAddedInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpNoReturnAttributeCanBeAddedInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpNonCanonicalElementsOrderInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpNonCanonicalElementsOrderInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpNonCompoundUseInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpNonCompoundUseInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpNonStrictObjectEqualityInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpNonStrictObjectEqualityInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpNotInstalledPackagesInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpNotInstalledPackagesInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpNullIsNotCompatibleWithParameterInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpNullIsNotCompatibleWithParameterInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpNullSafeOperatorCanBeUsedInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpNullSafeOperatorCanBeUsedInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpObjectFieldsAreOnlyWrittenInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpObjectFieldsAreOnlyWrittenInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpOptionalBeforeRequiredParametersInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpOptionalBeforeRequiredParametersInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpOverridingMethodVisibilityInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpOverridingMethodVisibilityInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpParameterByRefIsNotUsedAsReferenceInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpParameterByRefIsNotUsedAsReferenceInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpParameterNameChangedDuringInheritanceInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpParameterNameChangedDuringInheritanceInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpParamsInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpParamsInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpPassByRefInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpPassByRefInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpPluralMixedCanBeReplacedWithArrayInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpPluralMixedCanBeReplacedWithArrayInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpPossiblePolymorphicInvocationInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpPossiblePolymorphicInvocationInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpPregMatchWithoutEffectiveRegexpInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpPregMatchWithoutEffectiveRegexpInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpPrivateFieldCanBeLocalVariableInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpPrivateFieldCanBeLocalVariableInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpPromotedFieldUsageInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpPromotedFieldUsageInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
     <inspection_tool class="PhpPropertyNamingConventionInspection" enabled="false" level="TYPO" enabled_by_default="false">
       <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpPropertyOnlyWrittenInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpPropertyOnlyWrittenInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpPureAttributeCanBeAddedInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpPureAttributeCanBeAddedInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpPureFunctionMayProduceSideEffectsInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpPureFunctionMayProduceSideEffectsInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpRangesInClassCanBeMergedInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpRangesInClassCanBeMergedInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpReadonlyPropertyWrittenOutsideDeclarationScopeInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpReadonlyPropertyWrittenOutsideDeclarationScopeInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpRedundantArrayCallInForeachIteratedValueInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpRedundantArrayCallInForeachIteratedValueInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpRedundantAssignmentToPromotedFieldInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpRedundantAssignmentToPromotedFieldInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpRedundantAttributeParenthesisInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpRedundantAttributeParenthesisInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpRedundantCatchClauseInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpRedundantCatchClauseInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpRedundantClosingTagInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpRedundantClosingTagInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpRedundantDefaultBreakContinueArgumentInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpRedundantDefaultBreakContinueArgumentInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpRedundantDocCommentInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpRedundantDocCommentInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpRedundantIntersectionTypeInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpRedundantIntersectionTypeInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpRedundantMethodOverrideInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpRedundantMethodOverrideInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpRedundantOptionalArgumentInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpRedundantOptionalArgumentInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpRedundantTypeInUnionTypeInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpRedundantTypeInUnionTypeInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpRedundantVariableDocTypeInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpRedundantVariableDocTypeInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpReturnDocTypeMismatchInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpReturnDocTypeMismatchInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpReturnValueOfMethodIsNeverUsedInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpReturnValueOfMethodIsNeverUsedInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpSameParameterValueInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpSameParameterValueInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpSecondWriteToReadonlyPropertyInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpSecondWriteToReadonlyPropertyInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpSeparateElseIfInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpSeparateElseIfInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpShortOpenTagInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpShortOpenTagInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpSignatureMismatchDuringInheritanceInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpSignatureMismatchDuringInheritanceInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpSillyAssignmentInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpSillyAssignmentInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpSingleStatementWithBracesInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpSingleStatementWithBracesInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpStanGlobal" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpStanGlobal" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpStarClosureCanBeReplacedWithPlusInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpStarClosureCanBeReplacedWithPlusInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpStatementHasEmptyBodyInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpStatementHasEmptyBodyInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpStatementWithoutBracesInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpStatementWithoutBracesInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpStaticAsDynamicMethodCallInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpStaticAsDynamicMethodCallInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpStrFunctionsInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpStrFunctionsInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpStrictComparisonWithOperandsOfDifferentTypesInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpStrictComparisonWithOperandsOfDifferentTypesInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpStrictTypeCheckingInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpStrictTypeCheckingInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpSuperClassIncompatibleWithInterfaceInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpSuperClassIncompatibleWithInterfaceInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpSuspiciousNameCombinationInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpSuspiciousNameCombinationInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpSwitchCanBeReplacedWithMatchExpressionInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpSwitchCanBeReplacedWithMatchExpressionInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpSwitchCaseWithoutDefaultBranchInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpSwitchCaseWithoutDefaultBranchInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpSwitchStatementWitSingleBranchInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpSwitchStatementWitSingleBranchInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpSwitchWithCommonPartsInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpSwitchWithCommonPartsInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpTernaryExpressionCanBeReducedToShortVersionInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpTernaryExpressionCanBeReducedToShortVersionInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpTernaryExpressionCanBeReplacedWithConditionInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpTernaryExpressionCanBeReplacedWithConditionInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpToStringImplementationInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpToStringImplementationInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpToStringMayProduceExceptionInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpToStringMayProduceExceptionInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpToStringReturnInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpToStringReturnInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpTooManyParametersInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpTooManyParametersInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpTraditionalSyntaxArrayLiteralInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpTraditionalSyntaxArrayLiteralInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpTraitUsageOutsideUseInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpTraitUsageOutsideUseInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpTraitUseRuleInsideDifferentClassUseListInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpTraitUseRuleInsideDifferentClassUseListInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpTraitsUseListInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpTraitsUseListInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpTypedPropertyMightBeUninitializedInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpTypedPropertyMightBeUninitializedInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUncoveredEnumCasesInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUncoveredEnumCasesInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUndefinedCallbackInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUndefinedCallbackInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUndefinedClassConstantInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUndefinedClassConstantInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUndefinedClassInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUndefinedClassInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUndefinedConstantInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUndefinedConstantInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUndefinedFieldInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUndefinedFieldInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUndefinedFunctionInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUndefinedFunctionInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUndefinedGotoLabelInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUndefinedGotoLabelInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUndefinedMethodInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUndefinedMethodInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUndefinedNamespaceInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUndefinedNamespaceInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUndefinedVariableInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUndefinedVariableInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnhandledExceptionInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnhandledExceptionInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnitAssertArrayHasKeyInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnitAssertArrayHasKeyInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnitAssertCanBeReplacedWithEmptyInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnitAssertCanBeReplacedWithEmptyInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnitAssertCanBeReplacedWithFailInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnitAssertCanBeReplacedWithFailInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnitAssertContainsInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnitAssertContainsInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnitAssertCountInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnitAssertCountInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnitAssertEqualsInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnitAssertEqualsInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnitAssertFileEqualsInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnitAssertFileEqualsInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnitAssertTrueWithIncompatibleTypeArgumentInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnitAssertTrueWithIncompatibleTypeArgumentInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnitCoversByAccessModifierIsDeprecatedInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnitCoversByAccessModifierIsDeprecatedInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnitCoversFunctionWithoutScopeResolutionOperatorInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnitCoversFunctionWithoutScopeResolutionOperatorInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnitDeprecatedCallsIn10VersionInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnitDeprecatedCallsIn10VersionInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnitDeprecatedExpectExceptionInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnitDeprecatedExpectExceptionInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnitExpectedExceptionDocTagIsDeprecatedInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnitExpectedExceptionDocTagIsDeprecatedInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnitMisorderedAssertEqualsArgumentsInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnitMisorderedAssertEqualsArgumentsInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnitMissingTargetForTestInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnitMissingTargetForTestInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnitUndefinedDataProviderInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnitUndefinedDataProviderInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnnecessaryBoolCastInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnnecessaryBoolCastInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnnecessaryCurlyVarSyntaxInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnnecessaryCurlyVarSyntaxInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnnecessaryDoubleQuotesInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnnecessaryDoubleQuotesInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnnecessaryElseBranchInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnnecessaryElseBranchInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnnecessaryFullyQualifiedNameInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnnecessaryFullyQualifiedNameInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnnecessaryLeadingBackslashInUseStatementInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnnecessaryLeadingBackslashInUseStatementInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnnecessaryLocalVariableInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnnecessaryLocalVariableInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnnecessaryParenthesesInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnnecessaryParenthesesInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnnecessarySemicolonInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnnecessarySemicolonInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnnecessarySpreadOperatorForFunctionCallArgumentInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnnecessarySpreadOperatorForFunctionCallArgumentInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnnecessaryStaticReferenceInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnnecessaryStaticReferenceInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnnecessaryStopStatementInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnnecessaryStopStatementInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnnecessaryStringCastInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnnecessaryStringCastInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnpackedArgumentTypeMismatchInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnpackedArgumentTypeMismatchInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnreachableStatementInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnreachableStatementInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnused" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnused" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnusedAliasInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnusedAliasInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnusedFieldDefaultValueInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnusedFieldDefaultValueInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnusedLocalVariableInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnusedLocalVariableInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnusedMatchConditionInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnusedMatchConditionInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnusedParameterInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnusedParameterInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnusedPrivateFieldInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnusedPrivateFieldInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnusedPrivateMethodInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnusedPrivateMethodInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUnusedSwitchBranchInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUnusedSwitchBranchInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUsageOfSilenceOperatorInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUsageOfSilenceOperatorInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpUselessTrailingCommaInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpUselessTrailingCommaInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpVarUsageInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpVarUsageInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
     <inspection_tool class="PhpVariableNamingConventionInspection" enabled="false" level="TYPO" enabled_by_default="false">
       <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpVariableVariableInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpVariableVariableInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpVoidFunctionResultUsedInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpVoidFunctionResultUsedInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpWriteAccessToReferencedArrayValueWithoutUnsetInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpWriteAccessToReferencedArrayValueWithoutUnsetInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpWrongCatchClausesOrderInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpWrongCatchClausesOrderInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpWrongForeachArgumentTypeInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpWrongForeachArgumentTypeInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PhpWrongStringConcatenationInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PhpWrongStringConcatenationInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PsalmAdvanceCallableParamsInspection" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PsalmAdvanceCallableParamsInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="PsalmGlobal" enabled="true" level="TYPO" enabled_by_default="true">
-      <scope name="Open Files" level="TYPO" enabled="true" />
+    <inspection_tool class="PsalmGlobal" enabled="false" level="TYPO" enabled_by_default="false">
+      <scope name="Open Files" level="TYPO" enabled="false" />
     </inspection_tool>
     <inspection_tool class="SpellCheckingInspection" enabled="false" level="TYPO" enabled_by_default="false">
       <option name="processCode" value="true" />
