@@ -93,16 +93,6 @@ class Fichefrais
         $this->idfraisforfait = new \Doctrine\Common\Collections\ArrayCollection();
     }
 
-    public function getNumber(): ?int
-    {
-        return $this->number;
-    }
-
-    public function setNumber(?int $number): void
-    {
-        $this->number = $number;
-    }
-
     /** TO STRING FOR ID */
     public function __toString()
     {
