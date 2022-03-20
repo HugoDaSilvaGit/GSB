@@ -18,7 +18,7 @@ cd bd/gsb_peupler.sql
 
 **Prerequisites**
 
->MySQL/PHP connector (PDO) is required; MySQL provides PHP support through the MaySQL Connector/PHP (PDO), which is available through the apt Package Index.
+>MySQL/PHP connector (PDO) is required; MySQL provides PHP support through the MySQL Connector/PHP (PDO), which is available through the apt Package Index.
 ```Shell
 $ apt-get install php7.3-mysql
 ```
