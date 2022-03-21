@@ -14,6 +14,10 @@ visiteur:
   path: /visiteur/espace
   controller : App\Controller\VisiteurController::espace
 
+setfraisforfait:
+  path: /test
+  controller : App\Controller\VisiteurController::setfraisforfait
+
 comptable:
   path: /comptable/espace
   controller : App\Controller\ComptableController::espace

@@ -95,6 +95,8 @@ class SeConnecterController extends AbstractController
 
     public function signoff(){
         try {
+            $session = new Session();
+            $session->start();
             $session->clear();
 
             return $this->render('login.html.twig', [

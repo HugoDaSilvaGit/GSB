@@ -75,15 +75,6 @@ class Fichefrais
      */
     private $idvisiteur;
 
-    /**
-     * @var \Listelignesfraishorsforfait
-     */
-    private $lignesfraishorsforfait;
-
-    public function getlignesfraishorsforfait(): ?Listelignesfraishorsforfait{
-        return $this->lignesfraishorsforfait;
-    }
-
 
     /**
      * Constructor
@@ -102,6 +93,13 @@ class Fichefrais
     public function getIdfichefrais(): ?string
     {
         return $this->idfichefrais;
+    }
+
+    public function setIdfichefrais(?string $idfichefrais): self
+    {
+        $this->idfichefrais = $idfichefrais;
+
+        return $this;
     }
 
     public function getDate(): ?\DateTimeInterface

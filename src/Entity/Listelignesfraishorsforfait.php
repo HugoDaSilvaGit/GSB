@@ -16,10 +16,10 @@ class Listelignesfraishorsforfait
     public function addLignefraishorsforfait(Lignefraishorsforfait  $Lignefraishorsforfait)
     {
         $lignefraishorsforfait=$Lignefraishorsforfait->getIdlignefraishorsforfait();
-        $this->$lignefraishorsforfait = $Lignefraishorsforfait;
+        $this->$lignefraishorsforfait= $Lignefraishorsforfait;
     }
 
-    public function getLignefraishorsforfait(): Lignefraishorsforfait
+    public function getLignefraishorsforfait(): ?Lignefraishorsforfait
     {
         return $this->Lignefraishorforfait;
     }
