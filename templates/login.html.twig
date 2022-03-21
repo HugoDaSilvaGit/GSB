@@ -6,7 +6,7 @@
 <div class="container">
     <div class="columns is-centered is-top">
         <div class="column is-5-tablet is-4-desktop is-4-widescreen">
-            <form class="box has-text-left is-transparent" action="{{path('login')}}" method="POST">
+            <form class="box has-text-left is-transparent animate__animated animate__fadeInDown" action="{{path('login')}}" method="POST">
             <p role="img" class="gsb-logo is-grey"></p>
             <p class="subtitle has-text-grey has-text-centered">Galaxy Swiss Bourdin</p>
             {% if connexionON is defined %}
@@ -14,7 +14,7 @@
                     <label class="label">Login</label>
                     <div class="control is-transparent has-icons-left">
                         <label>
-                            <input class="input is-transparent" type="text" placeholder="Login" name="login" required="required">
+                            <input class="input" type="text" placeholder="Login" name="login" required="required">
                         </label>
                         <span class="icon is-small is-left">
                         <i class="fas fa-user"></i>
@@ -103,7 +103,7 @@
                     </div>
                 </div>
             {% endif %}
-                <button class="button-animation color-3" type="submit">Connexion</button>
+                <button class="button-animation color-3" type="submit">CONNEXION</button>
             </form>
         </div>
     </div>
