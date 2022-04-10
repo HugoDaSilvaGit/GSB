@@ -7,6 +7,7 @@
         {# Run `composer require symfony/webpack-encore-bundle`
            and uncomment the following Encore helpers to start using Symfony UX #}
         {% block stylesheets %}
+            <link rel="icon" href="{{ asset('images/logo-icon.png') }}">
             <link rel="stylesheet" href="{{asset('css/bulma.css')}}"/>
             <link rel="stylesheet" href="{{asset('css/bulmamodif.css')}}"/>
             <link rel="stylesheet" href="{{asset('css/style.css')}}"/>
@@ -35,8 +36,11 @@
                     {% if session is defined %}
                     <div id="navbarMenuHeroB" class="navbar-menu">
                         <div class="navbar-end">
-                            <a class="navbar-item is-active">
-                                ESPACE
+                            <a href="{{path('visiteur')}}" class="navbar-item is-active">
+                                <span class="has-4px-margin-right">
+                                    <i class="fas fa-redo"></i>
+                                </span>
+                                <span> ESPACE</span>
                             </a>
                             <a class="navbar-item is-relative">
                                 PROFIL
@@ -50,125 +54,55 @@
                                         </button>
                                     </div>
                                     <div class="dropdown-menu is-offset" id="dropdown-menu4" role="menu">
-                                        <div class="box is-opaque">
+                                        <div class="box is-opaque is-profil">
                                             <div class="column">
                                                 <div class="columns">
                                                     <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
                                                         <div class="tags has-addons">
-                                            <span class="tag has-text-bigger has-no-border-radius-top-left is-a-bit-transparent">
-                                                <span class="icon">
-                                                    <i class="fas fa-calendar-alt"></i>
-                                                </span>
-                                                <span>Période</span>
-                                            </span>
+                                                            <span class="tag has-text-bigger has-no-border-radius-top-left is-a-bit-transparent">
+                                                                <span>Nom</span>
+                                                            </span>
                                                             <span class="tag has-text-bigger has-no-border-radius-top-right is-a-lot-transparent">
-                                                ---
-                                            </span>
+                                                                {{ session.get('nom') }}
+                                                            </span>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="columns">
                                                     <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
                                                         <div class="tags has-addons">
-                                            <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
-                                                <span class="icon">
-                                                    <i class="fas fa-money-check"></i>
-                                                </span>
-                                                <span>Justificatifs</span>
-                                            </span>
+                                                            <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
+                                                                <span>Prénom</span>
+                                                            </span>
                                                             <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">
-                                                aucuns
-                                            </span>
+                                                                {{ session.get('prenom') }}
+                                                            </span>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="columns">
                                                     <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
                                                         <div class="tags has-addons">
-                                            <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
-                                                <span class="icon">
-                                                    <i class="fas fa-check-square"></i>
-                                                </span>
-                                                <span>Montant validé</span>
-                                            </span>
-                                                            <span class="tag has-text-bigger has-text-success has-no-border-radius is-a-lot-transparent">
-                                        <strong>
-                                            + 0 €
-                                        </strong>
-                                    </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="columns">
-                                                    <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
-                                                        <div class="tags has-addons">
-                                            <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
-                                                <span class="icon">
-                                                    <i class="fas fa-hourglass-half"></i>
-                                                </span>
-                                                <span>État</span>
-                                            </span>
+                                                            <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
+                                                                <span>Identifiant</span>
+                                                            </span>
                                                             <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">
-                                            Non enregistré
-                                            </span>
+                                                                <strong>
+                                                                    {{ session.get('id') }}
+                                                                </strong>
+                                                            </span>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="columns">
                                                     <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
                                                         <div class="tags has-addons">
-                                            <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
-                                                <span class="icon">
-                                                    <i class="fas fa-file-alt"></i>
-                                                </span>
-                                                <span>N° Fiche</span>
-                                            </span>
-                                                            <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">
-                                                ---
-                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="columns">
-                                                    <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
-                                                        <div class="tags has-addons">
-                                            <span class="tag has-text-bigger is-dark has-no-border-radius">
-                                                <span class="icon">
-                                                    <i class="fas fa-money-bill"></i>
-                                                </span>
-                                                <span>Frais</span>
-                                            </span>
-                                                            <span class="tag has-text-bigger has-text-danger has-no-border-radius is-a-lot-transparent">
-                                                <strong>
-                                                - 0 €
-                                                </strong>
-                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="columns">
-                                                    <div class="column has-2px-padding-top has-finest-padding-1024px">
-                                                        <div class="tags has-addons">
-                                            <span class="tag has-text-bigger is-dark has-no-border-radius-bottom-left">
-                                                <span class="icon">
-                                                    <i class="fas fa-money-bill"></i>
-                                                </span>
-                                                <span>Hors frais</span>
-                                            </span>
-                                                            <span class="tag has-text-bigger has-text-danger has-no-border-radius-bottom-right is-a-lot-transparent">
-                                                <strong>
-                                                    - 0 €
-                                                </strong>
-                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="columns">
-                                                    <div id="columnac0" class="column is-12 is-hidden content-fichefrais">
-                                                        <div class="box is-like-hero-background animate__animated animate__fadeIn">
-                                                            <div class="column has-background-transparent">
-                                                                - 0 €
-                                                            </div>
+                                                            <span class="tag has-text-bigger has-no-border-radius-bottom-left is-a-bit-transparent">
+                                                                <span>Mot de passe</span>
+                                                            </span>
+                                                            <span class="tag has-text-bigger has-border-radius-bottom-right is-a-lot-transparent">
+                                                                *******
+                                                            </span>
                                                         </div>
                                                     </div>
                                                 </div>

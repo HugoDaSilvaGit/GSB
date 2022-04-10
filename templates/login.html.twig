@@ -1,108 +1,139 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello SeConnecterController!{% endblock %}
+{% block title %}GSB login{% endblock %}
 
 {% block body %}
 <div class="container">
     <div class="columns is-centered is-top">
         <div class="column is-5-tablet is-4-desktop is-4-widescreen">
             <form class="box has-text-left is-transparent animate__animated animate__fadeInDown" action="{{path('login')}}" method="POST">
-            <p role="img" class="gsb-logo is-grey"></p>
-            <p class="subtitle has-text-grey has-text-centered">Galaxy Swiss Bourdin</p>
-            {% if connexionON is defined %}
-                <div class="field">
-                    <label class="label">Login</label>
-                    <div class="control is-transparent has-icons-left">
-                        <label>
-                            <input class="input" type="text" placeholder="Login" name="login" required="required">
-                        </label>
-                        <span class="icon is-small is-left">
+                <p role="img" class="gsb-logo is-grey"></p>
+                <p class="subtitle has-text-grey has-text-centered">Galaxy Swiss Bourdin</p>
+                {% for flashMessage in app.session.flashbag.get('connexionSTATE') %}
+                    {% if flashMessage == 'connexionON' %}
+                    <div class="field">
+                        <label class="label">Login</label>
+                        <div class="control is-transparent has-icons-left">
+                            <label>
+                                <input class="input" type="text" placeholder="Login" name="login" required="required">
+                            </label>
+                            <span class="icon is-small is-left">
+                            <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Mot de passe</label>
+                        <div class="control has-icons-left">
+                            <label>
+                                <input class="input" type="password" placeholder="Mot de passe" name="mdp" required="required">
+                            </label>
+                            <span class="icon is-small is-left">
+                            <i class="fas fa-lock"></i>
+                            </span>
+                        </div>
+                    </div>
+                    {% elseif flashMessage == 'connexionOFF' %}
+                    <div class="field">
+                        <label class="label">Login</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <label>
+                                <input class="input is-danger" type="text" placeholder="Login" name="login" required="required">
+                            </label>
+                            <span class="icon is-small is-left">
+                            <i class="fas fa-user"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Mot de passe</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <label>
+                                <input class="input is-danger" type="password" placeholder="Mot de passe" name="mdp" required="required">
+                            </label>
+                            <span class="icon is-small is-left">
+                            <i class="fas fa-lock"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="notification is-small is-danger is-light">
+                        <button class="delete is-small"></button>
+                        <div class="content is-small">
+                            <strong>Login</strong> ou <strong>mot de passe incorrect.</strong>
+                        </div>
+                    </div>
+                    {% elseif flashMessage == 'connexionERROR' %}
+                    <div class="field">
+                        <label class="label">Login</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <label>
+                                <input class="input is-warning" type="text" placeholder="Login" name="login" required="required">
+                            </label>
+                            <span class="icon is-small is-left">
+                            <i class="fas fa-user"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Mot de passe</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <label>
+                                <input class="input is-warning" type="password" placeholder="Mot de passe" name="mdp" required="required">
+                            </label>
+                            <span class="icon is-small is-left">
+                            <i class="fas fa-lock"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="notification is-small is-warning is-light">
+                        <button class="delete is-small"></button>
+                        <div class="content is-small">
+                            <strong>Connexion impossible</strong> ou <strong>site momentanément indisponible</strong>, veuillez réessayer ultérieurement.
+                        </div>
+                    </div>
+                    {% elseif flashMessage == 'connexionCLOSED' %}
+                    <div class="field">
+                        <label class="label">Login</label>
+                        <div class="control is-transparent has-icons-left">
+                            <label>
+                                <input class="input" type="text" placeholder="Login" name="login" required="required">
+                            </label>
+                            <span class="icon is-small is-left">
                         <i class="fas fa-user"></i>
                         </span>
+                        </div>
                     </div>
-                </div>
-                <div class="field">
-                    <label class="label">Mot de passe</label>
-                    <div class="control has-icons-left">
-                        <label>
-                            <input class="input" type="password" placeholder="Mot de passe" name="mdp" required="required">
-                        </label>
-                        <span class="icon is-small is-left">
+                    <div class="field">
+                        <label class="label">Mot de passe</label>
+                        <div class="control has-icons-left">
+                            <label>
+                                <input class="input" type="password" placeholder="Mot de passe" name="mdp" required="required">
+                            </label>
+                            <span class="icon is-small is-left">
                         <i class="fas fa-lock"></i>
                         </span>
+                        </div>
                     </div>
-                </div>
-            {% elseif connexionOFF is defined %}
-                <div class="field">
-                    <label class="label">Login</label>
-                    <div class="control has-icons-left has-icons-right">
-                        <label>
-                            <input class="input is-danger" type="text" placeholder="Login" name="login" required="required">
-                        </label>
-                        <span class="icon is-small is-left">
-                        <i class="fas fa-user"></i>
-                        </span>
-                        <span class="icon is-small is-right">
-                        <i class="fas fa-exclamation-triangle"></i>
-                        </span>
+                    <div class="notification is-small is-success">
+                        <button class="delete is-small"></button>
+                        <div class="content is-small">
+                            <strong>Deconnecté</strong> avec <strong>succés.</strong>
+                        </div>
                     </div>
-                </div>
-                <div class="field">
-                    <label class="label">Mot de passe</label>
-                    <div class="control has-icons-left has-icons-right">
-                        <label>
-                            <input class="input is-danger" type="password" placeholder="Mot de passe" name="mdp" required="required">
-                        </label>
-                        <span class="icon is-small is-left">
-                        <i class="fas fa-lock"></i>
-                        </span>
-                        <span class="icon is-small is-right">
-                        <i class="fas fa-exclamation-triangle"></i>
-                        </span>
-                    </div>
-                </div>
-                <div class="notification is-small is-danger is-light">
-                    <button class="delete is-small"></button>
-                    <div class="content is-small">
-                        <strong>Login</strong> ou <strong>mot de passe</strong> incorrect.
-                    </div>
-                </div>
-            {% elseif connexionERROR is defined %}
-                <div class="field">
-                    <label class="label">Login</label>
-                    <div class="control has-icons-left has-icons-right">
-                        <label>
-                            <input class="input is-warning" type="text" placeholder="Login" name="login" required="required">
-                        </label>
-                        <span class="icon is-small is-left">
-                        <i class="fas fa-user"></i>
-                        </span>
-                        <span class="icon is-small is-right">
-                        <i class="fas fa-exclamation-triangle"></i>
-                        </span>
-                    </div>
-                </div>
-                <div class="field">
-                    <label class="label">Mot de passe</label>
-                    <div class="control has-icons-left has-icons-right">
-                        <label>
-                            <input class="input is-warning" type="password" placeholder="Mot de passe" name="mdp" required="required">
-                        </label>
-                        <span class="icon is-small is-left">
-                        <i class="fas fa-lock"></i>
-                        </span>
-                        <span class="icon is-small is-right">
-                        <i class="fas fa-exclamation-triangle"></i>
-                        </span>
-                    </div>
-                </div>
-                <div class="notification is-small is-warning is-light">
-                    <button class="delete is-small"></button>
-                    <div class="content is-small">
-                        <strong>Connexion impossible</strong> ou <strong>site momentanément indisponible</strong>, veuillez réessayer ultérieurement.
-                    </div>
-                </div>
-            {% endif %}
+                    {% endif %}
+                {% endfor %}
                 <button class="button-animation color-3" type="submit">CONNEXION</button>
             </form>
         </div>

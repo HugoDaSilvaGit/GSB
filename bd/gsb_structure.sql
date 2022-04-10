@@ -128,7 +128,7 @@ CREATE TABLE IF NOT EXISTS `LigneFraisForfait` (
 
 CREATE TABLE IF NOT EXISTS `LigneFraisHorsForfait` (
   `idFicheFrais` char(12) NOT NULL,
-  `idLigneFraisHorsForfait` int(2) NOT NULL auto_increment,
+  `idLigneFraisHorsForfait` int(2) NOT NULL UNIQUE,
   `libelle` varchar(100) DEFAULT NULL,
   `date` date DEFAULT NULL,
   `montant` decimal(10,2) DEFAULT NULL,
