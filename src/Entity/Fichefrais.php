@@ -23,7 +23,6 @@ class Fichefrais
      *
      * @ORM\Column(name="idFicheFrais", type="string", length=12, nullable=false, options={"fixed"=true})
      * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $idfichefrais;
 
@@ -46,14 +45,14 @@ class Fichefrais
      *
      * @ORM\Column(name="montantValide", type="decimal", precision=10, scale=2, nullable=true, options={"default"="NULL"})
      */
-    private $montantvalide = 'NULL';
+    private $montantvalide = NULL;
 
     /**
      * @var \DateTime|null
      *
      * @ORM\Column(name="dateModif", type="date", nullable=true, options={"default"="NULL"})
      */
-    private $datemodif = 'NULL';
+    private $datemodif;
 
     /**
      * @var \Etat

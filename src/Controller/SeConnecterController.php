@@ -17,8 +17,9 @@ class SeConnecterController extends AbstractController
         $login=$request->request->get('login');
         $mdp=$request->request->get('mdp');
         if(empty($login) && empty($mdp)){
+            //envoie du flashbag pour la notification visiteur//
+            $this->get('session')->getFlashBag()->add('connexionSTATE','connexionON');
             return $this->render('login.html.twig', [
-                'connexionON' => true
             ]);
         }
 
@@ -42,13 +43,15 @@ class SeConnecterController extends AbstractController
                     $session->set('prenom',$comptable->getPrenom());
                     $session->set('login',$comptable->getLogin());
 
+                    //envoie du flashbag pour la notification visiteur//
+                    $this->get('session')->getFlashBag()->add('connexionSTATE','connexionSUCCESS');
                     return $this->redirectToRoute('comptable', [
-                        'session' => $session
                     ]);
                 }
                 else{
+                    //envoie du flashbag pour la notification visiteur//
+                    $this->get('session')->getFlashBag()->add('connexionSTATE','connexionOFF');
                     return $this->render('login.html.twig', [
-                        'connexionOFF' => true
                     ]);
                 }
             }
@@ -67,27 +70,30 @@ class SeConnecterController extends AbstractController
                     $session->set('cp',$visiteur->getCp());
                     $session->set('ville',$visiteur->getVille());
 
+                    //envoie du flashbag pour la notification visiteur//
+                    $this->get('session')->getFlashBag()->add('connexionSTATE','connexionSUCCESS');
                     return $this->redirectToRoute('visiteur', [
-                        'session' => $session
                     ]);
                 }
                 else{
+                    //envoie du flashbag pour la notification visiteur//
+                    $this->get('session')->getFlashBag()->add('connexionSTATE','connexionOFF');
                     return $this->render('login.html.twig', [
-                        'connexionOFF' => true
                     ]);
                 }
             }
             else{
+                //envoie du flashbag pour la notification visiteur//
+                $this->get('session')->getFlashBag()->add('connexionSTATE','connexionOFF');
                 return $this->render('login.html.twig', [
-                    'connexionOFF' => true
                 ]);
             }
 
         }
         catch(PDOException $e){
-            echo'Connexion à la BDD impossible'.$e;
+            //envoie du flashbag pour la notification visiteur//
+            $this->get('session')->getFlashBag()->add('connexionSTATE','connexionERROR');
             return $this->render('login.html.twig', [
-                'connexionERROR' => true
             ]);
 
         }
@@ -98,15 +104,15 @@ class SeConnecterController extends AbstractController
             $session = new Session();
             $session->start();
             $session->clear();
-
+            //envoie du flashbag pour la notification visiteur//
+            $this->get('session')->getFlashBag()->add('connexionSTATE','connexionCLOSED');
             return $this->render('login.html.twig', [
-                'connexionON' => true
             ]);
         }
         catch (SessionException $e){
-            echo'Deconnexion impossible'.$e;
+            //envoie du flashbag pour la notification visiteur//
+            $this->get('session')->getFlashBag()->add('connexionSTATE','connexionERROR');
             return $this->render('login.html.twig', [
-                'connexionERROR' => true
             ]);
         }
     }

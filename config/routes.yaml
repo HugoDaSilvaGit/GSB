@@ -11,12 +11,24 @@ signoff:
   controller : App\Controller\SeConnecterController::signoff
 
 visiteur:
-  path: /visiteur/espace
+  path: /visiteur-medical/espace
   controller : App\Controller\VisiteurController::espace
 
 setfraisforfait:
   path: /test
   controller : App\Controller\VisiteurController::setfraisforfait
+
+addfichefrais:
+  path: /test2
+  controller : App\Controller\VisiteurController::addfichefrais
+
+removefichefrais:
+  path: /test3
+  controller: App\Controller\VisiteurController::removefichefrais
+
+setfraishorsforfait:
+  path: /test4
+  controller: App\Controller\VisiteurController::setfraishorsforfait
 
 comptable:
   path: /comptable/espace

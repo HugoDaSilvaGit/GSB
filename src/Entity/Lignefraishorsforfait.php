@@ -17,7 +17,6 @@ class Lignefraishorsforfait
      *
      * @ORM\Column(name="idLigneFraisHorsForfait", type="integer", nullable=false)
      * @ORM\Id
-     * @ORM\GeneratedValue(strategy="NONE")
      */
     private $idlignefraishorsforfait;
 
@@ -57,6 +56,11 @@ class Lignefraishorsforfait
     public function getIdlignefraishorsforfait(): ?int
     {
         return $this->idlignefraishorsforfait;
+    }
+
+    public function setIdlignefraishorsforfait(int $idlignefraishorsforfait): void
+    {
+        $this->idlignefraishorsforfait = $idlignefraishorsforfait;
     }
 
     public function getLibelle(): ?string
