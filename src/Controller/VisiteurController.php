@@ -400,24 +400,26 @@ class VisiteurController extends AbstractController
 
                 //création de chaque (objet)lignefraishorsforfait//
                 $i = 0;
-                foreach ($arraymontantFHF as $unmontantFHF) {
+                if($arraymontantFHF) {
+                    foreach ($arraymontantFHF as $unmontantFHF) {
 
-                    //creation de (objet)date à attribuer à (objet)unenouvellelignefraishorsforfait//
-                    $date = \DateTime::createFromFormat('Y-m-d', $arraydateFHF[$i]);
-                    dump($date);
+                        //creation de (objet)date à attribuer à (objet)unenouvellelignefraishorsforfait//
+                        $date = \DateTime::createFromFormat('Y-m-d', $arraydateFHF[$i]);
+                        dump($date);
 
-                    //creation de (objet)unenouvellelignefraishorsforfait//
-                    $unenouvellelignefraishorsforfait = new Lignefraishorsforfait();
-                    //valorisation de (objet)unenouvellelignefraishorsforfait//
-                    $unenouvellelignefraishorsforfait->setIdlignefraishorsforfait($i + 1);
-                    $unenouvellelignefraishorsforfait->setIdfichefrais($unefichefrais);
-                    $unenouvellelignefraishorsforfait->setDate($date);
-                    $unenouvellelignefraishorsforfait->setMontant($unmontantFHF);
-                    $unenouvellelignefraishorsforfait->setLibelle($arraylibelleFHF[$i]);
-                    $entityManager->persist($unenouvellelignefraishorsforfait);
-                    $entityManager->flush();
+                        //creation de (objet)unenouvellelignefraishorsforfait//
+                        $unenouvellelignefraishorsforfait = new Lignefraishorsforfait();
+                        //valorisation de (objet)unenouvellelignefraishorsforfait//
+                        $unenouvellelignefraishorsforfait->setIdlignefraishorsforfait($i + 1);
+                        $unenouvellelignefraishorsforfait->setIdfichefrais($unefichefrais);
+                        $unenouvellelignefraishorsforfait->setDate($date);
+                        $unenouvellelignefraishorsforfait->setMontant($unmontantFHF);
+                        $unenouvellelignefraishorsforfait->setLibelle($arraylibelleFHF[$i]);
+                        $entityManager->persist($unenouvellelignefraishorsforfait);
+                        $entityManager->flush();
 
-                    $i += 1;
+                        $i += 1;
+                    }
                 }
                 //envoie du flashbag pour la notification visiteur//
                 $this->get('session')->getFlashBag()->add('setfraishorsforfaitSTATE', 'setfraishorsforfaitSUCCESS');
