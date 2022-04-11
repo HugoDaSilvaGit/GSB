@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1434px" preserveAspectRatio="none" style="width:3985px;height:1434px;background:#FFFFFF;" version="1.1" viewBox="0 0 3985 1434" width="3985px" zoomAndPan="magnify"><defs/><g><!--MD5=[aeb7678dfba7f7e7f0f6df5e0a801750]
+cluster Modele--><polygon fill="#FFFFFF" points="1328,99,1386,99,1393,121.4883,3968,121.4883,3968,1427,1328,1427,1328,99" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="1328" x2="1393" y1="121.4883" y2="121.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="52" x="1332" y="114.5352">Modele</text><!--MD5=[fcfdc41e9e8661e0b08e1357fb9c5ed1]
+cluster Entity--><polygon fill="#FFFFFF" points="2746,142,2794,142,2801,164.4883,3944,164.4883,3944,1403,2746,1403,2746,142" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="2746" x2="2801" y1="164.4883" y2="164.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="42" x="2750" y="157.5352">Entity</text><!--MD5=[71971f99a41bb66cf321ce46bb59f738]
+cluster Repository--><polygon fill="#FFFFFF" points="1352,220.5,1436,220.5,1443,242.9883,2722,242.9883,2722,754,1352,754,1352,220.5" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="1352" x2="1443" y1="242.9883" y2="242.9883"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="78" x="1356" y="236.0352">Repository</text><!--MD5=[1f2cfc53d9d308f53762fd0fcbaa4873]
+cluster Controller--><polygon fill="#FFFFFF" points="16,6,95,6,102,28.4883,1304,28.4883,1304,800.5,16,800.5,16,6" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="16" x2="102" y1="28.4883" y2="28.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="73" x="20" y="21.5352">Controller</text><!--MD5=[f77a22d99e00b636f5b9ba3cd487e3ab]
+class Comptable--><rect codeLine="5" fill="#C9FFC9" height="248.5918" id="Comptable" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="262" x="3666" y="183.5"/><ellipse cx="3761.25" cy="202.6328" fill="#6495ED" rx="11" ry="11" style="stroke:#000000;stroke-width:1.0;"/><path d="M3763.7231,208.7759 Q3763.1421,209.0747 3762.5029,209.2241 Q3761.8638,209.3735 3761.1582,209.3735 Q3758.6514,209.3735 3757.3315,207.7217 Q3756.0117,206.0698 3756.0117,202.9487 Q3756.0117,199.8193 3757.3315,198.1675 Q3758.6514,196.5156 3761.1582,196.5156 Q3761.8638,196.5156 3762.5112,196.665 Q3763.1587,196.8145 3763.7231,197.1133 L3763.7231,199.8359 Q3763.0923,199.2549 3762.4988,198.9851 Q3761.9053,198.7153 3761.2744,198.7153 Q3759.9297,198.7153 3759.2449,199.782 Q3758.5601,200.8486 3758.5601,202.9487 Q3758.5601,205.0405 3759.2449,206.1072 Q3759.9297,207.1738 3761.2744,207.1738 Q3761.9053,207.1738 3762.4988,206.9041 Q3763.0923,206.6343 3763.7231,206.0532 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="3791.75" y="200.1016">«Entity»</text><text fill="#6495ED" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="63" x="3781.75" y="214.2344">Comptable</text><line style="stroke:#000000;stroke-width:1.5;" x1="3667" x2="3927" y1="221.7656" y2="221.7656"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="3674" y="229.7656"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="236" x="3686" y="236.4004">$idcomptable: ?string #strategy="IDENTITY"</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="3674" y="242.7207"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="74" x="3686" y="249.3555">$nom: ?string</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="3674" y="255.6758"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="92" x="3686" y="262.3105">$prenom: ?string</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="3674" y="268.6309"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="77" x="3686" y="275.2656">$login: ?string</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="3674" y="281.5859"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="74" x="3686" y="288.2207">$mdp: ?string</text><line style="stroke:#000000;stroke-width:1.5;" x1="3667" x2="3927" y1="294.541" y2="294.541"/><ellipse cx="3677" cy="305.541" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="92" x="3686" y="309.1758">this(): Comptable</text><ellipse cx="3677" cy="318.4961" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="134" x="3686" y="322.1309">getIdcomptable(): ?string</text><ellipse cx="3677" cy="331.4512" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="93" x="3686" y="335.0859">getNom(): ?string</text><ellipse cx="3677" cy="344.4063" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="143" x="3686" y="348.041">setNom(string: $nom): self</text><ellipse cx="3677" cy="357.3613" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="109" x="3686" y="360.9961">getPrenom(): ?string</text><ellipse cx="3677" cy="370.3164" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="177" x="3686" y="373.9512">setPrenom(string: $prenom): self</text><ellipse cx="3677" cy="383.2715" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="96" x="3686" y="386.9063">getLogin():  string</text><ellipse cx="3677" cy="396.2266" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="151" x="3686" y="399.8613">setLogin(string: $login): self</text><ellipse cx="3677" cy="409.1816" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="91" x="3686" y="412.8164">getMdp(): ?string</text><ellipse cx="3677" cy="422.1367" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="141" x="3686" y="425.7715">setMdp(string: $mdp): self</text><!--MD5=[07d979d3769a9d0ac312d3ddda78cc19]
+class Visiteur--><rect codeLine="24" fill="#C9FFC9" height="417.0078" id="Visiteur" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="277" x="2811.5" y="970"/><ellipse cx="2924.25" cy="989.1328" fill="#6495ED" rx="11" ry="11" style="stroke:#000000;stroke-width:1.0;"/><path d="M2926.7231,995.2759 Q2926.1421,995.5747 2925.5029,995.7241 Q2924.8638,995.8735 2924.1582,995.8735 Q2921.6514,995.8735 2920.3315,994.2217 Q2919.0117,992.5698 2919.0117,989.4487 Q2919.0117,986.3193 2920.3315,984.6675 Q2921.6514,983.0156 2924.1582,983.0156 Q2924.8638,983.0156 2925.5112,983.165 Q2926.1587,983.3145 2926.7231,983.6133 L2926.7231,986.3359 Q2926.0923,985.7549 2925.4988,985.4851 Q2924.9053,985.2153 2924.2744,985.2153 Q2922.9297,985.2153 2922.2449,986.282 Q2921.5601,987.3486 2921.5601,989.4487 Q2921.5601,991.5405 2922.2449,992.6072 Q2922.9297,993.6738 2924.2744,993.6738 Q2924.9053,993.6738 2925.4988,993.4041 Q2926.0923,993.1343 2926.7231,992.5532 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="2944.75" y="986.6016">«Entity»</text><text fill="#6495ED" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="43" x="2944.75" y="1000.7344">Visiteur</text><line style="stroke:#000000;stroke-width:1.5;" x1="2812.5" x2="3087.5" y1="1008.2656" y2="1008.2656"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2819.5" y="1016.2656"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="220" x="2831.5" y="1022.9004">$idvisiteur: ?string #strategy="IDENTITY"</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2819.5" y="1029.2207"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="74" x="2831.5" y="1035.8555">$nom: ?string</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2819.5" y="1042.1758"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="92" x="2831.5" y="1048.8105">$prenom: ?string</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2819.5" y="1055.1309"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="77" x="2831.5" y="1061.7656">$login: ?string</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2819.5" y="1068.0859"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="74" x="2831.5" y="1074.7207">$mdp: ?string</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2819.5" y="1081.041"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="92" x="2831.5" y="1087.6758">$adresse: ?string</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2819.5" y="1093.9961"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="45" x="2831.5" y="1100.6309">$cp: ?int</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2819.5" y="1106.9512"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="71" x="2831.5" y="1113.5859">$ville: ?string</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2819.5" y="1119.9063"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="141" x="2831.5" y="1126.541">$dateembauche: DateTime</text><line style="stroke:#000000;stroke-width:1.5;" x1="2812.5" x2="3087.5" y1="1132.8613" y2="1132.8613"/><ellipse cx="2822.5" cy="1143.8613" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="75" x="2831.5" y="1147.4961">this(): Visiteur</text><ellipse cx="2822.5" cy="1156.8164" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="118" x="2831.5" y="1160.4512">getIdvisiteur(): ?string</text><ellipse cx="2822.5" cy="1169.7715" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="194" x="2831.5" y="1173.4063">setIdvisiteur(string: $idvisiteur): self</text><ellipse cx="2822.5" cy="1182.7266" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="93" x="2831.5" y="1186.3613">getNom(): ?string</text><ellipse cx="2822.5" cy="1195.6816" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="143" x="2831.5" y="1199.3164">setNom(string: $nom): self</text><ellipse cx="2822.5" cy="1208.6367" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="109" x="2831.5" y="1212.2715">getPrenom(): ?string</text><ellipse cx="2822.5" cy="1221.5918" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="177" x="2831.5" y="1225.2266">setPrenom(string: $prenom): self</text><ellipse cx="2822.5" cy="1234.5469" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="98" x="2831.5" y="1238.1816">getLogin(): ?string</text><ellipse cx="2822.5" cy="1247.502" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="151" x="2831.5" y="1251.1367">setLogin(string: $login): self</text><ellipse cx="2822.5" cy="1260.457" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="91" x="2831.5" y="1264.0918">getMdp(): ?string</text><ellipse cx="2822.5" cy="1273.4121" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="141" x="2831.5" y="1277.0469">setMdp(string: $mdp): self</text><ellipse cx="2822.5" cy="1286.3672" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="112" x="2831.5" y="1290.002">getAdresse(): ?string</text><ellipse cx="2822.5" cy="1299.3223" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="180" x="2831.5" y="1302.957">setAdresse(string: $adresse): self</text><ellipse cx="2822.5" cy="1312.2773" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="83" x="2831.5" y="1315.9121">getCp(): ?string</text><ellipse cx="2822.5" cy="1325.2324" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="122" x="2831.5" y="1328.8672">setCp(string: $cp): self</text><ellipse cx="2822.5" cy="1338.1875" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="90" x="2831.5" y="1341.8223">getVille(): ?string</text><ellipse cx="2822.5" cy="1351.1426" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="137" x="2831.5" y="1354.7773">setVille(string: $ville): self</text><ellipse cx="2822.5" cy="1364.0977" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="147" x="2831.5" y="1367.7324">getDateembauche(): ?string</text><ellipse cx="2822.5" cy="1377.0527" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="251" x="2831.5" y="1380.6875">setDateembauche(string: $dateembauche): self</text><!--MD5=[d7a86c142fdde356f8ae5a8b885bc91c]
+class Etat--><rect codeLine="56" fill="#C9FFC9" height="119.041" id="Etat" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="226" x="3164" y="1119"/><ellipse cx="3253.25" cy="1138.1328" fill="#6495ED" rx="11" ry="11" style="stroke:#000000;stroke-width:1.0;"/><path d="M3255.7231,1144.2759 Q3255.1421,1144.5747 3254.5029,1144.7241 Q3253.8638,1144.8735 3253.1582,1144.8735 Q3250.6514,1144.8735 3249.3315,1143.2217 Q3248.0117,1141.5698 3248.0117,1138.4487 Q3248.0117,1135.3193 3249.3315,1133.6675 Q3250.6514,1132.0156 3253.1582,1132.0156 Q3253.8638,1132.0156 3254.5112,1132.165 Q3255.1587,1132.3145 3255.7231,1132.6133 L3255.7231,1135.3359 Q3255.0923,1134.7549 3254.4988,1134.4851 Q3253.9053,1134.2153 3253.2744,1134.2153 Q3251.9297,1134.2153 3251.2449,1135.282 Q3250.5601,1136.3486 3250.5601,1138.4487 Q3250.5601,1140.5405 3251.2449,1141.6072 Q3251.9297,1142.6738 3253.2744,1142.6738 Q3253.9053,1142.6738 3254.4988,1142.4041 Q3255.0923,1142.1343 3255.7231,1141.5532 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="3271.75" y="1135.6016">«Entity»</text><text fill="#6495ED" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="22" x="3282.25" y="1149.7344">Etat</text><line style="stroke:#000000;stroke-width:1.5;" x1="3165" x2="3389" y1="1157.2656" y2="1157.2656"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="3172" y="1165.2656"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="200" x="3184" y="1171.9004">$idetat: ?string #strategy="IDENTITY"</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="3172" y="1178.2207"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="101" x="3184" y="1184.8555">$libelleetat: ?string</text><line style="stroke:#000000;stroke-width:1.5;" x1="3165" x2="3389" y1="1191.1758" y2="1191.1758"/><ellipse cx="3175" cy="1202.1758" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="98" x="3184" y="1205.8105">getIdetat(): ?string</text><ellipse cx="3175" cy="1215.1309" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="122" x="3184" y="1218.7656">getLibelleetat(): ?string</text><ellipse cx="3175" cy="1228.0859" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="199" x="3184" y="1231.7207">setLibelleetat(string: $libelleetat): self</text><!--MD5=[d7b65a41dac65a6420ce6987fa4f74cb]
+class Fichefrais--><rect codeLine="65" fill="#C9FFC9" height="352.2324" id="Fichefrais" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="438" x="2781" y="543"/><ellipse cx="2968.75" cy="562.1328" fill="#6495ED" rx="11" ry="11" style="stroke:#000000;stroke-width:1.0;"/><path d="M2971.2231,568.2759 Q2970.6421,568.5747 2970.0029,568.7241 Q2969.3638,568.8735 2968.6582,568.8735 Q2966.1514,568.8735 2964.8315,567.2217 Q2963.5117,565.5698 2963.5117,562.4487 Q2963.5117,559.3193 2964.8315,557.6675 Q2966.1514,556.0156 2968.6582,556.0156 Q2969.3638,556.0156 2970.0112,556.165 Q2970.6587,556.3145 2971.2231,556.6133 L2971.2231,559.3359 Q2970.5923,558.7549 2969.9988,558.4851 Q2969.4053,558.2153 2968.7744,558.2153 Q2967.4297,558.2153 2966.7449,559.282 Q2966.0601,560.3486 2966.0601,562.4487 Q2966.0601,564.5405 2966.7449,565.6072 Q2967.4297,566.6738 2968.7744,566.6738 Q2969.4053,566.6738 2969.9988,566.4041 Q2970.5923,566.1343 2971.2231,565.5532 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="2994.75" y="559.6016">«Entity»</text><text fill="#6495ED" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="54" x="2989.25" y="573.7344">Fichefrais</text><line style="stroke:#000000;stroke-width:1.5;" x1="2782" x2="3218" y1="581.2656" y2="581.2656"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2789" y="589.2656"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="230" x="2801" y="595.9004">$idfichefrais: ?string #strategy="IDENTITY"</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2789" y="602.2207"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="234" x="2801" y="608.8555">$idvisiteur: Visiteur #targetEntity="Visiteur"</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2789" y="615.1758"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="86" x="2801" y="621.8105">$date: DateTime</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2789" y="628.1309"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="105" x="2801" y="634.7656">$nbjustificatifs: ?int</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2789" y="641.0859"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="126" x="2801" y="647.7207">$montantvalide: ?string</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2789" y="654.041"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="117" x="2801" y="660.6758">$datemodif: DateTime</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2789" y="666.9961"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="172" x="2801" y="673.6309">$idetat: Etat #targetEntity="Etat"</text><line style="stroke:#000000;stroke-width:1.5;" x1="2782" x2="3218" y1="679.9512" y2="679.9512"/><ellipse cx="2792" cy="690.9512" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="86" x="2801" y="694.5859">this(): Fichefrais</text><ellipse cx="2792" cy="703.9063" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="2801" y="707.541">getIdfichefrais(): ?string</text><ellipse cx="2792" cy="716.8613" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="214" x="2801" y="720.4961">setIdfichefrais(string: $idfichefrais): self</text><ellipse cx="2792" cy="729.8164" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="152" x="2801" y="733.4512">getDate(): DateTimeInterface</text><ellipse cx="2792" cy="742.7715" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="206" x="2801" y="746.4063">setDate(DateTimeInterface: $date): self</text><ellipse cx="2792" cy="755.7266" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="124" x="2801" y="759.3613">getNbjustificatifs(): ?int</text><ellipse cx="2792" cy="768.6816" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="223" x="2801" y="772.3164">setNbjustificatifs(int: $nbjustificatifs): self</text><ellipse cx="2792" cy="781.6367" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="143" x="2801" y="785.2715">getMontantvalide(): ?string</text><ellipse cx="2792" cy="794.5918" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="245" x="2801" y="798.2266">setMontantvalide(string: $montantvalide): self</text><ellipse cx="2792" cy="807.5469" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="136" x="2801" y="811.1816">getDatemodif(): DateTime</text><ellipse cx="2792" cy="820.502" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="237" x="2801" y="824.1367">setDatemodif(DateTimeInterface: $date): self</text><ellipse cx="2792" cy="833.457" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="81" x="2801" y="837.0918">getIdetat(): Etat</text><ellipse cx="2792" cy="846.4121" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="142" x="2801" y="850.0469">setIdetat(Etat: $idetat): self</text><ellipse cx="2792" cy="859.3672" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="122" x="2801" y="863.002">getIdvisiteur(): Visiteur</text><ellipse cx="2792" cy="872.3223" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="203" x="2801" y="875.957">setIdvisiteur(Visiteur: $idvisiteur): self</text><ellipse cx="2792" cy="885.2773" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="412" x="2801" y="888.9121">convertObjectClass(Array: $array, Class: $final_class): $final_class::class/u&gt;</text><!--MD5=[c477163f66fbf3c1954f57e7cc659e2a]
+class Fraisforfait--><rect codeLine="92" fill="#C9FFC9" height="170.8613" id="Fraisforfait" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="323" x="3294.5" y="633.5"/><ellipse cx="3421.25" cy="652.6328" fill="#6495ED" rx="11" ry="11" style="stroke:#000000;stroke-width:1.0;"/><path d="M3423.7231,658.7759 Q3423.1421,659.0747 3422.5029,659.2241 Q3421.8638,659.3735 3421.1582,659.3735 Q3418.6514,659.3735 3417.3315,657.7217 Q3416.0117,656.0698 3416.0117,652.9487 Q3416.0117,649.8193 3417.3315,648.1675 Q3418.6514,646.5156 3421.1582,646.5156 Q3421.8638,646.5156 3422.5112,646.665 Q3423.1587,646.8145 3423.7231,647.1133 L3423.7231,649.8359 Q3423.0923,649.2549 3422.4988,648.9851 Q3421.9053,648.7153 3421.2744,648.7153 Q3419.9297,648.7153 3419.2449,649.782 Q3418.5601,650.8486 3418.5601,652.9487 Q3418.5601,655.0405 3419.2449,656.1072 Q3419.9297,657.1738 3421.2744,657.1738 Q3421.9053,657.1738 3422.4988,656.9041 Q3423.0923,656.6343 3423.7231,656.0532 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="3450.75" y="650.1016">«Entity»</text><text fill="#6495ED" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="61" x="3441.75" y="664.2344">Fraisforfait</text><line style="stroke:#000000;stroke-width:1.5;" x1="3295.5" x2="3616.5" y1="671.7656" y2="671.7656"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="3302.5" y="679.7656"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="237" x="3314.5" y="686.4004">$idfraisforfait: ?string #strategy="IDENTITY"</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="3302.5" y="692.7207"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="138" x="3314.5" y="699.3555">$libellefraisforfait: ?string</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="3302.5" y="705.6758"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="152" x="3314.5" y="712.3105">$montantfraisforfait: ?string</text><line style="stroke:#000000;stroke-width:1.5;" x1="3295.5" x2="3616.5" y1="718.6309" y2="718.6309"/><ellipse cx="3305.5" cy="729.6309" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="93" x="3314.5" y="733.2656">this(): Fraisforfait</text><ellipse cx="3305.5" cy="742.5859" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="3314.5" y="746.2207">getIdfraisforfait(): ?string</text><ellipse cx="3305.5" cy="755.541" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="159" x="3314.5" y="759.1758">getLibellefraisforfait(): ?string</text><ellipse cx="3305.5" cy="768.4961" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="273" x="3314.5" y="772.1309">setLibellefraisforfait(string: $libellefraisforfait): self</text><ellipse cx="3305.5" cy="781.4512" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="169" x="3314.5" y="785.0859">getMontantfraisforfait(): ?string</text><ellipse cx="3305.5" cy="794.4063" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="297" x="3314.5" y="798.041">setMontantfraisforfait(string: $montantfraisforfait): self</text><!--MD5=[1d1061b3e2e85350581bc8466e577e83]
+class Lignefraisforfait--><rect codeLine="105" fill="#C9FFC9" height="196.7715" id="Lignefraisforfait" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="416" x="3175" y="209.5"/><ellipse cx="3334.25" cy="228.6328" fill="#6495ED" rx="11" ry="11" style="stroke:#000000;stroke-width:1.0;"/><path d="M3336.7231,234.7759 Q3336.1421,235.0747 3335.5029,235.2241 Q3334.8638,235.3735 3334.1582,235.3735 Q3331.6514,235.3735 3330.3315,233.7217 Q3329.0117,232.0698 3329.0117,228.9487 Q3329.0117,225.8193 3330.3315,224.1675 Q3331.6514,222.5156 3334.1582,222.5156 Q3334.8638,222.5156 3335.5112,222.665 Q3336.1587,222.8145 3336.7231,223.1133 L3336.7231,225.8359 Q3336.0923,225.2549 3335.4988,224.9851 Q3334.9053,224.7153 3334.2744,224.7153 Q3332.9297,224.7153 3332.2449,225.782 Q3331.5601,226.8486 3331.5601,228.9487 Q3331.5601,231.0405 3332.2449,232.1072 Q3332.9297,233.1738 3334.2744,233.1738 Q3334.9053,233.1738 3335.4988,232.9041 Q3336.0923,232.6343 3336.7231,232.0532 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="3377.75" y="226.1016">«Entity»</text><text fill="#6495ED" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="89" x="3354.75" y="240.2344">Lignefraisforfait</text><line style="stroke:#000000;stroke-width:1.5;" x1="3176" x2="3590" y1="247.7656" y2="247.7656"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="3183" y="255.7656"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="266" x="3195" y="262.4004">$idfichefrais: Fichefrais #targetEntity="Fichefrais"</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="3183" y="268.7207"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="287" x="3195" y="275.3555">$idfraisforfait: Fraisforfait #targetEntity="Fraisforfait"</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="3183" y="281.6758"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="94" x="3195" y="288.3105">$quantité: ?string</text><line style="stroke:#000000;stroke-width:1.5;" x1="3176" x2="3590" y1="294.6309" y2="294.6309"/><ellipse cx="3186" cy="305.6309" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="120" x="3195" y="309.2656">this(): Lignefraisforfait</text><ellipse cx="3186" cy="318.5859" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="143" x="3195" y="322.2207">getIdfichefrais(): Fichefrais</text><ellipse cx="3186" cy="331.541" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="234" x="3195" y="335.1758">setIdfichefrais(Fichefrais: $idfichefrais): self</text><ellipse cx="3186" cy="344.4961" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="157" x="3195" y="348.1309">getIdfraisforfait(): Fraisforfait</text><ellipse cx="3186" cy="357.4512" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="255" x="3195" y="361.0859">setIdfraisforfait(Fraisforfait: $idfraisforfait): self</text><ellipse cx="3186" cy="370.4063" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="96" x="3195" y="374.041">getQuantite(): ?int</text><ellipse cx="3186" cy="383.3613" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="159" x="3195" y="386.9961">setQuantite(int: quantite): self</text><ellipse cx="3186" cy="396.3164" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="390" x="3195" y="399.9512">convertObjectClass(Array: $array, Class: $final_class): $final_class::class</text><!--MD5=[0631ca305d47b1d7bcfff653b651c9e1]
+class Lignefraishorsforfait--><rect codeLine="120" fill="#C9FFC9" height="261.5469" id="Lignefraishorsforfait" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="338" x="2762" y="177"/><ellipse cx="2869.75" cy="196.1328" fill="#6495ED" rx="11" ry="11" style="stroke:#000000;stroke-width:1.0;"/><path d="M2872.2231,202.2759 Q2871.6421,202.5747 2871.0029,202.7241 Q2870.3638,202.8735 2869.6582,202.8735 Q2867.1514,202.8735 2865.8315,201.2217 Q2864.5117,199.5698 2864.5117,196.4487 Q2864.5117,193.3193 2865.8315,191.6675 Q2867.1514,190.0156 2869.6582,190.0156 Q2870.3638,190.0156 2871.0112,190.165 Q2871.6587,190.3145 2872.2231,190.6133 L2872.2231,193.3359 Q2871.5923,192.7549 2870.9988,192.4851 Q2870.4053,192.2153 2869.7744,192.2153 Q2868.4297,192.2153 2867.7449,193.282 Q2867.0601,194.3486 2867.0601,196.4487 Q2867.0601,198.5405 2867.7449,199.6072 Q2868.4297,200.6738 2869.7744,200.6738 Q2870.4053,200.6738 2870.9988,200.4041 Q2871.5923,200.1343 2872.2231,199.5532 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="2925.75" y="193.6016">«Entity»</text><text fill="#6495ED" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="114" x="2890.25" y="207.7344">Lignefraishorsforfait</text><line style="stroke:#000000;stroke-width:1.5;" x1="2763" x2="3099" y1="215.2656" y2="215.2656"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2770" y="223.2656"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="270" x="2782" y="229.9004">$idlignefraishorsforfait: ?int #strategy="IDENTITY"</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2770" y="236.2207"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="266" x="2782" y="242.8555">$idfichefrais: Fichefrais #targetEntity="Fichefrais"</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2770" y="249.1758"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="81" x="2782" y="255.8105">$libelle: ?string</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2770" y="262.1309"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="86" x="2782" y="268.7656">$date: DateTime</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2770" y="275.0859"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="2782" y="281.7207">$montant: ?string</text><line style="stroke:#000000;stroke-width:1.5;" x1="2763" x2="3099" y1="288.041" y2="288.041"/><ellipse cx="2773" cy="299.041" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="145" x="2782" y="302.6758">this(): Lignefraishorsforfait</text><ellipse cx="2773" cy="311.9961" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="168" x="2782" y="315.6309">getIdlignefraishorsforfait(): ?int</text><ellipse cx="2773" cy="324.9512" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="312" x="2782" y="328.5859">setIdlignefraishorsforfait(int: $idlignefraishorsforfait): self</text><ellipse cx="2773" cy="337.9063" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="143" x="2782" y="341.541">getIdfichefrais(): Fichefrais</text><ellipse cx="2773" cy="350.8613" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="234" x="2782" y="354.4961">setIdfichefrais(Fichefrais: $idfichefrais): self</text><ellipse cx="2773" cy="363.8164" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="102" x="2782" y="367.4512">getLibelle(): ?string</text><ellipse cx="2773" cy="376.7715" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="159" x="2782" y="380.4063">setLibelle(string: $libelle): self</text><ellipse cx="2773" cy="389.7266" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="152" x="2782" y="393.3613">getDate(): DateTimeInterface</text><ellipse cx="2773" cy="402.6816" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="206" x="2782" y="406.3164">setDate(DateTimeInterface: $date): self</text><ellipse cx="2773" cy="415.6367" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="112" x="2782" y="419.2715">getMontant(): ?string</text><ellipse cx="2773" cy="428.5918" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="183" x="2782" y="432.2266">setMontant(string: $montant): self</text><!--MD5=[262b6ba311e54440f4fa7b988e26e820]
+class ComptableRepository--><rect codeLine="149" fill="#C9FFC9" height="38.2656" id="ComptableRepository" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="156" x="1368" y="700"/><ellipse cx="1383" cy="719.1328" fill="#6495ED" rx="11" ry="11" style="stroke:#000000;stroke-width:1.0;"/><path d="M1385.4731,725.2759 Q1384.8921,725.5747 1384.2529,725.7241 Q1383.6138,725.8735 1382.9082,725.8735 Q1380.4014,725.8735 1379.0815,724.2217 Q1377.7617,722.5698 1377.7617,719.4487 Q1377.7617,716.3193 1379.0815,714.6675 Q1380.4014,713.0156 1382.9082,713.0156 Q1383.6138,713.0156 1384.2612,713.165 Q1384.9087,713.3145 1385.4731,713.6133 L1385.4731,716.3359 Q1384.8423,715.7549 1384.2488,715.4851 Q1383.6553,715.2153 1383.0244,715.2153 Q1381.6797,715.2153 1380.9949,716.282 Q1380.3101,717.3486 1380.3101,719.4487 Q1380.3101,721.5405 1380.9949,722.6072 Q1381.6797,723.6738 1383.0244,723.6738 Q1383.6553,723.6738 1384.2488,723.4041 Q1384.8423,723.1343 1385.4731,722.5532 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="73" x="1422.5" y="716.6016">«DOCTRINE»</text><text fill="#6495ED" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="124" x="1397" y="730.7344">ComptableRepository</text><!--MD5=[29b6d71e65986ad74d854a1432178306]
+class ServiceEntityRepository--><rect codeLine="212" fill="#F8F8FF" height="52.9551" id="ServiceEntityRepository" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="164" x="1942" y="281.5"/><ellipse cx="1957" cy="297.5" fill="#6495ED" rx="11" ry="11" style="stroke:#000000;stroke-width:1.0;"/><path d="M1959.4731,303.6431 Q1958.8921,303.9419 1958.2529,304.0913 Q1957.6138,304.2407 1956.9082,304.2407 Q1954.4014,304.2407 1953.0815,302.5889 Q1951.7617,300.937 1951.7617,297.8159 Q1951.7617,294.6865 1953.0815,293.0347 Q1954.4014,291.3828 1956.9082,291.3828 Q1957.6138,291.3828 1958.2612,291.5322 Q1958.9087,291.6816 1959.4731,291.9805 L1959.4731,294.7031 Q1958.8423,294.1221 1958.2488,293.8523 Q1957.6553,293.5825 1957.0244,293.5825 Q1955.6797,293.5825 1954.9949,294.6492 Q1954.3101,295.7158 1954.3101,297.8159 Q1954.3101,299.9077 1954.9949,300.9744 Q1955.6797,302.041 1957.0244,302.041 Q1957.6553,302.041 1958.2488,301.7712 Q1958.8423,301.5015 1959.4731,300.9204 Z " fill="#000000"/><text fill="#6495ED" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="132" x="1971" y="302.0352">ServiceEntityRepository</text><line style="stroke:#000000;stroke-width:1.5;" x1="1943" x2="2105" y1="313.5" y2="313.5"/><ellipse cx="1953" cy="324.5" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="28" x="1962" y="328.1348">this()</text><!--MD5=[36ad99e19ff6be2390b14fff53d6ff6d]
+class ObjectRepository--><rect codeLine="168" fill="#F8F8FF" height="104.7754" id="ObjectRepository" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="419" x="1447.5" y="255.5"/><ellipse cx="1603.25" cy="271.5" fill="#B4A7E5" rx="11" ry="11" style="stroke:#000000;stroke-width:1.0;"/><path d="M1599.6777,267.7651 L1599.6777,265.6069 L1607.0571,265.6069 L1607.0571,267.7651 L1604.5918,267.7651 L1604.5918,275.8418 L1607.0571,275.8418 L1607.0571,278 L1599.6777,278 L1599.6777,275.8418 L1602.1431,275.8418 L1602.1431,267.7651 Z " fill="#000000"/><text fill="#6495ED" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="99" x="1623.75" y="276.0352">ObjectRepository</text><line style="stroke:#000000;stroke-width:1.5;" x1="1448.5" x2="1865.5" y1="287.5" y2="287.5"/><ellipse cx="1458.5" cy="298.5" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="49" x="1467.5" y="302.1348">find($id);</text><ellipse cx="1458.5" cy="311.4551" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="46" x="1467.5" y="315.0898">findAll();</text><ellipse cx="1458.5" cy="324.4102" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="393" x="1467.5" y="328.0449">findBy(array $criteria, ?array $orderBy = null, $limit = null, $offset = null)</text><ellipse cx="1458.5" cy="337.3652" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="139" x="1467.5" y="341">findOneBy(array $criteria)</text><ellipse cx="1458.5" cy="350.3203" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="84" x="1467.5" y="353.9551">getClassName()</text><!--MD5=[fcb2d1f73cca58af54e696f4b4a75798]
+class EtatRepository--><rect codeLine="152" fill="#C9FFC9" height="38.2656" id="EtatRepository" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="115" x="1599.5" y="700"/><ellipse cx="1614.5" cy="719.1328" fill="#6495ED" rx="11" ry="11" style="stroke:#000000;stroke-width:1.0;"/><path d="M1616.9731,725.2759 Q1616.3921,725.5747 1615.7529,725.7241 Q1615.1138,725.8735 1614.4082,725.8735 Q1611.9014,725.8735 1610.5815,724.2217 Q1609.2617,722.5698 1609.2617,719.4487 Q1609.2617,716.3193 1610.5815,714.6675 Q1611.9014,713.0156 1614.4082,713.0156 Q1615.1138,713.0156 1615.7612,713.165 Q1616.4087,713.3145 1616.9731,713.6133 L1616.9731,716.3359 Q1616.3423,715.7549 1615.7488,715.4851 Q1615.1553,715.2153 1614.5244,715.2153 Q1613.1797,715.2153 1612.4949,716.282 Q1611.8101,717.3486 1611.8101,719.4487 Q1611.8101,721.5405 1612.4949,722.6072 Q1613.1797,723.6738 1614.5244,723.6738 Q1615.1553,723.6738 1615.7488,723.4041 Q1616.3423,723.1343 1616.9731,722.5532 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="73" x="1633.5" y="716.6016">«DOCTRINE»</text><text fill="#6495ED" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="83" x="1628.5" y="730.7344">EtatRepository</text><!--MD5=[a4648833c7e050970f807cb120b3505d]
+class FichefraisRepository--><rect codeLine="155" fill="#C9FFC9" height="38.2656" id="FichefraisRepository" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="147" x="1789.5" y="700"/><ellipse cx="1804.5" cy="719.1328" fill="#6495ED" rx="11" ry="11" style="stroke:#000000;stroke-width:1.0;"/><path d="M1806.9731,725.2759 Q1806.3921,725.5747 1805.7529,725.7241 Q1805.1138,725.8735 1804.4082,725.8735 Q1801.9014,725.8735 1800.5815,724.2217 Q1799.2617,722.5698 1799.2617,719.4487 Q1799.2617,716.3193 1800.5815,714.6675 Q1801.9014,713.0156 1804.4082,713.0156 Q1805.1138,713.0156 1805.7612,713.165 Q1806.4087,713.3145 1806.9731,713.6133 L1806.9731,716.3359 Q1806.3423,715.7549 1805.7488,715.4851 Q1805.1553,715.2153 1804.5244,715.2153 Q1803.1797,715.2153 1802.4949,716.282 Q1801.8101,717.3486 1801.8101,719.4487 Q1801.8101,721.5405 1802.4949,722.6072 Q1803.1797,723.6738 1804.5244,723.6738 Q1805.1553,723.6738 1805.7488,723.4041 Q1806.3423,723.1343 1806.9731,722.5532 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="73" x="1839.5" y="716.6016">«DOCTRINE»</text><text fill="#6495ED" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="115" x="1818.5" y="730.7344">FichefraisRepository</text><!--MD5=[f097ad8ac43820c01a1440bdac79e010]
+class FraisforfaitRepository--><rect codeLine="158" fill="#C9FFC9" height="38.2656" id="FraisforfaitRepository" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="154" x="2012" y="700"/><ellipse cx="2027" cy="719.1328" fill="#6495ED" rx="11" ry="11" style="stroke:#000000;stroke-width:1.0;"/><path d="M2029.4731,725.2759 Q2028.8921,725.5747 2028.2529,725.7241 Q2027.6138,725.8735 2026.9082,725.8735 Q2024.4014,725.8735 2023.0815,724.2217 Q2021.7617,722.5698 2021.7617,719.4487 Q2021.7617,716.3193 2023.0815,714.6675 Q2024.4014,713.0156 2026.9082,713.0156 Q2027.6138,713.0156 2028.2612,713.165 Q2028.9087,713.3145 2029.4731,713.6133 L2029.4731,716.3359 Q2028.8423,715.7549 2028.2488,715.4851 Q2027.6553,715.2153 2027.0244,715.2153 Q2025.6797,715.2153 2024.9949,716.282 Q2024.3101,717.3486 2024.3101,719.4487 Q2024.3101,721.5405 2024.9949,722.6072 Q2025.6797,723.6738 2027.0244,723.6738 Q2027.6553,723.6738 2028.2488,723.4041 Q2028.8423,723.1343 2029.4731,722.5532 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="73" x="2065.5" y="716.6016">«DOCTRINE»</text><text fill="#6495ED" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="122" x="2041" y="730.7344">FraisforfaitRepository</text><!--MD5=[6242ea86f775aa91fda7beaaa23cffb3]
+class LignefraisforfaitRepository--><rect codeLine="161" fill="#C9FFC9" height="38.2656" id="LignefraisforfaitRepository" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="182" x="2241" y="700"/><ellipse cx="2256" cy="719.1328" fill="#6495ED" rx="11" ry="11" style="stroke:#000000;stroke-width:1.0;"/><path d="M2258.4731,725.2759 Q2257.8921,725.5747 2257.2529,725.7241 Q2256.6138,725.8735 2255.9082,725.8735 Q2253.4014,725.8735 2252.0815,724.2217 Q2250.7617,722.5698 2250.7617,719.4487 Q2250.7617,716.3193 2252.0815,714.6675 Q2253.4014,713.0156 2255.9082,713.0156 Q2256.6138,713.0156 2257.2612,713.165 Q2257.9087,713.3145 2258.4731,713.6133 L2258.4731,716.3359 Q2257.8423,715.7549 2257.2488,715.4851 Q2256.6553,715.2153 2256.0244,715.2153 Q2254.6797,715.2153 2253.9949,716.282 Q2253.3101,717.3486 2253.3101,719.4487 Q2253.3101,721.5405 2253.9949,722.6072 Q2254.6797,723.6738 2256.0244,723.6738 Q2256.6553,723.6738 2257.2488,723.4041 Q2257.8423,723.1343 2258.4731,722.5532 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="73" x="2308.5" y="716.6016">«DOCTRINE»</text><text fill="#6495ED" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="150" x="2270" y="730.7344">LignefraisforfaitRepository</text><!--MD5=[ab44e1fd7fac108d05a35711cf4c9381]
+class LignefraishorsforfaitRepository--><rect codeLine="164" fill="#C9FFC9" height="38.2656" id="LignefraishorsforfaitRepository" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="207" x="2498.5" y="700"/><ellipse cx="2513.5" cy="719.1328" fill="#6495ED" rx="11" ry="11" style="stroke:#000000;stroke-width:1.0;"/><path d="M2515.9731,725.2759 Q2515.3921,725.5747 2514.7529,725.7241 Q2514.1138,725.8735 2513.4082,725.8735 Q2510.9014,725.8735 2509.5815,724.2217 Q2508.2617,722.5698 2508.2617,719.4487 Q2508.2617,716.3193 2509.5815,714.6675 Q2510.9014,713.0156 2513.4082,713.0156 Q2514.1138,713.0156 2514.7612,713.165 Q2515.4087,713.3145 2515.9731,713.6133 L2515.9731,716.3359 Q2515.3423,715.7549 2514.7488,715.4851 Q2514.1553,715.2153 2513.5244,715.2153 Q2512.1797,715.2153 2511.4949,716.282 Q2510.8101,717.3486 2510.8101,719.4487 Q2510.8101,721.5405 2511.4949,722.6072 Q2512.1797,723.6738 2513.5244,723.6738 Q2514.1553,723.6738 2514.7488,723.4041 Q2515.3423,723.1343 2515.9731,722.5532 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="73" x="2578.5" y="716.6016">«DOCTRINE»</text><text fill="#6495ED" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="175" x="2527.5" y="730.7344">LignefraishorsforfaitRepository</text><!--MD5=[9108fdf81951524880110cfb7aa737b5]
+class VisiteurController--><rect codeLine="178" fill="#F8F8FF" height="104.7754" id="VisiteurController" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="284" x="1004" y="666.5"/><ellipse cx="1092.25" cy="682.5" fill="#6495ED" rx="11" ry="11" style="stroke:#000000;stroke-width:1.0;"/><path d="M1094.7231,688.6431 Q1094.1421,688.9419 1093.5029,689.0913 Q1092.8638,689.2407 1092.1582,689.2407 Q1089.6514,689.2407 1088.3315,687.5889 Q1087.0117,685.937 1087.0117,682.8159 Q1087.0117,679.6865 1088.3315,678.0347 Q1089.6514,676.3828 1092.1582,676.3828 Q1092.8638,676.3828 1093.5112,676.5322 Q1094.1587,676.6816 1094.7231,676.9805 L1094.7231,679.7031 Q1094.0923,679.1221 1093.4988,678.8523 Q1092.9053,678.5825 1092.2744,678.5825 Q1090.9297,678.5825 1090.2449,679.6492 Q1089.5601,680.7158 1089.5601,682.8159 Q1089.5601,684.9077 1090.2449,685.9744 Q1090.9297,687.041 1092.2744,687.041 Q1092.9053,687.041 1093.4988,686.7712 Q1094.0923,686.5015 1094.7231,685.9204 Z " fill="#000000"/><text fill="#6495ED" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="99" x="1112.75" y="687.0352">VisiteurController</text><line style="stroke:#000000;stroke-width:1.5;" x1="1005" x2="1287" y1="698.5" y2="698.5"/><ellipse cx="1015" cy="709.5" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="103" x="1024" y="713.1348">espace(): Response</text><ellipse cx="1015" cy="722.4551" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="233" x="1024" y="726.0898">setfraisforfait(Request $request): Response</text><ellipse cx="1015" cy="735.4102" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="230" x="1024" y="739.0449">addfichefrais(Request $request): Response</text><ellipse cx="1015" cy="748.3652" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="258" x="1024" y="752">setfraishorsforfait(Request $request): Response</text><ellipse cx="1015" cy="761.3203" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="250" x="1024" y="764.9551">removefichefrais(Request $request): Response</text><!--MD5=[c8f8358d41a1c595b99510f2374ca8ba]
+class AbstractController--><rect codeLine="201" fill="#F8F8FF" height="99.8203" id="AbstractController" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="375" x="912.5" y="258"/><ellipse cx="1043.75" cy="274" fill="#A9DCDF" rx="11" ry="11" style="stroke:#000000;stroke-width:1.0;"/><path d="M1043.6133,269.3481 L1042.4595,274.4199 L1044.7754,274.4199 Z M1042.1191,267.1069 L1045.1157,267.1069 L1048.4609,279.5 L1046.0122,279.5 L1045.2485,276.437 L1041.9697,276.437 L1041.2227,279.5 L1038.7739,279.5 Z " fill="#000000"/><text fill="#6495ED" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="104" x="1064.25" y="278.5352">AbstractController</text><line style="stroke:#000000;stroke-width:1.5;" x1="913.5" x2="1286.5" y1="290" y2="290"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="920.5" y="298"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="113" x="932.5" y="304.6348">protected $container</text><line style="stroke:#000000;stroke-width:1.5;" x1="913.5" x2="1286.5" y1="310.9551" y2="310.9551"/><ellipse cx="923.5" cy="321.9551" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="349" x="932.5" y="325.5898">setContainer(ContainerInterface $container): ?ContainerInterface</text><polygon fill="#FFFF44" points="923.5,329.9102,927.5,333.9102,923.5,337.9102,919.5,333.9102" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="150" x="932.5" y="338.5449">getParameter(string $name)</text><ellipse cx="923.5" cy="347.8652" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="129" x="932.5" y="351.5">getSubscribedServices()</text><!--MD5=[babaf2afa865a8cf1bf76e7c4ffec6bb]
+class SeConnecterController--><rect codeLine="186" fill="#F8F8FF" height="65.9102" id="SeConnecterController" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="213" x="331.5" y="686"/><ellipse cx="370.8" cy="702" fill="#6495ED" rx="11" ry="11" style="stroke:#000000;stroke-width:1.0;"/><path d="M373.2731,708.1431 Q372.6921,708.4419 372.0529,708.5913 Q371.4138,708.7407 370.7082,708.7407 Q368.2014,708.7407 366.8815,707.0889 Q365.5617,705.437 365.5617,702.3159 Q365.5617,699.1865 366.8815,697.5347 Q368.2014,695.8828 370.7082,695.8828 Q371.4138,695.8828 372.0612,696.0322 Q372.7087,696.1816 373.2731,696.4805 L373.2731,699.2031 Q372.6423,698.6221 372.0488,698.3523 Q371.4553,698.0825 370.8244,698.0825 Q369.4797,698.0825 368.7949,699.1492 Q368.1101,700.2158 368.1101,702.3159 Q368.1101,704.4077 368.7949,705.4744 Q369.4797,706.541 370.8244,706.541 Q371.4553,706.541 372.0488,706.2712 Q372.6423,706.0015 373.2731,705.4204 Z " fill="#000000"/><text fill="#6495ED" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="127" x="390.2" y="706.5352">SeConnecterController</text><line style="stroke:#000000;stroke-width:1.5;" x1="332.5" x2="543.5" y1="718" y2="718"/><ellipse cx="342.5" cy="729" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="187" x="351.5" y="732.6348">login(Request $request): Response</text><ellipse cx="342.5" cy="741.9551" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="46" x="351.5" y="745.5898">signoff()</text><!--MD5=[a5b69be455cf2854b166fd1c8097079e]
+class ComptableController--><rect codeLine="191" fill="#F8F8FF" height="130.6855" id="ComptableController" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="309" x="619.5" y="653.5"/><ellipse cx="710.25" cy="669.5" fill="#6495ED" rx="11" ry="11" style="stroke:#000000;stroke-width:1.0;"/><path d="M712.7231,675.6431 Q712.1421,675.9419 711.5029,676.0913 Q710.8638,676.2407 710.1582,676.2407 Q707.6514,676.2407 706.3315,674.5889 Q705.0117,672.937 705.0117,669.8159 Q705.0117,666.6865 706.3315,665.0347 Q707.6514,663.3828 710.1582,663.3828 Q710.8638,663.3828 711.5112,663.5322 Q712.1587,663.6816 712.7231,663.9805 L712.7231,666.7031 Q712.0923,666.1221 711.4988,665.8523 Q710.9053,665.5825 710.2744,665.5825 Q708.9297,665.5825 708.2449,666.6492 Q707.5601,667.7158 707.5601,669.8159 Q707.5601,671.9077 708.2449,672.9744 Q708.9297,674.041 710.2744,674.041 Q710.9053,674.041 711.4988,673.7712 Q712.0923,673.5015 712.7231,672.9204 Z " fill="#000000"/><text fill="#6495ED" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="119" x="730.75" y="674.0352">ComptableController</text><line style="stroke:#000000;stroke-width:1.5;" x1="620.5" x2="927.5" y1="685.5" y2="685.5"/><ellipse cx="630.5" cy="696.5" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="103" x="639.5" y="700.1348">espace(): Response</text><ellipse cx="630.5" cy="709.4551" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="237" x="639.5" y="713.0898">espacevisiteur(Request $request): Response</text><ellipse cx="630.5" cy="722.4102" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="258" x="639.5" y="726.0449">validatefraisforfait(Request $request): Response</text><ellipse cx="630.5" cy="735.3652" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="251" x="639.5" y="739">refusefraisforfait(Request $request): Response</text><ellipse cx="630.5" cy="748.3203" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="283" x="639.5" y="751.9551">validatefraishorsforfait(Request $request): Response</text><ellipse cx="630.5" cy="761.2754" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="276" x="639.5" y="764.9102">refusefraishorsforfait(Request $request): Response</text><ellipse cx="630.5" cy="774.2305" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="238" x="639.5" y="777.8652">closefichefrais(Request $request): Response</text><!--MD5=[422df1370d09590e26956b47f73ab97d]
+class ServiceSubscriberInterface--><rect codeLine="209" fill="#F8F8FF" height="32" id="ServiceSubscriberInterface" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="183" x="815.5" y="41"/><ellipse cx="830.5" cy="57" fill="#B4A7E5" rx="11" ry="11" style="stroke:#000000;stroke-width:1.0;"/><path d="M826.9277,53.2651 L826.9277,51.1069 L834.3071,51.1069 L834.3071,53.2651 L831.8418,53.2651 L831.8418,61.3418 L834.3071,61.3418 L834.3071,63.5 L826.9277,63.5 L826.9277,61.3418 L829.3931,61.3418 L829.3931,53.2651 Z " fill="#000000"/><text fill="#6495ED" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="151" x="844.5" y="61.5352">ServiceSubscriberInterface</text><!--MD5=[7b442112a51f2249a13a8c5ea24726ad]
+class EntityRepository--><rect codeLine="216" fill="#F8F8FF" height="320.0566" id="EntityRepository" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="805" x="32.5" y="148"/><ellipse cx="384.75" cy="164" fill="#6495ED" rx="11" ry="11" style="stroke:#000000;stroke-width:1.0;"/><path d="M387.2231,170.1431 Q386.6421,170.4419 386.0029,170.5913 Q385.3638,170.7407 384.6582,170.7407 Q382.1514,170.7407 380.8315,169.0889 Q379.5117,167.437 379.5117,164.3159 Q379.5117,161.1865 380.8315,159.5347 Q382.1514,157.8828 384.6582,157.8828 Q385.3638,157.8828 386.0112,158.0322 Q386.6587,158.1816 387.2231,158.4805 L387.2231,161.2031 Q386.5923,160.6221 385.9988,160.3523 Q385.4053,160.0825 384.7744,160.0825 Q383.4297,160.0825 382.7449,161.1492 Q382.0601,162.2158 382.0601,164.3159 Q382.0601,166.4077 382.7449,167.4744 Q383.4297,168.541 384.7744,168.541 Q385.4053,168.541 385.9988,168.2712 Q386.5923,168.0015 387.2231,167.4204 Z " fill="#000000"/><text fill="#6495ED" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="92" x="405.25" y="168.5352">EntityRepository</text><line style="stroke:#000000;stroke-width:1.5;" x1="33.5" x2="836.5" y1="180" y2="180"/><polygon fill="none" points="43.5,186,47.5,190,43.5,194,39.5,190" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="73" x="52.5" y="194.6348">$_entityName</text><polygon fill="none" points="43.5,198.9551,47.5,202.9551,43.5,206.9551,39.5,202.9551" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="29" x="52.5" y="207.5898">$_em</text><polygon fill="none" points="43.5,211.9102,47.5,215.9102,43.5,219.9102,39.5,215.9102" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="40" x="52.5" y="220.5449">$_class</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="40.5" y="226.8652"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="52" x="52.5" y="233.5">$inflector</text><line style="stroke:#000000;stroke-width:1.5;" x1="33.5" x2="836.5" y1="239.8203" y2="239.8203"/><ellipse cx="43.5" cy="250.8203" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="28" x="52.5" y="254.4551">this()</text><ellipse cx="43.5" cy="263.7754" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="762" x="52.5" y="267.4102">createQueryBuilder($alias, $indexBy = null): $this-&gt;_em-&gt;createQueryBuilder()-&gt;select($alias)-&gt;from($this-&gt;_entityName, $alias, $indexBy)</text><ellipse cx="43.5" cy="276.7305" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="591" x="52.5" y="280.3652">createNamedQuery($queryName): $this-&gt;_em-&gt;createQuery($this-&gt;_class-&gt;getNamedQuery($queryName))</text><ellipse cx="43.5" cy="289.6855" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="567" x="52.5" y="293.3203">createNativeNamedQuery($queryName): $this-&gt;_em-&gt;createNativeQuery($queryMapping['query'], $rsm)</text><ellipse cx="43.5" cy="302.6406" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="34" x="52.5" y="306.2754">clear()</text><ellipse cx="43.5" cy="315.5957" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="641" x="52.5" y="319.2305">find($id, $lockMode = null, $lockVersion = null): $this-&gt;_em-&gt;find($this-&gt;_entityName, $id, $lockMode, $lockVersion)</text><ellipse cx="43.5" cy="328.5508" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="140" x="52.5" y="332.1855">findAll(): $this-&gt;findBy([])</text><ellipse cx="43.5" cy="341.5059" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="694" x="52.5" y="345.1406">findBy(array $criteria, ?array $orderBy = null, $limit = null, $offset = null): $persister-&gt;loadAll($criteria, $orderBy, $limit, $offset)</text><ellipse cx="43.5" cy="354.4609" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="577" x="52.5" y="358.0957">findOneBy(array $criteria, ?array $orderBy = null): $persister-&gt;load($criteria, null, null, [], null, 1, $orderBy)</text><ellipse cx="43.5" cy="367.416" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="611" x="52.5" y="371.0508">count(array $criteria): $this-&gt;_em-&gt;getUnitOfWork()-&gt;getEntityPersister($this-&gt;_entityName)-&gt;count($criteria)</text><ellipse cx="43.5" cy="380.3711" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="303" x="52.5" y="384.0059">__call($method, $arguments): $this-&gt;resolveMagicCall()</text><polygon fill="#FFFF44" points="43.5,388.3262,47.5,392.3262,43.5,396.3262,39.5,392.3262" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="199" x="52.5" y="396.9609">getEntityName(): $this-&gt;_entityName</text><ellipse cx="43.5" cy="406.2813" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="217" x="52.5" y="409.916">getClassName(): $this-&gt;getEntityName()</text><polygon fill="#FFFF44" points="43.5,414.2363,47.5,418.2363,43.5,422.2363,39.5,418.2363" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="171" x="52.5" y="422.8711">getEntityManager(): $this-&gt;_em</text><polygon fill="#FFFF44" points="43.5,427.1914,47.5,431.1914,43.5,435.1914,39.5,431.1914" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="183" x="52.5" y="435.8262">getClassMetadata(): $this-&gt;_class</text><ellipse cx="43.5" cy="445.1465" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="408" x="52.5" y="448.7813">matching(Criteria $criteria): new LazyCriteriaCollection($persister, $criteria)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="40.5" y="455.1016"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="779" x="52.5" y="461.7363">resolveMagicCall(string $method, string $by, array $arguments): $this-&gt;$method([$fieldName =&gt; $arguments[0]], ...array_slice($arguments, 1))</text><!--MD5=[d8cec7adaed1d52e2d1882fcd1a5b5c8]
+class ServiceEntityRepositoryInterface--><rect fill="#F8F8FF" height="32" id="ServiceEntityRepositoryInterface" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="214" x="1074" y="41"/><ellipse cx="1089" cy="57" fill="#B4A7E5" rx="11" ry="11" style="stroke:#000000;stroke-width:1.0;"/><path d="M1085.4277,53.2651 L1085.4277,51.1069 L1092.8071,51.1069 L1092.8071,53.2651 L1090.3418,53.2651 L1090.3418,61.3418 L1092.8071,61.3418 L1092.8071,63.5 L1085.4277,63.5 L1085.4277,61.3418 L1087.8931,61.3418 L1087.8931,53.2651 Z " fill="#000000"/><text fill="#6495ED" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="182" x="1103" y="61.5352">ServiceEntityRepositoryInterface</text><!--MD5=[d514b8e122349fc374e7a9b1b483de3e]
+class Selectable--><rect fill="#F8F8FF" height="32" id="Selectable" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="90" x="390" y="41"/><ellipse cx="405" cy="57" fill="#B4A7E5" rx="11" ry="11" style="stroke:#000000;stroke-width:1.0;"/><path d="M401.4277,53.2651 L401.4277,51.1069 L408.8071,51.1069 L408.8071,53.2651 L406.3418,53.2651 L406.3418,61.3418 L408.8071,61.3418 L408.8071,63.5 L401.4277,63.5 L401.4277,61.3418 L403.8931,61.3418 L403.8931,53.2651 Z " fill="#000000"/><text fill="#6495ED" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="58" x="419" y="61.5352">Selectable</text><!--MD5=[1738d43cac697dcb2725edfdb226f549]
+link Fichefrais to Visiteur--><path codeLine="140" d="M2979.41,908.44 C2977.67,924.36 2974.0249,957.6812 2974.0249,957.6812 " fill="none" id="Fichefrais-Visiteur" style="stroke:#808080;stroke-width:1.0;"/><polygon fill="#808080" points="2972.72,969.61,2977.3487,964.0806,2974.0249,957.6812,2969.3962,963.2106,2972.72,969.61" style="stroke:#808080;stroke-width:1.0;"/><polygon fill="#808080" points="2980.85,895.25,2975.895,903.7617,2980.3063,900.2203,2983.8476,904.6316,2980.85,895.25" style="stroke:#808080;stroke-width:1.0;"/><line style="stroke:#808080;stroke-width:1.0;" x1="2980.3063" x2="2979.435" y1="900.2203" y2="908.165"/><ellipse cx="2914.0655" cy="910.8141" fill="#000000" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="59" x="2919.5655" y="915.572">leVisiteur</text><!--MD5=[4815d4a62db68ee107d6920030b3b043]
+link Fichefrais to Etat--><path codeLine="141" d="M3112.87,906.42 C3155.77,977.27 3235.2215,1108.4969 3235.2215,1108.4969 " fill="none" id="Fichefrais-Etat" style="stroke:#808080;stroke-width:1.0;"/><polygon fill="#808080" points="3241.44,1118.76,3241.7518,1111.5556,3235.2215,1108.4969,3234.9097,1115.7013,3241.44,1118.76" style="stroke:#808080;stroke-width:1.0;"/><polygon fill="#808080" points="3106.11,895.25,3107.3492,905.0206,3108.6994,899.5272,3114.1928,900.8775,3106.11,895.25" style="stroke:#808080;stroke-width:1.0;"/><line style="stroke:#808080;stroke-width:1.0;" x1="3108.6994" x2="3112.84" y1="899.5272" y2="906.365"/><ellipse cx="3068.0951" cy="910.8141" fill="#000000" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="36" x="3073.5951" y="915.572">idetat</text><!--MD5=[bd92b852eaf6eea2aa9d92587dff9a4f]
+link Lignefraisforfait to Fichefrais--><path codeLine="142" d="M3282.43,416.4 C3248.92,452.18 3172.3938,533.9123 3172.3938,533.9123 " fill="none" id="Lignefraisforfait-Fichefrais" style="stroke:#808080;stroke-width:1.0;"/><polygon fill="#808080" points="3164.19,542.67,3171.2111,541.0257,3172.3938,533.9123,3165.3726,535.5565,3164.19,542.67" style="stroke:#808080;stroke-width:1.0;"/><polygon fill="#808080" points="3291.51,406.71,3282.4379,410.5437,3288.0918,410.3591,3288.2764,416.0129,3291.51,406.71" style="stroke:#808080;stroke-width:1.0;"/><line style="stroke:#808080;stroke-width:1.0;" x1="3288.0918" x2="3282.62" y1="410.3591" y2="416.19"/><ellipse cx="3205.6943" cy="422.0074" fill="#000000" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="71" x="3211.1943" y="426.7652">idfichefrais</text><!--MD5=[77f94bb83ab05cb6646da74ca3f16f50]
+link Lignefraisforfait to Fraisforfait--><path codeLine="143" d="M3402.79,419.9 C3413.96,482.46 3438.7505,621.3769 3438.7505,621.3769 " fill="none" id="Lignefraisforfait-Fraisforfait" style="stroke:#808080;stroke-width:1.0;"/><polygon fill="#808080" points="3440.86,633.19,3443.743,626.5803,3438.7505,621.3769,3435.8675,627.9866,3440.86,633.19" style="stroke:#808080;stroke-width:1.0;"/><polygon fill="#808080" points="3400.44,406.71,3398.0844,416.273,3401.319,411.6321,3405.9598,414.8667,3400.44,406.71" style="stroke:#808080;stroke-width:1.0;"/><line style="stroke:#808080;stroke-width:1.0;" x1="3401.319" x2="3402.72" y1="411.6321" y2="419.5"/><ellipse cx="3314.0022" cy="422.0074" fill="#000000" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="79" x="3319.5022" y="426.7652">idfraisforfait</text><!--MD5=[8bbe45b841437c3e45e5edda54983abb]
+link Lignefraishorsforfait to Fichefrais--><path codeLine="144" d="M2955.15,452.14 C2959.4,477.35 2968.4673,531.1383 2968.4673,531.1383 " fill="none" id="Lignefraishorsforfait-Fichefrais" style="stroke:#808080;stroke-width:1.0;"/><polygon fill="#808080" points="2970.47,542.97,2973.4126,536.3866,2968.4673,531.1383,2965.5248,537.7217,2970.47,542.97" style="stroke:#808080;stroke-width:1.0;"/><polygon fill="#808080" points="2952.97,439.25,2950.5195,448.7891,2953.8,444.1806,2958.4085,447.4611,2952.97,439.25" style="stroke:#808080;stroke-width:1.0;"/><line style="stroke:#808080;stroke-width:1.0;" x1="2953.8" x2="2955.135" y1="444.1806" y2="452.075"/><ellipse cx="2875.4888" cy="454.2345" fill="#000000" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="71" x="2880.9888" y="458.9923">idfichefrais</text><!--MD5=[dac666a27f7056d8e53fba42b4f42778]
+reverse link ServiceEntityRepository to ComptableRepository--><path d="M1992.54,350.68 C1956.99,397.79 1904,468 1904,468 C1904,468 1562,543 1562,543 C1562,543 1487.61,655.22 1457.98,699.93 " fill="none" id="ServiceEntityRepository-backto-ComptableRepository" style="stroke:#808080;stroke-width:1.0;"/><polygon fill="none" points="1987.08,346.29,2004.72,334.55,1998.26,354.73,1987.08,346.29" style="stroke:#808080;stroke-width:1.0;"/><!--MD5=[825444f0eb2cba5eb8b93f5ac5ff490f]
+reverse link ObjectRepository to ComptableRepository--><path d="M1620.98,378.82 C1571.14,475.42 1484.05,644.23 1455.42,699.74 " fill="none" id="ObjectRepository-backto-ComptableRepository" style="stroke:#808080;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="1614.89,375.36,1630.28,360.8,1627.33,381.78,1614.89,375.36" style="stroke:#808080;stroke-width:1.0;"/><!--MD5=[d6fbc7a1a43591400309ceda5924ec7e]
+reverse link ServiceEntityRepository to EtatRepository--><path d="M1992.54,350.68 C1956.99,397.79 1904,468 1904,468 C1904,468 1752,543 1752,543 C1752,543 1691.08,655.22 1666.81,699.93 " fill="none" id="ServiceEntityRepository-backto-EtatRepository" style="stroke:#808080;stroke-width:1.0;"/><polygon fill="none" points="1987.08,346.29,2004.72,334.55,1998.26,354.73,1987.08,346.29" style="stroke:#808080;stroke-width:1.0;"/><!--MD5=[5ab9de30b0c1b154052868397fc592f2]
+reverse link ObjectRepository to EtatRepository--><path d="M1657,380.94 C1657,477.87 1657,644.64 1657,699.74 " fill="none" id="ObjectRepository-backto-EtatRepository" style="stroke:#808080;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="1650,380.8,1657,360.8,1664,380.8,1650,380.8" style="stroke:#808080;stroke-width:1.0;"/><!--MD5=[f1ccd73387344ac99d36e277fb0d2a64]
+reverse link ServiceEntityRepository to FichefraisRepository--><path d="M2006.57,353.27 C1971.59,442.15 1894.11,638.96 1870.18,699.75 " fill="none" id="ServiceEntityRepository-backto-FichefraisRepository" style="stroke:#808080;stroke-width:1.0;"/><polygon fill="none" points="2000.09,350.63,2013.93,334.58,2013.12,355.76,2000.09,350.63" style="stroke:#808080;stroke-width:1.0;"/><!--MD5=[a39b5683c6eca88613aae71d8b3a8b90]
+reverse link ObjectRepository to FichefraisRepository--><path d="M1692.16,378.82 C1740.82,475.42 1825.85,644.23 1853.8,699.74 " fill="none" id="ObjectRepository-backto-FichefraisRepository" style="stroke:#808080;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="1685.83,381.81,1683.09,360.8,1698.34,375.51,1685.83,381.81" style="stroke:#808080;stroke-width:1.0;"/><!--MD5=[c208f98ce6ae985d53c61c4cd34d9e6a]
+reverse link ServiceEntityRepository to FraisforfaitRepository--><path d="M2031.22,354.4 C2045.42,443.8 2076.48,639.22 2086.1,699.75 " fill="none" id="ServiceEntityRepository-backto-FraisforfaitRepository" style="stroke:#808080;stroke-width:1.0;"/><polygon fill="none" points="2024.29,355.44,2028.07,334.58,2038.12,353.24,2024.29,355.44" style="stroke:#808080;stroke-width:1.0;"/><!--MD5=[87ed2ee95806bea9f5194373f6fb689c]
+reverse link ObjectRepository to FraisforfaitRepository--><path d="M1743.07,372.54 C1836.95,441.83 1974,543 1974,543 C1974,543 2047.74,655.22 2077.13,699.93 " fill="none" id="ObjectRepository-backto-FraisforfaitRepository" style="stroke:#808080;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="1738.89,378.15,1726.96,360.64,1747.21,366.89,1738.89,378.15" style="stroke:#808080;stroke-width:1.0;"/><!--MD5=[3a17440c5c1d2ba3a562981069ad0e17]
+reverse link ServiceEntityRepository to LignefraisforfaitRepository--><path d="M2056.21,351.11 C2107.75,418.48 2203,543 2203,543 C2203,543 2285.72,655.22 2318.68,699.93 " fill="none" id="ServiceEntityRepository-backto-LignefraisforfaitRepository" style="stroke:#808080;stroke-width:1.0;"/><polygon fill="none" points="2050.43,355.07,2043.84,334.94,2061.55,346.57,2050.43,355.07" style="stroke:#808080;stroke-width:1.0;"/><!--MD5=[50c062d365df4c0f2fc990c75c8db908]
+reverse link ObjectRepository to LignefraisforfaitRepository--><path d="M1754.02,371.45 C1823.19,415.98 1904,468 1904,468 C1904,468 2203,543 2203,543 C2203,543 2285.72,655.22 2318.68,699.93 " fill="none" id="ObjectRepository-backto-LignefraisforfaitRepository" style="stroke:#808080;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="1750.22,377.33,1737.19,360.62,1757.8,365.56,1750.22,377.33" style="stroke:#808080;stroke-width:1.0;"/><!--MD5=[4f1b74db9d52d4d5e28b6d2b6cc9d2fe]
+reverse link ServiceEntityRepository to LignefraishorsforfaitRepository--><path d="M2089.6,344.21 C2211.35,409.55 2460,543 2460,543 C2460,543 2551.06,655.22 2587.34,699.93 " fill="none" id="ServiceEntityRepository-backto-LignefraishorsforfaitRepository" style="stroke:#808080;stroke-width:1.0;"/><polygon fill="none" points="2086.22,350.34,2071.91,334.71,2092.84,338,2086.22,350.34" style="stroke:#808080;stroke-width:1.0;"/><!--MD5=[9bba558424d688bb9e49caf0e82fa07c]
+reverse link ObjectRepository to LignefraishorsforfaitRepository--><path d="M1754.02,371.45 C1823.19,415.98 1904,468 1904,468 C1904,468 2460,543 2460,543 C2460,543 2551.06,655.22 2587.34,699.93 " fill="none" id="ObjectRepository-backto-LignefraishorsforfaitRepository" style="stroke:#808080;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="1750.22,377.33,1737.19,360.62,1757.8,365.56,1750.22,377.33" style="stroke:#808080;stroke-width:1.0;"/><!--MD5=[60d913f70574212ac62499c7fe0d2b61]
+reverse link AbstractController to VisiteurController--><path d="M1107.8,378.37 C1116.97,459.88 1131.97,593.24 1140.18,666.24 " fill="none" id="AbstractController-backto-VisiteurController" style="stroke:#808080;stroke-width:1.0;"/><polygon fill="none" points="1100.83,378.99,1105.55,358.33,1114.74,377.43,1100.83,378.99" style="stroke:#808080;stroke-width:1.0;"/><!--MD5=[841938b98a993474445cee350846673d]
+reverse link AbstractController to SeConnecterController--><path d="M1013.98,369.79 C950.46,414.68 875,468 875,468 C875,468 582,543 582,543 C582,543 505.98,635.38 464.41,685.9 " fill="none" id="AbstractController-backto-SeConnecterController" style="stroke:#808080;stroke-width:1.0;"/><polygon fill="none" points="1010.28,363.83,1030.66,358,1018.36,375.26,1010.28,363.83" style="stroke:#808080;stroke-width:1.0;"/><!--MD5=[b6049d5d5835a800bd11c164888786e0]
+reverse link AbstractController to ComptableController--><path d="M1047.91,374.35 C986.86,450.94 886.34,577.05 825.54,653.34 " fill="none" id="AbstractController-backto-ComptableController" style="stroke:#808080;stroke-width:1.0;"/><polygon fill="none" points="1042.74,369.61,1060.68,358.33,1053.68,378.34,1042.74,369.61" style="stroke:#808080;stroke-width:1.0;"/><!--MD5=[21e55e871b7fa29ba0861f51810732a2]
+reverse link ServiceSubscriberInterface to AbstractController--><path d="M931.12,89.11 C963.97,131.5 1023.15,207.85 1062,257.98 " fill="none" id="ServiceSubscriberInterface-backto-AbstractController" style="stroke:#808080;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="925.5,93.3,918.78,73.2,936.57,84.72,925.5,93.3" style="stroke:#808080;stroke-width:1.0;"/><!--MD5=[514b59ad266be82fb323c57c1e473f16]
+reverse link EntityRepository to ServiceEntityRepository--><path d="M777.73,138.97 C834.34,111.05 875,91 875,91 C875,91 912.5,82 912.5,82 C912.5,82 1866.5,82 1866.5,82 C1866.5,82 1904,91 1904,91 C1904,91 1977.24,223.45 2009.29,281.39 " fill="none" id="EntityRepository-backto-ServiceEntityRepository" style="stroke:#808080;stroke-width:1.0;"/><polygon fill="none" points="780.72,145.3,759.68,147.87,774.52,132.75,780.72,145.3" style="stroke:#808080;stroke-width:1.0;"/><!--MD5=[2b0e54a37a2d8bfb84e11c3359bdfed5]
+reverse link ServiceEntityRepositoryInterface to ServiceEntityRepository--><path d="M1308.17,63.8 C1515.63,73.27 1904,91 1904,91 C1904,91 1977.98,224.16 2009.76,281.37 " fill="none" id="ServiceEntityRepositoryInterface-backto-ServiceEntityRepository" style="stroke:#808080;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="1307.73,70.79,1288.07,62.89,1308.37,56.81,1307.73,70.79" style="stroke:#808080;stroke-width:1.0;"/><!--MD5=[4bde5c0ec441ec132e39f4a2ffcdbcb6]
+reverse link ObjectRepository to EntityRepository--><path d="M1556.84,244.63 C1455.6,180.58 1314,91 1314,91 C1314,91 1276.5,82 1276.5,82 C1276.5,82 912.5,82 912.5,82 C912.5,82 875,91 875,91 C875,91 825.49,115.42 759.68,147.87 " fill="none" id="ObjectRepository-backto-EntityRepository" style="stroke:#808080;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="1560.81,238.86,1573.97,255.47,1553.33,250.69,1560.81,238.86" style="stroke:#808080;stroke-width:1.0;"/><!--MD5=[1c8a5de260e81aeaa52c1981605f9695]
+reverse link Selectable to EntityRepository--><path d="M435,93.39 C435,108.6 435,127.52 435,147.78 " fill="none" id="Selectable-backto-EntityRepository" style="stroke:#808080;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="428,93.2,435,73.2,442,93.2,428,93.2" style="stroke:#808080;stroke-width:1.0;"/><!--MD5=[84c8ce2d2806ecd74785da8d15273101]
+@startuml
+!include style/commons.style
+
+package Modele {
+    package Entity {
+        class Comptable <<Entity>> #TECHNOLOGY {
+            - $idcomptable: ?string #strategy="IDENTITY"
+            - $nom: ?string
+            - $prenom: ?string
+            - $login: ?string
+            - $mdp: ?string
+
+            + this(): Comptable
+            + getIdcomptable(): ?string
+            + getNom(): ?string
+            + setNom(string: $nom): self
+            + getPrenom(): ?string
+            + setPrenom(string: $prenom): self
+            + getLogin():  string
+            + setLogin(string: $login): self
+            + getMdp(): ?string
+            + setMdp(string: $mdp): self
+        }
+
+        class Visiteur <<Entity>> #TECHNOLOGY {
+            - $idvisiteur: ?string #strategy="IDENTITY"
+            - $nom: ?string
+            - $prenom: ?string
+            - $login: ?string
+            - $mdp: ?string
+            - $adresse: ?string
+            - $cp: ?int
+            - $ville: ?string
+            - $dateembauche: DateTime
+
+            + this(): Visiteur
+            + getIdvisiteur(): ?string
+            + setIdvisiteur(string: $idvisiteur): self
+            + getNom(): ?string
+            + setNom(string: $nom): self
+            + getPrenom(): ?string
+            + setPrenom(string: $prenom): self
+            + getLogin(): ?string
+            + setLogin(string: $login): self
+            + getMdp(): ?string
+            + setMdp(string: $mdp): self
+            + getAdresse(): ?string
+            + setAdresse(string: $adresse): self
+            + getCp(): ?string
+            + setCp(string: $cp): self
+            + getVille(): ?string
+            + setVille(string: $ville): self
+            + getDateembauche(): ?string
+            + setDateembauche(string: $dateembauche): self
+        }
+
+        class Etat <<Entity>> #TECHNOLOGY {
+            - $idetat: ?string #strategy="IDENTITY"
+            - $libelleetat: ?string
+
+            + getIdetat(): ?string
+            + getLibelleetat(): ?string
+            + setLibelleetat(string: $libelleetat): self
+        }
+
+        class Fichefrais <<Entity>> #TECHNOLOGY {
+            - $idfichefrais: ?string #strategy="IDENTITY"
+            - $idvisiteur: Visiteur #targetEntity="Visiteur"
+            - $date: DateTime
+            - $nbjustificatifs: ?int
+            - $montantvalide: ?string
+            - $datemodif: DateTime
+            - $idetat: Etat #targetEntity="Etat"
+
+            + this(): Fichefrais
+            + getIdfichefrais(): ?string
+            + setIdfichefrais(string: $idfichefrais): self
+            + getDate(): DateTimeInterface
+            + setDate(DateTimeInterface: $date): self
+            + getNbjustificatifs(): ?int
+            + setNbjustificatifs(int: $nbjustificatifs): self
+            + getMontantvalide(): ?string
+            + setMontantvalide(string: $montantvalide): self
+            + getDatemodif(): DateTime
+            + setDatemodif(DateTimeInterface: $date): self
+            + getIdetat(): Etat
+            + setIdetat(Etat: $idetat): self
+            + getIdvisiteur(): Visiteur
+            + setIdvisiteur(Visiteur: $idvisiteur): self
+            + <u>convertObjectClass(Array: $array, Class: $final_class): $final_class::class/u>
+        }
+
+        class Fraisforfait <<Entity>> #TECHNOLOGY {
+            - $idfraisforfait: ?string #strategy="IDENTITY"
+            - $libellefraisforfait: ?string
+            - $montantfraisforfait: ?string
+
+            + this(): Fraisforfait
+            + getIdfraisforfait(): ?string
+            + getLibellefraisforfait(): ?string
+            + setLibellefraisforfait(string: $libellefraisforfait): self
+            + getMontantfraisforfait(): ?string
+            + setMontantfraisforfait(string: $montantfraisforfait): self
+        }
+
+        class Lignefraisforfait <<Entity>> #TECHNOLOGY {
+            - $idfichefrais: Fichefrais #targetEntity="Fichefrais"
+            - $idfraisforfait: Fraisforfait #targetEntity="Fraisforfait"
+            - $quantité: ?string
+
+             + this(): Lignefraisforfait
+             + getIdfichefrais(): Fichefrais
+             + setIdfichefrais(Fichefrais: $idfichefrais): self
+             + getIdfraisforfait(): Fraisforfait
+             + setIdfraisforfait(Fraisforfait: $idfraisforfait): self
+             + getQuantite(): ?int
+             + setQuantite(int: quantite): self
+             + <u>convertObjectClass(Array: $array, Class: $final_class): $final_class::class</u>
+        }
+
+        class Lignefraishorsforfait <<Entity>> #TECHNOLOGY {
+            - $idlignefraishorsforfait: ?int #strategy="IDENTITY"
+            - $idfichefrais: Fichefrais #targetEntity="Fichefrais"
+            - $libelle: ?string
+            - $date: DateTime
+            - $montant: ?string
+
+            + this(): Lignefraishorsforfait
+            + getIdlignefraishorsforfait(): ?int
+            + setIdlignefraishorsforfait(int: $idlignefraishorsforfait): self
+            + getIdfichefrais(): Fichefrais
+            + setIdfichefrais(Fichefrais: $idfichefrais): self
+            + getLibelle(): ?string
+            + setLibelle(string: $libelle): self
+            + getDate(): DateTimeInterface
+            + setDate(DateTimeInterface: $date): self
+            + getMontant(): ?string
+            + setMontant(string: $montant): self
+        }
+
+          Fichefrais "*leVisiteur"<- -* Visiteur
+          Fichefrais "*idetat"<- -* Etat
+          Lignefraisforfait "*idfichefrais"<- -* Fichefrais
+          Lignefraisforfait "*idfraisforfait" <- -* Fraisforfait
+          Lignefraishorsforfait "*idfichefrais"<- -* Fichefrais
+
+    }
+
+    package Repository {
+        class ComptableRepository <<DOCTRINE>> #TECHNOLOGY extends ServiceEntityRepository implements ObjectRepository {
+        }
+
+        class EtatRepository <<DOCTRINE>> #TECHNOLOGY extends ServiceEntityRepository implements ObjectRepository {
+        }
+
+        class FichefraisRepository <<DOCTRINE>> #TECHNOLOGY extends ServiceEntityRepository implements ObjectRepository {
+        }
+
+        class FraisforfaitRepository <<DOCTRINE>> #TECHNOLOGY extends ServiceEntityRepository implements ObjectRepository {
+        }
+
+        class LignefraisforfaitRepository <<DOCTRINE>> #TECHNOLOGY extends ServiceEntityRepository implements ObjectRepository {
+        }
+
+        class LignefraishorsforfaitRepository <<DOCTRINE>> #TECHNOLOGY extends ServiceEntityRepository implements ObjectRepository {
+        }
+    }
+
+    interface ObjectRepository {
+    + find($id);
+    + findAll();
+    + findBy(array $criteria, ?array $orderBy = null, $limit = null, $offset = null)
+    + findOneBy(array $criteria)
+    + getClassName()
+    }
+}
+
+package Controller {
+   class VisiteurController extends AbstractController {
+   + espace(): Response
+   + setfraisforfait(Request $request): Response
+   + addfichefrais(Request $request): Response
+   + setfraishorsforfait(Request $request): Response
+   + removefichefrais(Request $request): Response
+   }
+
+   class SeConnecterController extends AbstractController{
+   + login(Request $request): Response
+   + signoff()
+   }
+
+   class ComptableController extends AbstractController{
+   + espace(): Response
+   + espacevisiteur(Request $request): Response
+   + validatefraisforfait(Request $request): Response
+   + refusefraisforfait(Request $request): Response
+   + validatefraishorsforfait(Request $request): Response
+   + refusefraishorsforfait(Request $request): Response
+   + closefichefrais(Request $request): Response
+   }
+
+   abstract class AbstractController implements ServiceSubscriberInterface{
+   - protected $container
+
+   + setContainer(ContainerInterface $container): ?ContainerInterface
+   # getParameter(string $name)
+   + <u>getSubscribedServices()</u>
+   }
+
+   interface ServiceSubscriberInterface{
+   }
+
+   class ServiceEntityRepository extends EntityRepository implements ServiceEntityRepositoryInterface{
+   + this()
+   }
+
+   class EntityRepository implements ObjectRepository, Selectable{
+       # $_entityName
+       # $_em
+       # $_class
+       - <u>$inflector</u>
+
+       + this()
+       + createQueryBuilder($alias, $indexBy = null): $this->_em->createQueryBuilder()->select($alias)->from($this->_entityName, $alias, $indexBy)
+       + createNamedQuery($queryName): $this->_em->createQuery($this->_class->getNamedQuery($queryName))
+       + createNativeNamedQuery($queryName): $this->_em->createNativeQuery($queryMapping['query'], $rsm)
+       + clear()
+       + find($id, $lockMode = null, $lockVersion = null): $this->_em->find($this->_entityName, $id, $lockMode, $lockVersion)
+       + findAll(): $this->findBy([])
+       + findBy(array $criteria, ?array $orderBy = null, $limit = null, $offset = null): $persister->loadAll($criteria, $orderBy, $limit, $offset)
+       + findOneBy(array $criteria, ?array $orderBy = null): $persister->load($criteria, null, null, [], null, 1, $orderBy)
+       + count(array $criteria): $this->_em->getUnitOfWork()->getEntityPersister($this->_entityName)->count($criteria)
+       + __call($method, $arguments): $this->resolveMagicCall()
+       # getEntityName(): $this->_entityName
+       + getClassName(): $this->getEntityName()
+       # getEntityManager(): $this->_em
+       # getClassMetadata(): $this->_class
+       + matching(Criteria $criteria): new LazyCriteriaCollection($persister, $criteria)
+       - resolveMagicCall(string $method, string $by, array $arguments): $this->$method([$fieldName => $arguments[0]], ...array_slice($arguments, 1))
+   }
+}
+@enduml
+
+@startuml
+
+skinparam nodesep 75
+skinparam ranksep 75
+hide empty members
+
+skinparam noteFontSize 10
+skinparam noteFontName Courier
+
+skinparam monochrome  false
+skinparam shadowing   false
+skinparam roundcorner 10
+skinparam linetype polyline
+
+skinparam class {
+    BackgroundColor GhostWhite
+    ArrowColor      Gray
+    BorderColor     Black
+    fontColor       CornFlowerBlue
+}
+
+skinparam state {
+    BackgroundColor GhostWhite
+    ArrowColor      Gray
+    BorderColor     Black
+    fontColor       CornFlowerBlue
+}
+
+skinparam object {
+    BackgroundColor GhostWhite
+    ArrowColor      Gray
+    BorderColor     Black
+}
+
+skinparam package<<Layout>> {
+  borderColor         Transparent
+  backgroundColor     Transparent
+  fontColor           Transparent
+  stereotypeFontColor Transparent
+}
+
+skinparam sequence {
+	ArrowColor                  Gray
+  LifeLineBorderColor         CornFlowerBlue
+  LifeLineBackgroundColor     GhostWhite
+	ParticipantBorderColor      CornFlowerBlue
+	ParticipantBackgroundColor  GhostWhite
+  ActorBorderColor            CornFlowerBlue
+	ActorBackgroundColor        GhostWhite
+  BoxBorderColor         CornFlowerBlue
+  BoxBackgroundColor         GhostWhite
+}
+
+skinparam stereotypeCBackgroundColor CornflowerBlue
+
+hide footbox
+hide empty members
+
+skinparam note {
+ BackgroundColor GhostWhite
+ BorderColor         CornFlowerBlue
+}
+
+package Modele {
+    package Entity {
+        class Comptable <<Entity>> #TECHNOLOGY {
+            - $idcomptable: ?string #strategy="IDENTITY"
+            - $nom: ?string
+            - $prenom: ?string
+            - $login: ?string
+            - $mdp: ?string
+
+            + this(): Comptable
+            + getIdcomptable(): ?string
+            + getNom(): ?string
+            + setNom(string: $nom): self
+            + getPrenom(): ?string
+            + setPrenom(string: $prenom): self
+            + getLogin():  string
+            + setLogin(string: $login): self
+            + getMdp(): ?string
+            + setMdp(string: $mdp): self
+        }
+
+        class Visiteur <<Entity>> #TECHNOLOGY {
+            - $idvisiteur: ?string #strategy="IDENTITY"
+            - $nom: ?string
+            - $prenom: ?string
+            - $login: ?string
+            - $mdp: ?string
+            - $adresse: ?string
+            - $cp: ?int
+            - $ville: ?string
+            - $dateembauche: DateTime
+
+            + this(): Visiteur
+            + getIdvisiteur(): ?string
+            + setIdvisiteur(string: $idvisiteur): self
+            + getNom(): ?string
+            + setNom(string: $nom): self
+            + getPrenom(): ?string
+            + setPrenom(string: $prenom): self
+            + getLogin(): ?string
+            + setLogin(string: $login): self
+            + getMdp(): ?string
+            + setMdp(string: $mdp): self
+            + getAdresse(): ?string
+            + setAdresse(string: $adresse): self
+            + getCp(): ?string
+            + setCp(string: $cp): self
+            + getVille(): ?string
+            + setVille(string: $ville): self
+            + getDateembauche(): ?string
+            + setDateembauche(string: $dateembauche): self
+        }
+
+        class Etat <<Entity>> #TECHNOLOGY {
+            - $idetat: ?string #strategy="IDENTITY"
+            - $libelleetat: ?string
+
+            + getIdetat(): ?string
+            + getLibelleetat(): ?string
+            + setLibelleetat(string: $libelleetat): self
+        }
+
+        class Fichefrais <<Entity>> #TECHNOLOGY {
+            - $idfichefrais: ?string #strategy="IDENTITY"
+            - $idvisiteur: Visiteur #targetEntity="Visiteur"
+            - $date: DateTime
+            - $nbjustificatifs: ?int
+            - $montantvalide: ?string
+            - $datemodif: DateTime
+            - $idetat: Etat #targetEntity="Etat"
+
+            + this(): Fichefrais
+            + getIdfichefrais(): ?string
+            + setIdfichefrais(string: $idfichefrais): self
+            + getDate(): DateTimeInterface
+            + setDate(DateTimeInterface: $date): self
+            + getNbjustificatifs(): ?int
+            + setNbjustificatifs(int: $nbjustificatifs): self
+            + getMontantvalide(): ?string
+            + setMontantvalide(string: $montantvalide): self
+            + getDatemodif(): DateTime
+            + setDatemodif(DateTimeInterface: $date): self
+            + getIdetat(): Etat
+            + setIdetat(Etat: $idetat): self
+            + getIdvisiteur(): Visiteur
+            + setIdvisiteur(Visiteur: $idvisiteur): self
+            + <u>convertObjectClass(Array: $array, Class: $final_class): $final_class::class/u>
+        }
+
+        class Fraisforfait <<Entity>> #TECHNOLOGY {
+            - $idfraisforfait: ?string #strategy="IDENTITY"
+            - $libellefraisforfait: ?string
+            - $montantfraisforfait: ?string
+
+            + this(): Fraisforfait
+            + getIdfraisforfait(): ?string
+            + getLibellefraisforfait(): ?string
+            + setLibellefraisforfait(string: $libellefraisforfait): self
+            + getMontantfraisforfait(): ?string
+            + setMontantfraisforfait(string: $montantfraisforfait): self
+        }
+
+        class Lignefraisforfait <<Entity>> #TECHNOLOGY {
+            - $idfichefrais: Fichefrais #targetEntity="Fichefrais"
+            - $idfraisforfait: Fraisforfait #targetEntity="Fraisforfait"
+            - $quantité: ?string
+
+             + this(): Lignefraisforfait
+             + getIdfichefrais(): Fichefrais
+             + setIdfichefrais(Fichefrais: $idfichefrais): self
+             + getIdfraisforfait(): Fraisforfait
+             + setIdfraisforfait(Fraisforfait: $idfraisforfait): self
+             + getQuantite(): ?int
+             + setQuantite(int: quantite): self
+             + <u>convertObjectClass(Array: $array, Class: $final_class): $final_class::class</u>
+        }
+
+        class Lignefraishorsforfait <<Entity>> #TECHNOLOGY {
+            - $idlignefraishorsforfait: ?int #strategy="IDENTITY"
+            - $idfichefrais: Fichefrais #targetEntity="Fichefrais"
+            - $libelle: ?string
+            - $date: DateTime
+            - $montant: ?string
+
+            + this(): Lignefraishorsforfait
+            + getIdlignefraishorsforfait(): ?int
+            + setIdlignefraishorsforfait(int: $idlignefraishorsforfait): self
+            + getIdfichefrais(): Fichefrais
+            + setIdfichefrais(Fichefrais: $idfichefrais): self
+            + getLibelle(): ?string
+            + setLibelle(string: $libelle): self
+            + getDate(): DateTimeInterface
+            + setDate(DateTimeInterface: $date): self
+            + getMontant(): ?string
+            + setMontant(string: $montant): self
+        }
+
+          Fichefrais "*leVisiteur"<- -* Visiteur
+          Fichefrais "*idetat"<- -* Etat
+          Lignefraisforfait "*idfichefrais"<- -* Fichefrais
+          Lignefraisforfait "*idfraisforfait" <- -* Fraisforfait
+          Lignefraishorsforfait "*idfichefrais"<- -* Fichefrais
+
+    }
+
+    package Repository {
+        class ComptableRepository <<DOCTRINE>> #TECHNOLOGY extends ServiceEntityRepository implements ObjectRepository {
+        }
+
+        class EtatRepository <<DOCTRINE>> #TECHNOLOGY extends ServiceEntityRepository implements ObjectRepository {
+        }
+
+        class FichefraisRepository <<DOCTRINE>> #TECHNOLOGY extends ServiceEntityRepository implements ObjectRepository {
+        }
+
+        class FraisforfaitRepository <<DOCTRINE>> #TECHNOLOGY extends ServiceEntityRepository implements ObjectRepository {
+        }
+
+        class LignefraisforfaitRepository <<DOCTRINE>> #TECHNOLOGY extends ServiceEntityRepository implements ObjectRepository {
+        }
+
+        class LignefraishorsforfaitRepository <<DOCTRINE>> #TECHNOLOGY extends ServiceEntityRepository implements ObjectRepository {
+        }
+    }
+
+    interface ObjectRepository {
+    + find($id);
+    + findAll();
+    + findBy(array $criteria, ?array $orderBy = null, $limit = null, $offset = null)
+    + findOneBy(array $criteria)
+    + getClassName()
+    }
+}
+
+package Controller {
+   class VisiteurController extends AbstractController {
+   + espace(): Response
+   + setfraisforfait(Request $request): Response
+   + addfichefrais(Request $request): Response
+   + setfraishorsforfait(Request $request): Response
+   + removefichefrais(Request $request): Response
+   }
+
+   class SeConnecterController extends AbstractController{
+   + login(Request $request): Response
+   + signoff()
+   }
+
+   class ComptableController extends AbstractController{
+   + espace(): Response
+   + espacevisiteur(Request $request): Response
+   + validatefraisforfait(Request $request): Response
+   + refusefraisforfait(Request $request): Response
+   + validatefraishorsforfait(Request $request): Response
+   + refusefraishorsforfait(Request $request): Response
+   + closefichefrais(Request $request): Response
+   }
+
+   abstract class AbstractController implements ServiceSubscriberInterface{
+   - protected $container
+
+   + setContainer(ContainerInterface $container): ?ContainerInterface
+   # getParameter(string $name)
+   + <u>getSubscribedServices()</u>
+   }
+
+   interface ServiceSubscriberInterface{
+   }
+
+   class ServiceEntityRepository extends EntityRepository implements ServiceEntityRepositoryInterface{
+   + this()
+   }
+
+   class EntityRepository implements ObjectRepository, Selectable{
+       # $_entityName
+       # $_em
+       # $_class
+       - <u>$inflector</u>
+
+       + this()
+       + createQueryBuilder($alias, $indexBy = null): $this->_em->createQueryBuilder()->select($alias)->from($this->_entityName, $alias, $indexBy)
+       + createNamedQuery($queryName): $this->_em->createQuery($this->_class->getNamedQuery($queryName))
+       + createNativeNamedQuery($queryName): $this->_em->createNativeQuery($queryMapping['query'], $rsm)
+       + clear()
+       + find($id, $lockMode = null, $lockVersion = null): $this->_em->find($this->_entityName, $id, $lockMode, $lockVersion)
+       + findAll(): $this->findBy([])
+       + findBy(array $criteria, ?array $orderBy = null, $limit = null, $offset = null): $persister->loadAll($criteria, $orderBy, $limit, $offset)
+       + findOneBy(array $criteria, ?array $orderBy = null): $persister->load($criteria, null, null, [], null, 1, $orderBy)
+       + count(array $criteria): $this->_em->getUnitOfWork()->getEntityPersister($this->_entityName)->count($criteria)
+       + __call($method, $arguments): $this->resolveMagicCall()
+       # getEntityName(): $this->_entityName
+       + getClassName(): $this->getEntityName()
+       # getEntityManager(): $this->_em
+       # getClassMetadata(): $this->_class
+       + matching(Criteria $criteria): new LazyCriteriaCollection($persister, $criteria)
+       - resolveMagicCall(string $method, string $by, array $arguments): $this->$method([$fieldName => $arguments[0]], ...array_slice($arguments, 1))
+   }
+}
+@enduml
+
+PlantUML version 1.2022.1(Tue Feb 01 19:19:58 CET 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: fr
+Country: FR
+--></g></svg>

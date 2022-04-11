@@ -1,0 +1,239 @@
+@startuml
+!include style/commons.style
+
+package Modele {
+    package Entity {
+        class Comptable <<Entity>> #TECHNOLOGY {
+            - $idcomptable: ?string #strategy="IDENTITY"
+            - $nom: ?string
+            - $prenom: ?string
+            - $login: ?string
+            - $mdp: ?string
+
+            + this(): Comptable
+            + getIdcomptable(): ?string
+            + getNom(): ?string
+            + setNom(string: $nom): self
+            + getPrenom(): ?string
+            + setPrenom(string: $prenom): self
+            + getLogin():  string
+            + setLogin(string: $login): self
+            + getMdp(): ?string
+            + setMdp(string: $mdp): self
+        }
+
+        class Visiteur <<Entity>> #TECHNOLOGY {
+            - $idvisiteur: ?string #strategy="IDENTITY"
+            - $nom: ?string
+            - $prenom: ?string
+            - $login: ?string
+            - $mdp: ?string
+            - $adresse: ?string
+            - $cp: ?int
+            - $ville: ?string
+            - $dateembauche: DateTime
+
+            + this(): Visiteur
+            + getIdvisiteur(): ?string
+            + setIdvisiteur(string: $idvisiteur): self
+            + getNom(): ?string
+            + setNom(string: $nom): self
+            + getPrenom(): ?string
+            + setPrenom(string: $prenom): self
+            + getLogin(): ?string
+            + setLogin(string: $login): self
+            + getMdp(): ?string
+            + setMdp(string: $mdp): self
+            + getAdresse(): ?string
+            + setAdresse(string: $adresse): self
+            + getCp(): ?string
+            + setCp(string: $cp): self
+            + getVille(): ?string
+            + setVille(string: $ville): self
+            + getDateembauche(): ?string
+            + setDateembauche(string: $dateembauche): self
+        }
+
+        class Etat <<Entity>> #TECHNOLOGY {
+            - $idetat: ?string #strategy="IDENTITY"
+            - $libelleetat: ?string
+
+            + getIdetat(): ?string
+            + getLibelleetat(): ?string
+            + setLibelleetat(string: $libelleetat): self
+        }
+
+        class Fichefrais <<Entity>> #TECHNOLOGY {
+            - $idfichefrais: ?string #strategy="IDENTITY"
+            - $idvisiteur: Visiteur #targetEntity="Visiteur"
+            - $date: DateTime
+            - $nbjustificatifs: ?int
+            - $montantvalide: ?string
+            - $datemodif: DateTime
+            - $idetat: Etat #targetEntity="Etat"
+
+            + this(): Fichefrais
+            + getIdfichefrais(): ?string
+            + setIdfichefrais(string: $idfichefrais): self
+            + getDate(): DateTimeInterface
+            + setDate(DateTimeInterface: $date): self
+            + getNbjustificatifs(): ?int
+            + setNbjustificatifs(int: $nbjustificatifs): self
+            + getMontantvalide(): ?string
+            + setMontantvalide(string: $montantvalide): self
+            + getDatemodif(): DateTime
+            + setDatemodif(DateTimeInterface: $date): self
+            + getIdetat(): Etat
+            + setIdetat(Etat: $idetat): self
+            + getIdvisiteur(): Visiteur
+            + setIdvisiteur(Visiteur: $idvisiteur): self
+            + <u>convertObjectClass(Array: $array, Class: $final_class): $final_class::class/u>
+        }
+
+        class Fraisforfait <<Entity>> #TECHNOLOGY {
+            - $idfraisforfait: ?string #strategy="IDENTITY"
+            - $libellefraisforfait: ?string
+            - $montantfraisforfait: ?string
+
+            + this(): Fraisforfait
+            + getIdfraisforfait(): ?string
+            + getLibellefraisforfait(): ?string
+            + setLibellefraisforfait(string: $libellefraisforfait): self
+            + getMontantfraisforfait(): ?string
+            + setMontantfraisforfait(string: $montantfraisforfait): self
+        }
+
+        class Lignefraisforfait <<Entity>> #TECHNOLOGY {
+            - $idfichefrais: Fichefrais #targetEntity="Fichefrais"
+            - $idfraisforfait: Fraisforfait #targetEntity="Fraisforfait"
+            - $quantité: ?string
+
+             + this(): Lignefraisforfait
+             + getIdfichefrais(): Fichefrais
+             + setIdfichefrais(Fichefrais: $idfichefrais): self
+             + getIdfraisforfait(): Fraisforfait
+             + setIdfraisforfait(Fraisforfait: $idfraisforfait): self
+             + getQuantite(): ?int
+             + setQuantite(int: quantite): self
+             + <u>convertObjectClass(Array: $array, Class: $final_class): $final_class::class</u>
+        }
+
+        class Lignefraishorsforfait <<Entity>> #TECHNOLOGY {
+            - $idlignefraishorsforfait: ?int #strategy="IDENTITY"
+            - $idfichefrais: Fichefrais #targetEntity="Fichefrais"
+            - $libelle: ?string
+            - $date: DateTime
+            - $montant: ?string
+
+            + this(): Lignefraishorsforfait
+            + getIdlignefraishorsforfait(): ?int
+            + setIdlignefraishorsforfait(int: $idlignefraishorsforfait): self
+            + getIdfichefrais(): Fichefrais
+            + setIdfichefrais(Fichefrais: $idfichefrais): self
+            + getLibelle(): ?string
+            + setLibelle(string: $libelle): self
+            + getDate(): DateTimeInterface
+            + setDate(DateTimeInterface: $date): self
+            + getMontant(): ?string
+            + setMontant(string: $montant): self
+        }
+
+          Fichefrais "*leVisiteur"<--* Visiteur
+          Fichefrais "*idetat"<--* Etat
+          Lignefraisforfait "*idfichefrais"<--* Fichefrais
+          Lignefraisforfait "*idfraisforfait" <--* Fraisforfait
+          Lignefraishorsforfait "*idfichefrais"<--* Fichefrais
+
+    }
+
+    package Repository {
+        class ComptableRepository <<DOCTRINE>> #TECHNOLOGY extends ServiceEntityRepository implements ObjectRepository {
+        }
+
+        class EtatRepository <<DOCTRINE>> #TECHNOLOGY extends ServiceEntityRepository implements ObjectRepository {
+        }
+
+        class FichefraisRepository <<DOCTRINE>> #TECHNOLOGY extends ServiceEntityRepository implements ObjectRepository {
+        }
+
+        class FraisforfaitRepository <<DOCTRINE>> #TECHNOLOGY extends ServiceEntityRepository implements ObjectRepository {
+        }
+
+        class LignefraisforfaitRepository <<DOCTRINE>> #TECHNOLOGY extends ServiceEntityRepository implements ObjectRepository {
+        }
+
+        class LignefraishorsforfaitRepository <<DOCTRINE>> #TECHNOLOGY extends ServiceEntityRepository implements ObjectRepository {
+        }
+    }
+
+    interface ObjectRepository {
+    + find($id);
+    + findAll();
+    + findBy(array $criteria, ?array $orderBy = null, $limit = null, $offset = null)
+    + findOneBy(array $criteria)
+    + getClassName()
+    }
+}
+
+package Controller {
+   class VisiteurController extends AbstractController {
+   + espace(): Response
+   + setfraisforfait(Request $request): Response
+   + addfichefrais(Request $request): Response
+   + setfraishorsforfait(Request $request): Response
+   + removefichefrais(Request $request): Response
+   }
+
+   class SeConnecterController extends AbstractController{
+   + login(Request $request): Response
+   + signoff()
+   }
+
+   class ComptableController extends AbstractController{
+   + espace(): Response
+   + espacevisiteur(Request $request): Response
+   + validatefraisforfait(Request $request): Response
+   + refusefraisforfait(Request $request): Response
+   + validatefraishorsforfait(Request $request): Response
+   + refusefraishorsforfait(Request $request): Response
+   + closefichefrais(Request $request): Response
+   }
+
+   abstract class AbstractController implements ServiceSubscriberInterface{
+   - protected $container
+
+   + setContainer(ContainerInterface $container): ?ContainerInterface
+   # getParameter(string $name)
+   + <u>getSubscribedServices()</u>
+   }
+
+   class ServiceEntityRepository extends EntityRepository implements ServiceEntityRepositoryInterface{
+   + this()
+   }
+
+   class EntityRepository implements ObjectRepository, Selectable{
+       # $_entityName
+       # $_em
+       # $_class
+       - <u>$inflector</u>
+
+       + this()
+       + createQueryBuilder($alias, $indexBy = null): $this->_em->createQueryBuilder()->select($alias)->from($this->_entityName, $alias, $indexBy)
+       + createNamedQuery($queryName): $this->_em->createQuery($this->_class->getNamedQuery($queryName))
+       + createNativeNamedQuery($queryName): $this->_em->createNativeQuery($queryMapping['query'], $rsm)
+       + clear()
+       + find($id, $lockMode = null, $lockVersion = null): $this->_em->find($this->_entityName, $id, $lockMode, $lockVersion)
+       + findAll(): $this->findBy([])
+       + findBy(array $criteria, ?array $orderBy = null, $limit = null, $offset = null): $persister->loadAll($criteria, $orderBy, $limit, $offset)
+       + findOneBy(array $criteria, ?array $orderBy = null): $persister->load($criteria, null, null, [], null, 1, $orderBy)
+       + count(array $criteria): $this->_em->getUnitOfWork()->getEntityPersister($this->_entityName)->count($criteria)
+       + __call($method, $arguments): $this->resolveMagicCall()
+       # getEntityName(): $this->_entityName
+       + getClassName(): $this->getEntityName()
+       # getEntityManager(): $this->_em
+       # getClassMetadata(): $this->_class
+       + matching(Criteria $criteria): new LazyCriteriaCollection($persister, $criteria)
+       - resolveMagicCall(string $method, string $by, array $arguments): $this->$method([$fieldName => $arguments[0]], ...array_slice($arguments, 1))
+   }
+}
+@enduml

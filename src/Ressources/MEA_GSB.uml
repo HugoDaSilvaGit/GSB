@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>d519d6d8-8a50-4859-bc00-c40b67d64ece.SCHEMA:gsb</OriginalElement>
+  <nodes>
+    <node x="571.5" y="322.0">d519d6d8-8a50-4859-bc00-c40b67d64ece.TABLE:gsb.Etat</node>
+    <node x="556.5" y="73.0">d519d6d8-8a50-4859-bc00-c40b67d64ece.TABLE:gsb.Comptable</node>
+    <node x="34.5" y="311.0">d519d6d8-8a50-4859-bc00-c40b67d64ece.TABLE:gsb.LigneFraisForfait</node>
+    <node x="318.5" y="-15.0">d519d6d8-8a50-4859-bc00-c40b67d64ece.TABLE:gsb.Visiteur</node>
+    <node x="291.0" y="267.0">d519d6d8-8a50-4859-bc00-c40b67d64ece.TABLE:gsb.FicheFrais</node>
+    <node x="286.5" y="509.0">d519d6d8-8a50-4859-bc00-c40b67d64ece.TABLE:gsb.LigneFraisHorsForfait</node>
+    <node x="-3.5" y="151.0">d519d6d8-8a50-4859-bc00-c40b67d64ece.TABLE:gsb.FraisForfait</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="d519d6d8-8a50-4859-bc00-c40b67d64ece.TABLE:gsb.LigneFraisHorsForfait" target="d519d6d8-8a50-4859-bc00-c40b67d64ece.TABLE:gsb.FicheFrais" relationship="REFERENCES">
+      <point x="0.0" y="-71.0" />
+      <point x="0.0" y="93.0" />
+    </edge>
+    <edge source="d519d6d8-8a50-4859-bc00-c40b67d64ece.TABLE:gsb.LigneFraisForfait" target="d519d6d8-8a50-4859-bc00-c40b67d64ece.TABLE:gsb.FicheFrais" relationship="REFERENCES">
+      <point x="85.5" y="0.0" />
+      <point x="-109.0" y="0.0" />
+    </edge>
+    <edge source="d519d6d8-8a50-4859-bc00-c40b67d64ece.TABLE:gsb.LigneFraisForfait" target="d519d6d8-8a50-4859-bc00-c40b67d64ece.TABLE:gsb.FraisForfait" relationship="REFERENCES">
+      <point x="0.0" y="-49.0" />
+      <point x="0.0" y="49.0" />
+    </edge>
+    <edge source="d519d6d8-8a50-4859-bc00-c40b67d64ece.TABLE:gsb.FicheFrais" target="d519d6d8-8a50-4859-bc00-c40b67d64ece.TABLE:gsb.Visiteur" relationship="REFERENCES">
+      <point x="0.0" y="-93.0" />
+      <point x="0.0" y="115.0" />
+    </edge>
+    <edge source="d519d6d8-8a50-4859-bc00-c40b67d64ece.TABLE:gsb.FicheFrais" target="d519d6d8-8a50-4859-bc00-c40b67d64ece.TABLE:gsb.Etat" relationship="REFERENCES">
+      <point x="109.0" y="0.0" />
+      <point x="-88.5" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Channel" zoom="1.0" showDependencies="false" x="372.5" y="408.0" />
+  <SelectedNodes>
+    <node>d519d6d8-8a50-4859-bc00-c40b67d64ece.TABLE:gsb.Comptable</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Comments</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+
