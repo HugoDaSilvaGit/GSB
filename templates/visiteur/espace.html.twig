@@ -849,12 +849,19 @@
                                                         <p class="control">
                                                             <input class="is-hidden" type="text" value="{{unefichefrais.idfichefrais}}" name="idfichefrais">
                                                             <div class="button-div">
-                                                            <button id="buttonsaveac{{loop.index}}" class="button is-small is-success is-full" type="submit">
+                                                            <button id="buttonsavefhfac{{loop.index}}" class="button is-small is-success is-full" type="submit">
                                                                 <span>ENREGISTRER</span>
                                                                 <span class="icon is-on-left">
                                                                     <i class="fas fa-save"></i>
                                                                 </span>
                                                             </button>
+                                                            <script>
+                                                                $(document).ready(function(){
+                                                                    $('#buttonsavefhfac{{loop.index}}').click(function (){
+                                                                        $('#buttonsavefhfac{{loop.index}}').removeClass('').addClass('is-loading');
+                                                                    });
+                                                                });
+                                                            </script>
                                                             </div>
                                                         </p>
                                                     </div>
