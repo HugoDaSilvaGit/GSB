@@ -91,6 +91,20 @@ CREATE TABLE IF NOT EXISTS `Visiteur` (
 -- Structure de la table `FicheFrais`
 --
 
+CREATE TABLE IF NOT EXISTS `Cvvehicule` (
+    `idcv` int(3) NOT NULL UNIQUE,
+    `cv` int(1) NOT NULL,
+    `distancemaxcv` int(6) NOT NULL,
+    `facteurcv` decimal(10,3) NOT NULL,
+    `constantecv` int(4) DEFAULT 0,
+    PRIMARY KEY (`idcv`)
+) ENGINE=InnoDB;
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `FicheFrais`
+--
+
 CREATE TABLE IF NOT EXISTS `FicheFrais` (
   `idFicheFrais` char(12) NOT NULL UNIQUE,
   `idVisiteur` char(4) NOT NULL,
@@ -99,9 +113,11 @@ CREATE TABLE IF NOT EXISTS `FicheFrais` (
   `montantValide` decimal(10,2) DEFAULT NULL,
   `dateModif` date DEFAULT NULL,
   `idEtat` char(2) DEFAULT 'CR',
+  `idcv` int(3) NOT NULL,
   PRIMARY KEY (`idFicheFrais`),
   FOREIGN KEY (`idEtat`) REFERENCES Etat(`idEtat`),
-  FOREIGN KEY (`idVisiteur`) REFERENCES Visiteur(`idVisiteur`)
+  FOREIGN KEY (`idVisiteur`) REFERENCES Visiteur(`idVisiteur`),
+  FOREIGN KEY (`idcv`) REFERENCES Cvvehicule(`idcv`)
 ) ENGINE=InnoDB;
 
 
@@ -128,7 +144,7 @@ CREATE TABLE IF NOT EXISTS `LigneFraisForfait` (
 
 CREATE TABLE IF NOT EXISTS `LigneFraisHorsForfait` (
   `idFicheFrais` char(12) NOT NULL,
-  `idLigneFraisHorsForfait` int(2) NOT NULL UNIQUE,
+  `idLigneFraisHorsForfait` int(2) NOT NULL,
   `libelle` varchar(100) DEFAULT NULL,
   `date` date DEFAULT NULL,
   `montant` decimal(10,2) DEFAULT NULL,

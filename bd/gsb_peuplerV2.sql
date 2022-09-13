@@ -33,17 +33,22 @@ INSERT INTO gsb.FraisForfait (idFraisForfait, libelleFraisForfait, montantFraisF
 INSERT INTO gsb.FraisForfait (idFraisForfait, libelleFraisForfait, montantFraisForfait) VALUES ('NUI', 'Nuitée Hôtel', 80.00);
 INSERT INTO gsb.FraisForfait (idFraisForfait, libelleFraisForfait, montantFraisForfait) VALUES ('REP', 'Repas Restaurant', 25.00);
 
-INSERT INTO gsb.FicheFrais (idFicheFrais, idVisiteur, date, nbJustificatifs, montantValide, dateModif, idEtat) VALUES ('a131-202008', 'a131', '2020-08-01', null, null, null, 'RB');
-INSERT INTO gsb.FicheFrais (idFicheFrais, idVisiteur, date, nbJustificatifs, montantValide, dateModif, idEtat) VALUES ('a131-202108', 'a131', '2021-08-01', null, null, '2022-03-22', 'RB');
-INSERT INTO gsb.FicheFrais (idFicheFrais, idVisiteur, date, nbJustificatifs, montantValide, dateModif, idEtat) VALUES ('a131-202109', 'a131', '2021-09-01', null, null, '2022-03-22', 'RB');
-INSERT INTO gsb.FicheFrais (idFicheFrais, idVisiteur, date, nbJustificatifs, montantValide, dateModif, idEtat) VALUES ('a131-202110', 'a131', '2021-10-01', null, null, '2022-03-23', 'RB');
-INSERT INTO gsb.FicheFrais (idFicheFrais, idVisiteur, date, nbJustificatifs, montantValide, dateModif, idEtat) VALUES ('a131-202111', 'a131', '2021-11-01', null, null, '2022-03-23', 'VA');
-INSERT INTO gsb.FicheFrais (idFicheFrais, idVisiteur, date, nbJustificatifs, montantValide, dateModif, idEtat) VALUES ('a131-202112', 'a131', '2021-12-01', null, null, '2022-03-22', 'CR');
-INSERT INTO gsb.FicheFrais (idFicheFrais, idVisiteur, date, nbJustificatifs, montantValide, dateModif, idEtat) VALUES ('a131-202201', 'a131', '2022-01-01', null, null, null, 'CR');
-INSERT INTO gsb.FicheFrais (idFicheFrais, idVisiteur, date, nbJustificatifs, montantValide, dateModif, idEtat) VALUES ('a131-202203', 'a131', '2022-03-01', null, null, null, 'CR');
-INSERT INTO gsb.FicheFrais (idFicheFrais, idVisiteur, date, nbJustificatifs, montantValide, dateModif, idEtat) VALUES ('a131-202204', 'a131', '2022-04-01', null, null, '2022-04-07', 'CR');
-INSERT INTO gsb.FicheFrais (idFicheFrais, idVisiteur, date, nbJustificatifs, montantValide, dateModif, idEtat) VALUES ('a17-202109', 'a17', '2021-10-01', null, null, null, 'RB');
-INSERT INTO gsb.FicheFrais (idFicheFrais, idVisiteur, date, nbJustificatifs, montantValide, dateModif, idEtat) VALUES ('a55-202110', 'a55', '2021-10-01', null, null, null, 'RB');
+INSERT INTO gsb.Cvvehicule (idcv, cv, distancemaxcv, facteurcv, constantecv) VALUES (1,4,5000,0.52,0);
+INSERT INTO gsb.Cvvehicule (idcv, cv, distancemaxcv, facteurcv, constantecv) VALUES (2,4,20000,0.294,1147);
+INSERT INTO gsb.Cvvehicule (idcv, cv, distancemaxcv, facteurcv, constantecv) VALUES (3,5,5000,0.548,0);
+INSERT INTO gsb.Cvvehicule (idcv, cv, distancemaxcv, facteurcv, constantecv) VALUES (4,5,20000,0.308,1200);
+
+INSERT INTO gsb.FicheFrais (idFicheFrais, idVisiteur, date, nbJustificatifs, montantValide, dateModif, idEtat, idcv) VALUES ('a131-202008', 'a131', '2020-08-01', null, null, null, 'RB',1);
+INSERT INTO gsb.FicheFrais (idFicheFrais, idVisiteur, date, nbJustificatifs, montantValide, dateModif, idEtat, idcv) VALUES ('a131-202108', 'a131', '2021-08-01', null, null, '2022-03-22', 'RB',1);
+INSERT INTO gsb.FicheFrais (idFicheFrais, idVisiteur, date, nbJustificatifs, montantValide, dateModif, idEtat, idcv) VALUES ('a131-202109', 'a131', '2021-09-01', null, null, '2022-03-22', 'RB',2);
+INSERT INTO gsb.FicheFrais (idFicheFrais, idVisiteur, date, nbJustificatifs, montantValide, dateModif, idEtat, idcv) VALUES ('a131-202110', 'a131', '2021-10-01', null, null, '2022-03-23', 'RB',3);
+INSERT INTO gsb.FicheFrais (idFicheFrais, idVisiteur, date, nbJustificatifs, montantValide, dateModif, idEtat, idcv) VALUES ('a131-202111', 'a131', '2021-11-01', null, null, '2022-03-23', 'VA',4);
+INSERT INTO gsb.FicheFrais (idFicheFrais, idVisiteur, date, nbJustificatifs, montantValide, dateModif, idEtat, idcv) VALUES ('a131-202112', 'a131', '2021-12-01', null, null, '2022-03-22', 'CR',2);
+INSERT INTO gsb.FicheFrais (idFicheFrais, idVisiteur, date, nbJustificatifs, montantValide, dateModif, idEtat, idcv) VALUES ('a131-202201', 'a131', '2022-01-01', null, null, null, 'CR',2);
+INSERT INTO gsb.FicheFrais (idFicheFrais, idVisiteur, date, nbJustificatifs, montantValide, dateModif, idEtat, idcv) VALUES ('a131-202203', 'a131', '2022-03-01', null, null, null, 'CR',1);
+INSERT INTO gsb.FicheFrais (idFicheFrais, idVisiteur, date, nbJustificatifs, montantValide, dateModif, idEtat, idcv) VALUES ('a131-202204', 'a131', '2022-04-01', null, null, '2022-04-07', 'CR',1);
+INSERT INTO gsb.FicheFrais (idFicheFrais, idVisiteur, date, nbJustificatifs, montantValide, dateModif, idEtat, idcv) VALUES ('a17-202109', 'a17', '2021-10-01', null, null, null, 'RB',1);
+INSERT INTO gsb.FicheFrais (idFicheFrais, idVisiteur, date, nbJustificatifs, montantValide, dateModif, idEtat, idcv) VALUES ('a55-202110', 'a55', '2021-10-01', null, null, null, 'RB',1);
 
 INSERT INTO gsb.LigneFraisForfait (idFicheFrais, idFraisForfait, quantite) VALUES ('a131-202008', 'ETP', 7);
 INSERT INTO gsb.LigneFraisForfait (idFicheFrais, idFraisForfait, quantite) VALUES ('a131-202108', 'ETP', 7);

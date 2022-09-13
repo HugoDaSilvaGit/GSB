@@ -12,7 +12,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Fichefrais
  *
- * @ORM\Table(name="FicheFrais", uniqueConstraints={@ORM\UniqueConstraint(name="idFicheFrais", columns={"idFicheFrais"})}, indexes={@ORM\Index(name="idEtat", columns={"idEtat"}), @ORM\Index(name="idVisiteur", columns={"idVisiteur"})})
+ * @ORM\Table(name="FicheFrais", uniqueConstraints={@ORM\UniqueConstraint(name="idFicheFrais", columns={"idFicheFrais"})}, indexes={@ORM\Index(name="idEtat", columns={"idEtat"}), @ORM\Index(name="idVisiteur", columns={"idVisiteur"}), @ORM\Index(name="idcv", columns={"idcv"})})
  * @ORM\Entity(repositoryClass="App\Repository\FichefraisRepository")
  */
 class Fichefrais
@@ -73,6 +73,16 @@ class Fichefrais
      * })
      */
     private $idvisiteur;
+
+    /**
+     * @var \Cvvehicule
+     *
+     * @ORM\ManyToOne(targetEntity="Cvvehicule")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="idcv", referencedColumnName="idcv")
+     * })
+     */
+    private $idcv;
 
 
     /**
@@ -196,6 +206,22 @@ class Fichefrais
 
         return $this;
     }
+
+    public function getIdcv(): ?Cvvehicule
+    {
+        return $this->idcv;
+    }
+
+    /**
+     * @param \Cvvehicule $idcv
+     */
+    public function setIdcv(Cvvehicule $idcv): self
+    {
+        $this->idcv = $idcv;
+
+        return $this;
+    }
+
 
     static function convertObjectClass($array, $final_class) {
         return unserialize(sprintf('O:%d:"%s"%s', strlen($final_class), $final_class, strstr(serialize($array), ':')
