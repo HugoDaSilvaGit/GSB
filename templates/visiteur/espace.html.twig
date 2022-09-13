@@ -65,31 +65,38 @@
                     {% endif %}
                 {% endfor %}
                 {% for flashMessage in app.session.flashbag.get('setfraisforfaitSTATE') %}
-                {% if flashMessage == 'setfraisforfaitSUCCESS' %}
-                    <div class="notification is-small is-success has-border-radius-40 animate__animated animate__fadeInDown">
-                        <button class="delete is-centered"></button>
-                        <div class="content is-small">
-                            <strong>Frais forfait mis à jour; </strong><strong>Fiche de frais MODIFIÉE</strong> avec <strong>SUCCÉS.</strong>
+                    {% if flashMessage == 'setfraisforfaitSUCCESS' %}
+                        <div class="notification is-small is-success has-border-radius-40 animate__animated animate__fadeInDown">
+                            <button class="delete is-centered"></button>
+                            <div class="content is-small">
+                                <strong>Frais forfait mis à jour; </strong><strong>Fiche de frais MODIFIÉE</strong> avec <strong>SUCCÉS.</strong>
+                            </div>
                         </div>
-                    </div>
-                {% elseif flashMessage == 'setfraisforfaitERROR' %}
-                    <div class="notification is-small is-danger has-border-radius-40 animate__animated animate__fadeInDown">
-                        <button class="delete is-centered"></button>
-                        <div class="content is-small">
-                            <strong>Fiche de frais INEXISTANTE</strong> ou <strong>NON MODIFIABLE.</strong>
+                    {% elseif flashMessage == 'setfraisforfaitERROR' %}
+                        <div class="notification is-small is-danger has-border-radius-40 animate__animated animate__fadeInDown">
+                            <button class="delete is-centered"></button>
+                            <div class="content is-small">
+                                <strong>Fiche de frais INEXISTANTE</strong> ou <strong>NON MODIFIABLE.</strong>
+                            </div>
                         </div>
-                    </div>
-                {% endif %}
+                    {% endif %}
                 {% endfor %}
                 {% for flashMessage in app.session.flashbag.get('addfichefraisSTATE') %}
-                {% if flashMessage == 'addfichefraisSUCCESS' %}
-                    <div class="notification is-small is-success has-border-radius-40 animate__animated animate__fadeInDown">
-                        <button class="delete is-centered"></button>
-                        <div class="content is-small">
-                            <strong>Fiche de frais AJOUTÉE</strong> avec <strong>SUCCÉS.</strong>
+                    {% if flashMessage == 'addfichefraisSUCCESS' %}
+                        <div class="notification is-small is-success has-border-radius-40 animate__animated animate__fadeInDown">
+                            <button class="delete is-centered"></button>
+                            <div class="content is-small">
+                                <strong>Fiche de frais AJOUTÉE</strong> avec <strong>SUCCÉS.</strong>
+                            </div>
                         </div>
-                    </div>
-                {% endif %}
+                    {% elseif flashMessage == 'addfichefraisERROR' %}
+                        <div class="notification is-small is-danger has-border-radius-40 animate__animated animate__fadeInDown">
+                            <button class="delete is-centered"></button>
+                            <div class="content is-small">
+                                <strong>AJOUT</strong> de la fiche de frais<strong> IMPOSSIBLE </strong>, veuillez rentrer des données <strong>CONFORMES.</strong>
+                            </div>
+                        </div>
+                    {% endif %}
                 {% endfor %}
                 {% for flashMessage in app.session.flashbag.get('setfraishorsforfaitSTATE') %}
                     {% if flashMessage == 'setfraishorsforfaitSUCCESS' %}
@@ -182,137 +189,139 @@
                     <div id="divac0" class="column is-3-desktop is-6-tablet is-12-mobile is-hidden">
                         <div id="boxac0" class="box is-transparent is-like-une-fiche-frais animate__animated animate__fadeIn">
                             <div class="column has-background-transparent">
-                                <div class="columns">
-                                    <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px is-month-bar has-background-success">
-                                        <span class="icon">
-                                            <i class="fas fa-file-invoice"></i>
-                                        </span>
-                                        <span>
-                                            <strong>{{yearmonth | format_datetime(pattern="MMMM", locale="fr") | upper}} {{ year }}</strong>
-                                        </span>
-                                        <span class="icon">
-                                            <i class="fas fa-lock-open"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="columns is-flex-mobile">
-                                    <div class="column has-finest-padding-1024px">
-                                        <button id="modifyac0" class="button is-fullwidth is-small is-success has-border-radius-40">
+                                <div class="is-relative">
+                                    <div class="columns">
+                                        <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px is-month-bar has-background-success">
                                             <span class="icon">
-                                                <i class="fas fa-edit"></i>
+                                                <i class="fas fa-file-invoice"></i>
                                             </span>
-                                            <span>EN COURS</span>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="columns">
-                                    <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
-                                        <div class="tags has-addons">
-                                            <span class="tag has-text-bigger has-no-border-radius-top-left is-a-bit-transparent">
-                                                <span class="icon">
-                                                    <i class="fas fa-calendar-alt"></i>
-                                                </span>
-                                                <span>Période</span>
+                                            <span>
+                                                <strong>{{yearmonth | format_datetime(pattern="MMMM", locale="fr") | upper}} {{ year }}</strong>
                                             </span>
-                                            <span class="tag has-text-bigger has-no-border-radius-top-right is-a-lot-transparent">
-                                                ---
+                                            <span class="icon">
+                                                <i class="fas fa-lock-open"></i>
                                             </span>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="columns">
-                                    <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
-                                        <div class="tags has-addons">
-                                            <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
+                                    <div class="columns is-flex-mobile">
+                                        <div class="column has-finest-padding-1024px">
+                                            <button id="modifyac0" class="button is-fullwidth is-small is-success has-border-radius-40">
                                                 <span class="icon">
-                                                    <i class="fas fa-money-check"></i>
+                                                    <i class="fas fa-edit"></i>
                                                 </span>
-                                                <span>Justificatifs</span>
-                                            </span>
-                                            <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">
-                                                aucuns
-                                            </span>
+                                                <span>EN COURS</span>
+                                            </button>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="columns">
-                                    <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
-                                        <div class="tags has-addons">
-                                            <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
-                                                <span class="icon">
-                                                    <i class="fas fa-check-square"></i>
+                                    <div class="columns">
+                                        <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
+                                            <div class="tags has-addons">
+                                                <span class="tag has-text-bigger has-no-border-radius-top-left is-a-bit-transparent">
+                                                    <span class="icon">
+                                                        <i class="fas fa-calendar-alt"></i>
+                                                    </span>
+                                                    <span>Période</span>
                                                 </span>
-                                                <span>Montant validé</span>
-                                            </span>
-                                            <span class="tag has-text-bigger has-text-success has-no-border-radius is-a-lot-transparent">
-                                                <strong>
-                                                    + 0 €
-                                                </strong>
-                                            </span>
+                                                <span class="tag has-text-bigger has-no-border-radius-top-right is-a-lot-transparent">
+                                                    ---
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="columns">
-                                    <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
-                                        <div class="tags has-addons">
-                                            <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
-                                                <span class="icon">
-                                                    <i class="fas fa-hourglass-half"></i>
+                                    <div class="columns">
+                                        <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
+                                            <div class="tags has-addons">
+                                                <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
+                                                    <span class="icon">
+                                                        <i class="fas fa-money-check"></i>
+                                                    </span>
+                                                    <span>Justificatifs</span>
                                                 </span>
-                                                <span>État</span>
-                                            </span>
-                                            <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">
-                                                Non enregistré
-                                            </span>
+                                                <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">
+                                                    aucuns
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="columns">
-                                    <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
-                                        <div class="tags has-addons">
-                                            <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
-                                                <span class="icon">
-                                                    <i class="fas fa-file-alt"></i>
+                                    <div class="columns">
+                                        <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
+                                            <div class="tags has-addons">
+                                                <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
+                                                    <span class="icon">
+                                                        <i class="fas fa-check-square"></i>
+                                                    </span>
+                                                    <span>Montant validé</span>
                                                 </span>
-                                                <span>N° Fiche</span>
-                                            </span>
-                                            <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">
-                                                ---
-                                            </span>
+                                                <span class="tag has-text-bigger has-text-success has-no-border-radius is-a-lot-transparent">
+                                                    <strong>
+                                                        + 0 €
+                                                    </strong>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="columns">
-                                    <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
-                                        <div class="tags has-addons">
-                                            <span class="tag has-text-bigger is-dark has-no-border-radius">
-                                                <span class="icon">
-                                                    <i class="fas fa-money-bill"></i>
+                                    <div class="columns">
+                                        <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
+                                            <div class="tags has-addons">
+                                                <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
+                                                    <span class="icon">
+                                                        <i class="fas fa-hourglass-half"></i>
+                                                    </span>
+                                                    <span>État</span>
                                                 </span>
-                                                <span>Frais</span>
-                                            </span>
-                                            <span class="tag has-text-bigger has-text-danger has-no-border-radius is-a-lot-transparent">
-                                                <strong>
-                                                - 0 €
-                                                </strong>
-                                            </span>
+                                                <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">
+                                                    Non enregistré
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="columns">
-                                    <div class="column has-2px-padding-top has-finest-padding-1024px">
-                                        <div class="tags has-addons">
-                                            <span class="tag has-text-bigger is-dark has-no-border-radius-bottom-left">
-                                                <span class="icon">
-                                                    <i class="fas fa-money-bill"></i>
+                                    <div class="columns">
+                                        <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
+                                            <div class="tags has-addons">
+                                                <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
+                                                    <span class="icon">
+                                                        <i class="fas fa-file-alt"></i>
+                                                    </span>
+                                                    <span>N° Fiche</span>
                                                 </span>
-                                                <span>Hors frais</span>
-                                            </span>
-                                            <span class="tag has-text-bigger has-text-danger has-border-radius-bottom-right is-a-lot-transparent">
-                                                <strong>
+                                                <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">
+                                                    ---
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="columns">
+                                        <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
+                                            <div class="tags has-addons">
+                                                <span class="tag has-text-bigger is-dark has-no-border-radius">
+                                                    <span class="icon">
+                                                        <i class="fas fa-money-bill"></i>
+                                                    </span>
+                                                    <span>Frais</span>
+                                                </span>
+                                                <span class="tag has-text-bigger has-text-danger has-no-border-radius is-a-lot-transparent">
+                                                    <strong>
                                                     - 0 €
-                                                </strong>
-                                            </span>
+                                                    </strong>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="columns">
+                                        <div class="column has-2px-padding-top has-finest-padding-1024px">
+                                            <div class="tags has-addons">
+                                                <span class="tag has-text-bigger is-dark has-no-border-radius-bottom-left">
+                                                    <span class="icon">
+                                                        <i class="fas fa-money-bill"></i>
+                                                    </span>
+                                                    <span>Hors frais</span>
+                                                </span>
+                                                <span class="tag has-text-bigger has-text-danger has-border-radius-bottom-right is-a-lot-transparent">
+                                                    <strong>
+                                                        - 0 €
+                                                    </strong>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -321,10 +330,18 @@
                                         <div class="box is-like-hero-background animate__animated animate__fadeIn">
                                             <div class="column has-no-padding has-background-transparent">
                                                 <form onsubmit="return formSubmit(this);" class="has-text-left" action="{{path('addfichefrais')}}" method="POST">
+                                                    <label class="label is-small is-aligned has-white-space-nowrap">Tarifs des distance des CV Fiscaux de votre Véhicule</label>
+                                                    <div class="select is-small">
+                                                        <select name="cv" required="required">
+                                                            {% for uncvvehicule in cvvehicule %}
+                                                                <option value="{{uncvvehicule.idcv}}">{{uncvvehicule.cv}} CV et plus de {{uncvvehicule.distancemaxcv}} km</option>
+                                                            {% endfor %}
+                                                        </select>
+                                                    </div>
                                                     <div class="field has-addons">
                                                         <p class="control has-icons-left is-expanded">
                                                             <label class="label is-small is-aligned has-white-space-nowrap">Forfait Etape</label>
-                                                            <input class="input is-small" type="number" placeholder="ETP" name="qtETP" required="required">
+                                                            <input class="input is-small has-border-radius-left" type="number" placeholder="ETP" name="qtETP" required="required">
                                                             <span class="icon is-aligned is-small is-left">
                                                                     <i class="fas fa-edit"></i>
                                                                 </span>
@@ -351,7 +368,7 @@
                                                                 </span>
                                                         </p>
                                                         <p class="control">
-                                                            <button id="buttonsaveac0" class="button is-small is-primary has-no-margin-bottom" type="submit">
+                                                            <button id="buttonsaveac0" class="button is-small is-success has-no-margin-bottom" type="submit">
                                                                 <SPAN>ENREGISTRER</SPAN>
                                                                 <span id="" class="icon is-on-left">
                                                                         <i class="fas fa-save"></i>
@@ -377,22 +394,12 @@
                                                         return false;
                                                     }
                                                 </script>
-                                                <form class="has-text-left" action="" method="POST">
-                                                    {% if unefichefrais.lignesfraishorsforfait is defined %}
-                                                        {% for unelignefraishorsforfait in unefichefrais.lignesfraishorsforfait %}
-                                                            {{ unelignefraishorsforfait.libelle }}
-                                                            - {{ unelignefraishorsforfait.montant }} €
-                                                        {% endfor %}
-                                                    {% else %}
-                                                        - 0 €
-                                                    {% endif %}
-                                                </form>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="columns">
-                                    <div class="column has-no-padding-bottom has-2px-padding-top has-6px-padding-top-on-mobile">
+                                    <div class="column has-14px-padding-top has-no-padding-bottom has-6px-padding-top-on-mobile">
                                         <span class="icon is-small">
                                             <i id="arrowac0" class="fas fa-chevron-down fa-lg grow cursor-pointer"></i>
                                         </span>
@@ -409,7 +416,7 @@
 
                                                             $('i[id*="arrowac"]').not("unique").fadeOut(150, function () {
                                                                 $('i[id*="arrowac"]').not("unique").removeClass('fa-chevron-up');
-                                                                $('div[id*="boxac"]').not("unique").addClass('is-transparent').removeClass('is-asked-to-be-modified-past');
+                                                                $('div[id*="boxac"]').not("unique").addClass('is-transparent').removeClass('is-asked-to-be-modified-past').height(280);
 
                                                                 $('div[id*="columnac"]').not("unique").fadeOut(150, function () {
                                                                     $('div[id*="columnac"]').not("unique").addClass('is-hidden');
@@ -429,8 +436,8 @@
 
                                                                 $('#arrowac0').fadeIn(150, function () {
                                                                     $('#arrowac0').addClass('fa-chevron-up');
-                                                                    $('#boxac0').addClass('is-asked-to-be-modified-current');
-                                                                    $('#boxac0').removeClass('is-transparent');
+                                                                    var newHeight = 340+$("#columnac0").height();
+                                                                    $('#boxac0').addClass('is-asked-to-be-modified-current').height(newHeight).removeClass('is-transparent');
 
                                                                     $("#arrowac0").removeClass('unique');
                                                                     $('#boxac0').removeClass('unique');
@@ -443,7 +450,7 @@
                                                         $('#arrowac0').fadeOut(150, function () {
                                                             $('#arrowac0').removeClass('fa-chevron-up');
                                                             $('#boxac0').addClass('is-transparent');
-                                                            $('#boxac0').removeClass('is-asked-to-be-modified-current');
+                                                            $('#boxac0').removeClass('is-asked-to-be-modified-current').height(280);
 
                                                             $('#columnac0').fadeOut(150, function () {
                                                                 $('#columnac0').addClass('is-hidden');
@@ -456,58 +463,6 @@
                                                     }
                                                 });
                                             });
-                                            /*function openBox""""(){
-                                                const theBox = document.getElementById("box"""");
-                                                const theArrow = document.getElementById("arrow""""");
-                                                const theModifyingColumn = document.getElementById("column"""")
-                                                const allModifyingColumnsShown = document.getElementsByClassName("id_modfyingColumns column is-12")
-                                                const allBoxesDown = document.getElementsByClassName("id-boxes box is-like-une-fiche-frais is-asked-to-be-modified");
-                                                const allArrowsUp = document.getElementsByClassName("id_arrows fas fa-chevron-up fa-lg grow");
-                                                if(theArrow.classList.contains("fa-chevron-down")){
-                                                    [].forEach.call(allBoxesDown, function(oneBoxDown){
-                                                        oneBoxDown.classList.remove("is-asked-to-be-modified");
-                                                        oneBoxDown.classList.add("is-transparent")
-                                                    });
-                                                    [].forEach.call(allArrowsUp,function(oneArrowUp){
-                                                        setTimeout(() => {
-                                                            oneArrowUp.classList.remove("fa-chevron-up");
-                                                        }, 200);
-                                                        setTimeout(() => {
-                                                            oneArrowUp.classList.add("fa-chevron-down");
-                                                            oneArrowUp.classList.add("fadeIn");
-                                                        }, 300);
-                                                        });
-                                                    [].forEach.call(allModifyingColumnsShown,function(oneModifyingColumnDown){
-                                                        oneModifyingColumnDown.classList.add("is-hidden");
-                                                    });
-                                                    theBox.classList.remove("is-transparent")
-                                                    theBox.classList.add("is-asked-to-be-modified");
-                                                    setTimeout(() => {
-                                                        theArrow.classList.remove("fa-chevron-down");
-                                                        theArrow.classList.remove("fadeIn");
-                                                    }, 200);
-                                                    setTimeout(() => {
-                                                        theArrow.classList.add("fa-chevron-up");
-                                                        theModifyingColumn.classList.remove("is-hidden")
-                                                    }, 300);
-                                                }
-                                                else{
-                                                    theModifyingColumn.classList.add("fadeOut")
-                                                    setTimeout(()=>{
-                                                        theModifyingColumn.classList.remove("fadeOut")
-                                                        theBox.classList.remove("is-asked-to-be-modified");
-                                                        theBox.classList.add("is-transparent")
-                                                        theModifyingColumn.classList.add("is-hidden")
-                                                    }, 300)
-                                                    setTimeout(() => {
-                                                        theArrow.classList.remove("fa-chevron-up");
-                                                    }, 500);
-                                                    setTimeout(() => {
-                                                        theArrow.classList.add("fa-chevron-down");
-                                                        theArrow.classList.add("fadeIn");
-                                                    }, 500);
-                                                }
-                                            }*/
                                         </script>
                                     </div>
                                 </div>
@@ -555,180 +510,180 @@
                                             </div>
                                         </div>
                                     </div>
-                                <div class="columns">
-                                    <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px is-month-bar has-background-success">
-                                        <span class="icon">
-                                            <i class="fas fa-file-invoice"></i>
-                                        </span>
-                                        <span>
-                                            <strong>{{unefichefrais.date | format_datetime(pattern="MMMM", locale="fr") | upper}} {{ unefichefrais.date | format_datetime(pattern="YYYY") }}</strong>
-                                        </span>
-                                        <span class="icon">
-                                            <i class="fas fa-lock-open"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="columns is-flex-mobile">
-                                    <div class="column has-finest-padding-1024px has-6px-margin-right is-bigger-for-button-1024px">
-                                        <button id="modifyac{{loop.index}}" class="button is-fullwidth is-small is-success has-border-radius-40">
+                                    <div class="columns">
+                                        <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px is-month-bar has-background-success">
                                             <span class="icon">
-                                                <i class="fas fa-edit"></i>
+                                                <i class="fas fa-file-invoice"></i>
                                             </span>
-                                            <span>MODIFIER</span>
-                                        </button>
-                                    </div>
-                                    <div class="column has-finest-padding-1024px has-6px-margin-left is-bigger-for-button-1024px">
-                                        <button id="buttondeleteac{{loop.index}}" class=" button is-fullwidth is-small is-danger has-border-radius-40">
-                                            <span>SUPPRIMER</span>
-                                            <script>
-                                                $(document).ready(function(){
-                                                    $('#buttondeleteac{{loop.index}}').click(function (){
-                                                        $('#backgrounddeleteac{{loop.index}}').removeClass('is-hidden').fadeIn(300, function (){});
-                                                    })
-                                                    $('#buttoncancelac{{loop.index}}').click(function (){
-                                                        $('#backgrounddeleteac{{loop.index}}').fadeOut(150, function (){
-                                                            $('#backgrounddeleteac{{loop.index}}').addClass('is-hidden');
-                                                        });
-                                                    })
-                                                })
-                                            </script>
-                                            <script>
-                                                $(document).ready(function(){
-                                                    $('#buttondeletevalidateac{{loop.index}}').click(function (){
-                                                        $('#buttondeletevalidateac{{loop.index}}').removeClass('').addClass('is-loading');
-                                                    })
-                                                })
-                                            </script>
-                                            <script>
-                                                function formSubmit(form) {
-                                                    document.getElementById("buttondeletevalidateac{{loop.index}}");
-                                                    setTimeout(function() {
-                                                        form.submit();
-                                                    }, 1000);  // 1 secondes
-                                                    return false;
-                                                }
-                                            </script>
+                                            <span>
+                                                <strong>{{unefichefrais.date | format_datetime(pattern="MMMM", locale="fr") | upper}} {{ unefichefrais.date | format_datetime(pattern="YYYY") }}</strong>
+                                            </span>
                                             <span class="icon">
-                                                <i class="fas fa-trash-alt"></i>
-                                            </span>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="columns">
-                                    <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
-                                        <div class="tags has-addons">
-                                            <span class="tag has-text-bigger has-no-border-radius-top-left is-a-bit-transparent">
-                                                <span class="icon">
-                                                    <i class="fas fa-calendar-alt"></i>
-                                                </span>
-                                                <span>Période</span>
-                                            </span>
-                                            <span class="tag has-text-bigger has-no-border-radius-top-right is-a-lot-transparent">
-                                                {{unefichefrais.date | date("m/Y")}}
+                                                <i class="fas fa-lock-open"></i>
                                             </span>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="columns">
-                                    <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
-                                        <div class="tags has-addons">
-                                            <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
+                                    <div class="columns is-flex-mobile">
+                                        <div class="column has-finest-padding-1024px has-6px-margin-right is-bigger-for-button-1024px">
+                                            <button id="modifyac{{loop.index}}" class="button is-fullwidth is-small is-success has-border-radius-40">
                                                 <span class="icon">
-                                                    <i class="fas fa-money-check"></i>
+                                                    <i class="fas fa-edit"></i>
                                                 </span>
-                                                <span>Justificatifs</span>
-                                            </span>
-                                            <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">
-                                                {{unefichefrais.nbjustificatifs | default("aucuns")}}
-                                            </span>
+                                                <span>MODIFIER</span>
+                                            </button>
+                                        </div>
+                                        <div class="column has-finest-padding-1024px has-6px-margin-left is-bigger-for-button-1024px">
+                                            <button id="buttondeleteac{{loop.index}}" class=" button is-fullwidth is-small is-danger has-border-radius-40">
+                                                <span>SUPPRIMER</span>
+                                                <script>
+                                                    $(document).ready(function(){
+                                                        $('#buttondeleteac{{loop.index}}').click(function (){
+                                                            $('#backgrounddeleteac{{loop.index}}').removeClass('is-hidden').fadeIn(300, function (){});
+                                                        })
+                                                        $('#buttoncancelac{{loop.index}}').click(function (){
+                                                            $('#backgrounddeleteac{{loop.index}}').fadeOut(150, function (){
+                                                                $('#backgrounddeleteac{{loop.index}}').addClass('is-hidden');
+                                                            });
+                                                        })
+                                                    })
+                                                </script>
+                                                <script>
+                                                    $(document).ready(function(){
+                                                        $('#buttondeletevalidateac{{loop.index}}').click(function (){
+                                                            $('#buttondeletevalidateac{{loop.index}}').removeClass('').addClass('is-loading');
+                                                        })
+                                                    })
+                                                </script>
+                                                <script>
+                                                    function formSubmit(form) {
+                                                        document.getElementById("buttondeletevalidateac{{loop.index}}");
+                                                        setTimeout(function() {
+                                                            form.submit();
+                                                        }, 1000);  // 1 secondes
+                                                        return false;
+                                                    }
+                                                </script>
+                                                <span class="icon">
+                                                    <i class="fas fa-trash-alt"></i>
+                                                </span>
+                                            </button>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="columns">
-                                    <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
-                                        <div class="tags has-addons">
-                                            <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
-                                                <span class="icon">
-                                                    <i class="fas fa-check-square"></i>
+                                    <div class="columns">
+                                        <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
+                                            <div class="tags has-addons">
+                                                <span class="tag has-text-bigger has-no-border-radius-top-left is-a-bit-transparent">
+                                                    <span class="icon">
+                                                        <i class="fas fa-calendar-alt"></i>
+                                                    </span>
+                                                    <span>Période</span>
                                                 </span>
-                                                <span>Montant validé</span>
-                                            </span>
-                                            <span class="tag has-text-bigger has-text-success has-no-border-radius is-a-lot-transparent">
-                                                <strong>
-                                                    + {{unefichefrais.montantvalide | default(0)}} €
-                                                </strong>
-                                            </span>
+                                                <span class="tag has-text-bigger has-no-border-radius-top-right is-a-lot-transparent">
+                                                    {{unefichefrais.date | date("m/Y")}}
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="columns">
-                                    <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
-                                        <div class="tags has-addons">
-                                            <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
-                                                <span class="icon">
-                                                    <i class="fas fa-hourglass-half"></i>
+                                    <div class="columns">
+                                        <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
+                                            <div class="tags has-addons">
+                                                <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
+                                                    <span class="icon">
+                                                        <i class="fas fa-money-check"></i>
+                                                    </span>
+                                                    <span>Justificatifs</span>
                                                 </span>
-                                                <span>État</span>
-                                            </span>
-                                            <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">
-                                                {{unefichefrais.idetat.libelleetat}}
-                                            </span>
+                                                <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">
+                                                    {{unefichefrais.nbjustificatifs | default("aucuns")}}
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="columns">
-                                    <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
-                                        <div class="tags has-addons">
-                                            <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
-                                                <span class="icon">
-                                                    <i class="fas fa-file-alt"></i>
+                                    <div class="columns">
+                                        <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
+                                            <div class="tags has-addons">
+                                                <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
+                                                    <span class="icon">
+                                                        <i class="fas fa-check-square"></i>
+                                                    </span>
+                                                    <span>Montant validé</span>
                                                 </span>
-                                                <span>N° Fiche</span>
-                                            </span>
-                                            <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">
-                                                {{unefichefrais.idfichefrais}}
-                                            </span>
+                                                <span class="tag has-text-bigger has-text-success has-no-border-radius is-a-lot-transparent">
+                                                    <strong>
+                                                        + {{unefichefrais.montantvalide | default(0)}} €
+                                                    </strong>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="columns">
-                                    <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
-                                        <div class="tags has-addons">
-                                            <span class="tag has-text-bigger is-dark has-no-border-radius">
-                                                <span class="icon">
-                                                    <i class="fas fa-money-bill"></i>
+                                    <div class="columns">
+                                        <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
+                                            <div class="tags has-addons">
+                                                <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
+                                                    <span class="icon">
+                                                        <i class="fas fa-hourglass-half"></i>
+                                                    </span>
+                                                    <span>État</span>
                                                 </span>
-                                                <span>Frais</span>
-                                            </span>
-                                            <span class="tag has-text-bigger has-text-danger has-no-border-radius is-a-lot-transparent">
-                                                <strong>
-                                                - {{ unefichefrais.montanttotalfraisforfait }} €
-                                                </strong>
-                                            </span>
+                                                <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">
+                                                    {{unefichefrais.idetat.libelleetat}}
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="columns">
-                                    <div class="column has-2px-padding-top has-finest-padding-1024px">
-                                        <div class="tags has-addons">
-                                            <span class="tag has-text-bigger is-dark has-no-border-radius-bottom-left">
-                                                <span class="icon">
-                                                    <i class="fas fa-money-bill"></i>
+                                    <div class="columns">
+                                        <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
+                                            <div class="tags has-addons">
+                                                <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
+                                                    <span class="icon">
+                                                        <i class="fas fa-file-alt"></i>
+                                                    </span>
+                                                    <span>N° Fiche</span>
                                                 </span>
-                                                <span>Hors frais</span>
-                                            </span>
-                                            <span class="tag has-text-bigger has-text-danger has-border-radius-bottom-right is-a-lot-transparent">
-                                                <strong>
-                                                    {% if unefichefrais.montanttotalfraishorsforfait is defined %}
-                                                        - {{ unefichefrais.montanttotalfraishorsforfait }} €
-                                                    {% else %}
-                                                        - 0 €
-                                                    {% endif %}
-                                                </strong>
-                                            </span>
+                                                <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">
+                                                    {{unefichefrais.idfichefrais}}
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                    <div class="columns">
+                                        <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
+                                            <div class="tags has-addons">
+                                                <span class="tag has-text-bigger is-dark has-no-border-radius">
+                                                    <span class="icon">
+                                                        <i class="fas fa-money-bill"></i>
+                                                    </span>
+                                                    <span>Frais</span>
+                                                </span>
+                                                <span class="tag has-text-bigger has-text-danger has-no-border-radius is-a-lot-transparent">
+                                                    <strong>
+                                                    - {{ unefichefrais.montanttotalfraisforfait }} €
+                                                    </strong>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="columns">
+                                        <div class="column has-2px-padding-top has-finest-padding-1024px">
+                                            <div class="tags has-addons">
+                                                <span class="tag has-text-bigger is-dark has-no-border-radius-bottom-left">
+                                                    <span class="icon">
+                                                        <i class="fas fa-money-bill"></i>
+                                                    </span>
+                                                    <span>Hors frais</span>
+                                                </span>
+                                                <span class="tag has-text-bigger has-text-danger has-border-radius-bottom-right is-a-lot-transparent">
+                                                    <strong>
+                                                        {% if unefichefrais.montanttotalfraishorsforfait is defined %}
+                                                            - {{ unefichefrais.montanttotalfraishorsforfait }} €
+                                                        {% else %}
+                                                            - 0 €
+                                                        {% endif %}
+                                                    </strong>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="columns">
                                     <div id="columnac{{loop.index}}" class="column is-12 is-hidden content-fichefrais">
@@ -736,9 +691,15 @@
                                             <div class="column has-no-padding has-background-transparent">
                                                 <form onsubmit="return formSubmit(this);" class="has-text-left" action="{{path('setfraisforfait')}}" method="POST">
                                                     <div class="field has-addons">
+                                                        <p>
+                                                            <label class="label is-small is-aligned has-white-space-nowrap">Tarifs des distance des CV Fiscaux de votre Véhicule</label>
+                                                            <input class="input is-small has-border-radius" type="text"  value="{{ unefichefrais.idcv.cv}} CV et plus de {{ unefichefrais.idcv.distancemaxcv }}" disabled>
+                                                        </p>
+                                                    </div>
+                                                    <div class="field has-addons">
                                                         <p class="control has-icons-left is-expanded">
                                                             <label class="label is-small is-aligned has-white-space-nowrap">{{ unefichefrais.ETP.idfraisforfait.libellefraisforfait }}</label>
-                                                            <input class="input is-small" type="number" placeholder="{{ unefichefrais.ETP.idfraisforfait.idfraisforfait }}" value="{{ unefichefrais.ETP.quantite }}" name="qtETP" required="required">
+                                                            <input class="input is-small has-border-radius-left" type="number" placeholder="{{ unefichefrais.ETP.idfraisforfait.idfraisforfait }}" value="{{ unefichefrais.ETP.quantite }}" name="qtETP" required="required">
                                                             <span class="icon is-aligned is-small is-left">
                                                                     <i class="fas fa-edit"></i>
                                                                 </span>
@@ -751,8 +712,8 @@
                                                             <span class="icon is-aligned is-small is-left">
                                                                     <i class="fas fa-edit"></i>
                                                                 </span>
-                                                            <label class="label is-small is-aligned has-8px-margin-top">{{ unefichefrais.KM.idfraisforfait.montantfraisforfait }}</label>
-                                                            <label class="label is-small is-aligned">{{ unefichefrais.KM.quantite * unefichefrais.KM.idfraisforfait.montantfraisforfait }}</label>
+                                                            <label class="label is-small is-aligned has-8px-margin-top">({{ unefichefrais.KM.quantite }} x {{ unefichefrais.idcv.facteurcv}}) + {{ unefichefrais.idcv.constantecv }}</label>
+                                                            <label class="label is-small is-aligned">{{ unefichefrais.KM.quantite * unefichefrais.idcv.facteurcv + unefichefrais.idcv.constantecv }}</label>
                                                         </p>
                                                         <p class="control has-icons-left is-expanded">
                                                             <label class="label is-small is-aligned has-white-space-nowrap">{{ unefichefrais.NUI.idfraisforfait.libellefraisforfait }}</label>
@@ -792,10 +753,10 @@
                                                             <label class="label is-small is-aligned has-white-space-nowrap">Date</label>
                                                             {% if unefichefrais.lignesfraishorsforfait is defined %}
                                                             {% for unelignefraishorsforfait in unefichefrais.lignesfraishorsforfait %}
-                                                                <input id="inputdatefhfac{{ loop.index }}" class="input is-small has-4px-margin-bottom" type="date" value="{{ unelignefraishorsforfait.date | date("Y-m-d")}}" name="dateFHF[]" required="required">
+                                                                <input id="inputdatefhfac{{ loop.index }}" class="input is-small has-4px-margin-bottom has-border-radius-left" type="date" value="{{ unelignefraishorsforfait.date | date("Y-m-d")}}" name="dateFHF[]" required="required">
                                                             {% endfor %}
                                                             {% else %}
-                                                                <input class="input is-small has-4px-margin-bottom" type="date" placeholder="Date" name="dateFHF[]">
+                                                                <input class="input is-small has-4px-margin-bottom has-border-radius-left" type="date" placeholder="Date" name="dateFHF[]">
                                                             {% endif %}
                                                             <span id="spandatefhfac{{ loop.index }}" class="icon is-aligned is-small is-left">
                                                                 <i class="fas fa-edit"></i>
@@ -895,7 +856,7 @@
                                                     $(document).ready(function (){
                                                         let count = 0;
                                                         $('#buttonaddac{{loop.index}}').click(function (){
-                                                            $('#inputdateac{{loop.index}}').append("<input id='inputdateaddac" + count + "' class='input is-small has-4px-margin-bottom' type='date' placeholder='Date' name='dateFHF[]' required='required'>");
+                                                            $('#inputdateac{{loop.index}}').append("<input id='inputdateaddac" + count + "' class='input is-small has-4px-margin-bottom has-border-radius-left' type='date' placeholder='Date' name='dateFHF[]' required='required'>");
                                                             $('#inputlibelleac{{loop.index}}').append("<input id='inputlibelleaddac" + count + "' class='input is-small has-4px-margin-bottom' type='text' placeholder='Libelle' name='libelleFHF[]' required='required'>");
                                                             $('#inputmontantac{{loop.index}}').append("<input id='inputmontantaddac" + count + "' class='input is-small has-4px-margin-bottom has-right-button' pattern='^\\d*(\\.\\d{0,2})?$' placeholder='00.00' name='montantFHF[]' required='required'><a onclick = 'deletebuttoninputaddac("+ count +")' id='buttoninputaddac"+ count +"' class='button buttondeletefhf is-small is-danger'><span>SUPPRIMER <i class='fas fa-trash-alt'></i></span></a>");
                                                             count++;
@@ -933,9 +894,9 @@
                                 </div>
                                 <div class="columns">
                                     <div class="column has-no-padding-bottom has-14px-padding-top has-6px-padding-top-on-mobile">
-                                    <span class="icon is-small">
-                                    <i id="arrowac{{loop.index}}" class="fas fa-chevron-down fa-lg grow cursor-pointer"></i>
-                                    </span>
+                                        <span class="icon is-small">
+                                            <i id="arrowac{{loop.index}}" class="fas fa-chevron-down fa-lg grow cursor-pointer"></i>
+                                        </span>
                                         <script>
                                             $(document).ready(function() {
                                                 $("#arrowac{{loop.index}},#modifyac{{loop.index}}").click(function () {
@@ -949,7 +910,7 @@
 
                                                             $('i[id*="arrowac"]').not("unique").fadeOut(150, function () {
                                                                 $('i[id*="arrowac"]').not("unique").removeClass('fa-chevron-up');
-                                                                $('div[id*="boxac"]').not("unique").addClass('is-transparent').removeClass('is-asked-to-be-modified-past').removeClass('is-asked-to-be-modified-current');
+                                                                $('div[id*="boxac"]').not("unique").addClass('is-transparent').removeClass('is-asked-to-be-modified-past').removeClass('is-asked-to-be-modified-current').height(280);
 
                                                                 $('div[id*="columnac"]').not("unique").fadeOut(150, function () {
                                                                     $('div[id*="columnac"]').not("unique").addClass('is-hidden');
@@ -968,7 +929,8 @@
 
                                                                 $('#arrowac{{loop.index}}').fadeIn(150, function () {
                                                                     $('#arrowac{{loop.index}}').addClass('fa-chevron-up');
-                                                                    $('#boxac{{loop.index}}').addClass('is-asked-to-be-modified-current').removeClass('is-transparent');
+                                                                    var newHeight = 340+$("#columnac{{loop.index}}").height();
+                                                                    $('#boxac{{loop.index}}').addClass('is-asked-to-be-modified-current').height(newHeight).removeClass('is-transparent');
 
                                                                     $("#arrowac{{loop.index}}").removeClass("unique");
                                                                     $('#boxac{{loop.index}}').removeClass('unique');
@@ -980,7 +942,7 @@
 
                                                         $('#arrowac{{loop.index}}').fadeOut(150, function () {
                                                             $('#arrowac{{loop.index}}').removeClass('fa-chevron-up');
-                                                            $('#boxac{{loop.index}}').addClass('is-transparent').removeClass('is-asked-to-be-modified-current');
+                                                            $('#boxac{{loop.index}}').addClass('is-transparent').removeClass('is-asked-to-be-modified-current').height(280);
 
                                                             $('#columnac{{loop.index}}').fadeOut(150, function () {
                                                                 $('#columnac{{loop.index}}').addClass('is-hidden');
@@ -993,58 +955,6 @@
                                                     }
                                                 });
                                             });
-                                            /*function openBox""""(){
-                                                const theBox = document.getElementById("box"""");
-                                                const theArrow = document.getElementById("arrow""""");
-                                                const theModifyingColumn = document.getElementById("column"""")
-                                                const allModifyingColumnsShown = document.getElementsByClassName("id_modfyingColumns column is-12")
-                                                const allBoxesDown = document.getElementsByClassName("id-boxes box is-like-une-fiche-frais is-asked-to-be-modified");
-                                                const allArrowsUp = document.getElementsByClassName("id_arrows fas fa-chevron-up fa-lg grow");
-                                                if(theArrow.classList.contains("fa-chevron-down")){
-                                                    [].forEach.call(allBoxesDown, function(oneBoxDown){
-                                                        oneBoxDown.classList.remove("is-asked-to-be-modified");
-                                                        oneBoxDown.classList.add("is-transparent")
-                                                    });
-                                                    [].forEach.call(allArrowsUp,function(oneArrowUp){
-                                                        setTimeout(() => {
-                                                            oneArrowUp.classList.remove("fa-chevron-up");
-                                                        }, 200);
-                                                        setTimeout(() => {
-                                                            oneArrowUp.classList.add("fa-chevron-down");
-                                                            oneArrowUp.classList.add("fadeIn");
-                                                        }, 300);
-                                                        });
-                                                    [].forEach.call(allModifyingColumnsShown,function(oneModifyingColumnDown){
-                                                        oneModifyingColumnDown.classList.add("is-hidden");
-                                                    });
-                                                    theBox.classList.remove("is-transparent")
-                                                    theBox.classList.add("is-asked-to-be-modified");
-                                                    setTimeout(() => {
-                                                        theArrow.classList.remove("fa-chevron-down");
-                                                        theArrow.classList.remove("fadeIn");
-                                                    }, 200);
-                                                    setTimeout(() => {
-                                                        theArrow.classList.add("fa-chevron-up");
-                                                        theModifyingColumn.classList.remove("is-hidden")
-                                                    }, 300);
-                                                }
-                                                else{
-                                                    theModifyingColumn.classList.add("fadeOut")
-                                                    setTimeout(()=>{
-                                                        theModifyingColumn.classList.remove("fadeOut")
-                                                        theBox.classList.remove("is-asked-to-be-modified");
-                                                        theBox.classList.add("is-transparent")
-                                                        theModifyingColumn.classList.add("is-hidden")
-                                                    }, 300)
-                                                    setTimeout(() => {
-                                                        theArrow.classList.remove("fa-chevron-up");
-                                                    }, 500);
-                                                    setTimeout(() => {
-                                                        theArrow.classList.add("fa-chevron-down");
-                                                        theArrow.classList.add("fadeIn");
-                                                    }, 500);
-                                                }
-                                            }*/
                                         </script>
                                     </div>
                                 </div>
@@ -1055,371 +965,7 @@
                     <div class="column is-3-desktop is-6-tablet is-12-mobile">
                         <div id="boxac{{loop.index}}" class="box is-transparent is-like-une-fiche-frais animate__animated animate__fadeIn">
                             <div class="column has-background-transparent">
-                                <div class="columns">
-                                    <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px is-month-bar has-background-warning">
-                                        <span class="icon">
-                                            <i class="fas fa-file-invoice"></i>
-                                        </span>
-                                        <span>
-                                            <strong>{{unefichefrais.date | format_datetime(pattern="MMMM", locale="fr") | upper}} {{ unefichefrais.date | format_datetime(pattern="YYYY") }}</strong>
-                                        </span>
-                                        <span class="icon">
-                                            <i class="fas fa-lock"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="columns is-flex-mobile">
-                                    <div class="column has-finest-padding-1024px has-6px-margin-right is-bigger-for-button-1024px">
-                                        <button id="addac{{loop.index}}" class="button is-fullwidth is-small is-info has-border-radius-40">
-                                            <span class="icon is-on-left">
-                                                <i class="fas fa-plus-square"></i>
-                                            </span>
-                                            <span>AJOUTER</span>
-                                        </button>
-                                    </div>
-                                    <div class="column has-finest-padding-1024px has-6px-margin-left is-bigger-for-button-1024px">
-                                        <button id="consultac{{loop.index}}" class="button is-fullwidth is-small is-carefull is-dark has-border-radius-40">
-                                            <span>CONSULTER</span>
-                                            <span class="icon">
-                                                <i class="fas fa-eye"></i>
-                                            </span>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="columns">
-                                    <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
-                                        <div class="tags has-addons">
-                                            <span class="tag has-text-bigger has-no-border-radius-top-left is-a-bit-transparent">
-                                                <span class="icon">
-                                                    <i class="fas fa-calendar-alt"></i>
-                                                </span>
-                                                <span>Période</span>
-                                            </span>
-                                            <span class="tag has-text-bigger has-no-border-radius-top-right is-a-lot-transparent">
-                                                {{unefichefrais.date | date("m/Y")}}
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="columns">
-                                    <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
-                                        <div class="tags has-addons">
-                                            <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
-                                                <span class="icon">
-                                                    <i class="fas fa-money-check"></i>
-                                                </span>
-                                                <span>Justificatifs</span>
-                                            </span>
-                                            <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">
-                                                {{unefichefrais.nbjustificatifs | default("aucuns")}}
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="columns">
-                                    <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
-                                        <div class="tags has-addons">
-                                            <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
-                                                <span class="icon">
-                                                    <i class="fas fa-check-square"></i>
-                                                </span>
-                                                <span>Montant validé</span>
-                                            </span>
-                                            <span class="tag has-text-bigger has-text-success has-no-border-radius is-a-lot-transparent">
-                                                <strong>
-                                                    + {{unefichefrais.montantvalide | default(0)}} €
-                                                </strong>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="columns">
-                                    <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
-                                        <div class="tags has-addons">
-                                            <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
-                                                <span class="icon">
-                                                    <i class="fas fa-hourglass-half"></i>
-                                                </span>
-                                                <span>État</span>
-                                            </span>
-                                            <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">
-                                                {{unefichefrais.idetat.libelleetat}}
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="columns">
-                                    <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
-                                        <div class="tags has-addons">
-                                            <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
-                                                <span class="icon">
-                                                    <i class="fas fa-file-alt"></i>
-                                                </span>
-                                                <span>N° Fiche</span>
-                                            </span>
-                                            <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">
-                                                {{unefichefrais.idfichefrais}}
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="columns">
-                                    <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
-                                        <div class="tags has-addons">
-                                            <span class="tag has-text-bigger is-dark has-no-border-radius">
-                                                <span class="icon">
-                                                    <i class="fas fa-money-bill"></i>
-                                                </span>
-                                                <span>Frais</span>
-                                            </span>
-                                            <span class="tag has-text-bigger has-text-danger has-no-border-radius is-a-lot-transparent">
-                                                <strong>
-                                                    - {{ unefichefrais.montanttotalfraisforfait }} €
-                                                </strong>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="columns">
-                                    <div class="column has-2px-padding-top has-finest-padding-1024px">
-                                        <div class="tags has-addons">
-                                            <span class="tag has-text-bigger is-dark has-no-border-radius-bottom-left">
-                                                <span class="icon">
-                                                    <i class="fas fa-money-bill"></i>
-                                                </span>
-                                                <span>Hors frais</span>
-                                            </span>
-                                            <span class="tag has-text-bigger has-text-danger has-border-radius-bottom-right is-a-lot-transparent">
-                                                <strong>
-                                                    {% if unefichefrais.montanttotalfraishorsforfait is defined %}
-                                                        - {{ unefichefrais.montanttotalfraishorsforfait }} €
-                                                    {% else %}
-                                                        - 0 €
-                                                    {% endif %}
-                                                </strong>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="columns">
-                                    <div id="columnac{{loop.index}}" class="column is-12 is-hidden content-fichefrais">
-                                        <div class="box is-like-hero-background animate__animated animate__fadeIn">
-                                            <div class="column has-no-padding has-background-transparent">
-                                                <form onsubmit="return formSubmit(this);" class="has-text-left" action="{{path('setfraisforfait')}}" method="POST">
-                                                    <div class="field has-addons">
-                                                        <p class="control has-icons-left is-expanded">
-                                                            <label class="label is-small is-aligned has-white-space-nowrap">{{ unefichefrais.ETP.idfraisforfait.libellefraisforfait }}</label>
-                                                            <input class="input is-small" type="number" placeholder="{{ unefichefrais.ETP.idfraisforfait.idfraisforfait }}" value="{{ unefichefrais.ETP.quantite }}" name="qtETP" required="required">
-                                                            <span class="icon is-aligned is-small is-left">
-                                                                    <i class="fas fa-edit"></i>
-                                                                </span>
-                                                            <label class="label is-small is-aligned has-8px-margin-top">{{ unefichefrais.ETP.idfraisforfait.montantfraisforfait }}</label>
-                                                            <label class="label is-small is-aligned">{{ unefichefrais.ETP.quantite * unefichefrais.ETP.idfraisforfait.montantfraisforfait }}</label>
-                                                        </p>
-                                                        <p class="control has-icons-left is-expanded">
-                                                            <label class="label is-small is-aligned has-white-space-nowrap">{{ unefichefrais.KM.idfraisforfait.libellefraisforfait }}</label>
-                                                            <input class="input is-small" type="number" placeholder="{{ unefichefrais.KM.idfraisforfait.idfraisforfait }}" value="{{ unefichefrais.KM.quantite }}" name="qtKM" required="required">
-                                                            <span class="icon is-aligned is-small is-left">
-                                                                    <i class="fas fa-edit"></i>
-                                                                </span>
-                                                            <label class="label is-small is-aligned has-8px-margin-top">{{ unefichefrais.KM.idfraisforfait.montantfraisforfait }}</label>
-                                                            <label class="label is-small is-aligned">{{ unefichefrais.KM.quantite * unefichefrais.KM.idfraisforfait.montantfraisforfait }}</label>
-                                                        </p>
-                                                        <p class="control has-icons-left is-expanded">
-                                                            <label class="label is-small is-aligned has-white-space-nowrap">{{ unefichefrais.NUI.idfraisforfait.libellefraisforfait }}</label>
-                                                            <input class="input is-small" type="number" placeholder="{{ unefichefrais.NUI.idfraisforfait.idfraisforfait }}" value="{{ unefichefrais.NUI.quantite }}" name="qtNUI" required="required">
-                                                            <span class="icon is-aligned is-small is-left">
-                                                                    <i class="fas fa-edit"></i>
-                                                                </span>
-                                                            <label class="label is-small is-aligned has-8px-margin-top">{{ unefichefrais.NUI.idfraisforfait.montantfraisforfait }}</label>
-                                                            <label class="label is-small is-aligned">{{ unefichefrais.NUI.quantite * unefichefrais.NUI.idfraisforfait.montantfraisforfait }}</label>
-                                                        </p>
-                                                        <p class="control has-icons-left is-expanded">
-                                                            <label class="label is-small is-aligned has-white-space-nowrap">{{ unefichefrais.REP.idfraisforfait.libellefraisforfait }}</label>
-                                                            <input class="input is-small" type="number" placeholder="{{ unefichefrais.REP.idfraisforfait.idfraisforfait }}" value="{{ unefichefrais.REP.quantite }}" name="qtREP" required="required">
-                                                            <span class="icon is-aligned is-small is-left">
-                                                                    <i class="fas fa-edit"></i>
-                                                                </span>
-                                                            <label class="label is-small is-aligned has-8px-margin-top">{{ unefichefrais.REP.idfraisforfait.montantfraisforfait }}</label>
-                                                            <label class="label is-small is-aligned">{{ unefichefrais.REP.quantite * unefichefrais.REP.idfraisforfait.montantfraisforfait }}</label>
-                                                        </p>
-                                                        <p class="control">
-                                                            <input class="is-hidden" type="text" value="{{unefichefrais.idfichefrais}}" name="idfichefrais">
-                                                            <button id="buttonsaveac{{loop.index}}" class="button is-small is-primary has-no-margin-bottom" type="submit" disabled>
-                                                                <SPAN>ENREGISTRER</SPAN>
-                                                                <span id="" class="icon is-on-left">
-                                                                        <i class="fas fa-save"></i>
-                                                                    </span>
-                                                            </button>
-                                                            <label class="label is-small is-aligned has-8px-margin-top">Montant</label>
-                                                            <label class="label is-small is-aligned">Total</label>
-                                                        </p>
-                                                    </div>
-                                                    <hr>
-                                                </form>
-                                                <script>
-                                                    $(document).ready(function(){
-                                                        $('#buttonsaveac{{loop.index}}').click(function (){
-                                                            $('#buttonsaveac{{loop.index}}').removeClass('').addClass('is-loading');
-                                                        })
-                                                    })
-                                                </script>
-                                                <script>
-                                                    function formSubmit(form) {
-                                                        document.getElementById("buttonsaveac{{loop.index}}");
-                                                        setTimeout(function() {
-                                                            form.submit();
-                                                        }, 1000);  // 1 secondes
-                                                        return false;
-                                                    }
-                                                </script>
-                                                <form class="has-text-left" action="" method="POST">
-                                                    {% if unefichefrais.lignesfraishorsforfait is defined %}
-                                                        {% for unelignefraishorsforfait in unefichefrais.lignesfraishorsforfait %}
-                                                            {{ unelignefraishorsforfait.libelle }}
-                                                            - {{ unelignefraishorsforfait.montant }} €
-                                                        {% endfor %}
-                                                    {% else %}
-                                                        - 0 €
-                                                    {% endif %}
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="columns">
-                                    <div class="column has-no-padding-bottom has-2px-padding-top has-6px-padding-top-on-mobile">
-                                        <span class="icon is-small">
-                                        <i id="arrowac{{loop.index}}" class="fas fa-chevron-down fa-lg grow cursor-pointer"></i>
-                                        </span>
-                                        <script>
-                                            $(document).ready(function() {
-                                                $("#arrowac{{loop.index}},#addac{{ loop.index }},#consultac{{loop.index}}").click(function () {
-                                                    if ($("#arrowac{{loop.index}}").hasClass("fa-chevron-down")) {
-
-                                                        $("#arrowac{{loop.index}}").addClass("unique");
-                                                        $('#boxac{{loop.index}}').addClass('unique');
-                                                        $('#columnac{{loop.index}}').addClass('unique');
-
-                                                        if($('i[id*="arrowac"]').not("unique").hasClass('fa-chevron-up')){
-
-                                                            $('i[id*="arrowac"]').not("unique").fadeOut(150, function () {
-                                                                $('i[id*="arrowac"]').not("unique").removeClass('fa-chevron-up');
-                                                                $('div[id*="boxac"]').not("unique").addClass('is-transparent').removeClass('is-asked-to-be-modified-past').removeClass('is-asked-to-be-modified-current');
-
-                                                                $('div[id*="columnac"]').not(".unique").fadeOut(150, function () {
-                                                                    $('div[id*="columnac"]').not(".unique").addClass('is-hidden');
-
-                                                                    $('i[id*="arrowac"]').not(".unique").fadeIn(150, function () {
-                                                                        $('i[id*="arrowac"]').not(".unique").addClass('fa-chevron-down');
-                                                                    });
-                                                                });
-                                                            });
-                                                        }
-
-                                                        $('#arrowac{{loop.index}}').fadeOut(150, function () {
-                                                            $('#arrowac{{loop.index}}').removeClass('fa-chevron-down');
-
-                                                            $('#columnac{{loop.index}}').fadeIn(150, function (){
-                                                                $('#columnac{{loop.index}}').removeClass('is-hidden');
-
-                                                                $('#arrowac{{loop.index}}').fadeIn(150, function () {
-                                                                    $('#arrowac{{loop.index}}').addClass('fa-chevron-up');
-                                                                    $('#boxac{{loop.index}}').addClass('is-asked-to-be-modified-past').removeClass('is-transparent');
-
-                                                                    $("#arrowac{{loop.index}}").removeClass("unique");
-                                                                    $('#boxac{{loop.index}}').removeClass('unique');
-                                                                    $('#columnac{{loop.index}}').removeClass('unique');
-                                                                });
-                                                            });
-                                                        });
-                                                    } else {
-
-                                                        $('#arrowac{{loop.index}}').fadeOut(150, function () {
-                                                            $('#arrowac{{loop.index}}').removeClass('fa-chevron-up');
-                                                            $('#boxac{{loop.index}}').addClass('is-transparent').removeClass('is-asked-to-be-modified-past');
-
-                                                            $('#columnac{{loop.index}}').fadeOut(150, function () {
-                                                                $('#columnac{{loop.index}}').addClass('is-hidden');
-
-                                                                $('#arrowac{{loop.index}}').fadeIn(150, function () {
-                                                                    $('#arrowac{{loop.index}}').addClass('fa-chevron-down');
-                                                                });
-                                                            });
-                                                        });
-                                                    }
-                                                });
-                                            });
-                                            /*function openBox""""(){
-                                                const theBox = document.getElementById("box"""");
-                                                const theArrow = document.getElementById("arrow""""");
-                                                const theModifyingColumn = document.getElementById("column"""")
-                                                const allModifyingColumnsShown = document.getElementsByClassName("id_modfyingColumns column is-12")
-                                                const allBoxesDown = document.getElementsByClassName("id-boxes box is-like-une-fiche-frais is-asked-to-be-modified");
-                                                const allArrowsUp = document.getElementsByClassName("id_arrows fas fa-chevron-up fa-lg grow");
-                                                if(theArrow.classList.contains("fa-chevron-down")){
-                                                    [].forEach.call(allBoxesDown, function(oneBoxDown){
-                                                        oneBoxDown.classList.remove("is-asked-to-be-modified");
-                                                        oneBoxDown.classList.add("is-transparent")
-                                                    });
-                                                    [].forEach.call(allArrowsUp,function(oneArrowUp){
-                                                        setTimeout(() => {
-                                                            oneArrowUp.classList.remove("fa-chevron-up");
-                                                        }, 200);
-                                                        setTimeout(() => {
-                                                            oneArrowUp.classList.add("fa-chevron-down");
-                                                            oneArrowUp.classList.add("fadeIn");
-                                                        }, 300);
-                                                        });
-                                                    [].forEach.call(allModifyingColumnsShown,function(oneModifyingColumnDown){
-                                                        oneModifyingColumnDown.classList.add("is-hidden");
-                                                    });
-                                                    theBox.classList.remove("is-transparent")
-                                                    theBox.classList.add("is-asked-to-be-modified");
-                                                    setTimeout(() => {
-                                                        theArrow.classList.remove("fa-chevron-down");
-                                                        theArrow.classList.remove("fadeIn");
-                                                    }, 200);
-                                                    setTimeout(() => {
-                                                        theArrow.classList.add("fa-chevron-up");
-                                                        theModifyingColumn.classList.remove("is-hidden")
-                                                    }, 300);
-                                                }
-                                                else{
-                                                    theModifyingColumn.classList.add("fadeOut")
-                                                    setTimeout(()=>{
-                                                        theModifyingColumn.classList.remove("fadeOut")
-                                                        theBox.classList.remove("is-asked-to-be-modified");
-                                                        theBox.classList.add("is-transparent")
-                                                        theModifyingColumn.classList.add("is-hidden")
-                                                    }, 300)
-                                                    setTimeout(() => {
-                                                        theArrow.classList.remove("fa-chevron-up");
-                                                    }, 500);
-                                                    setTimeout(() => {
-                                                        theArrow.classList.add("fa-chevron-down");
-                                                        theArrow.classList.add("fadeIn");
-                                                    }, 500);
-                                                }
-                                            }*/
-                                        </script>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {% endif %}
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-        <div id="columnpast" class="columns is-10 is-centered is-multiline is-hidden">
-            <div class="column is-12">
-                <div class="columns is-multiline">
-                    {% for unefichefrais in fichesfraisanneepasse %}
-                        <div class="column is-3-desktop is-6-tablet is-12-mobile">
-                            <div id="boxap{{loop.index}}" class="box is-transparent is-like-une-fiche-frais animate__animated animate__fadeIn">
-                                <div class="column has-background-transparent">
+                                <div class="is-relative">
                                     <div class="columns">
                                         <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px is-month-bar has-background-warning">
                                             <span class="icon">
@@ -1435,7 +981,7 @@
                                     </div>
                                     <div class="columns is-flex-mobile">
                                         <div class="column has-finest-padding-1024px has-6px-margin-right is-bigger-for-button-1024px">
-                                            <button id="addap{{loop.index}}" class="button is-fullwidth is-small is-info has-border-radius-40">
+                                            <button id="addac{{loop.index}}" class="button is-fullwidth is-small is-info has-border-radius-40">
                                                 <span class="icon is-on-left">
                                                     <i class="fas fa-plus-square"></i>
                                                 </span>
@@ -1443,7 +989,7 @@
                                             </button>
                                         </div>
                                         <div class="column has-finest-padding-1024px has-6px-margin-left is-bigger-for-button-1024px">
-                                            <button id="consultap{{loop.index}}" class="button is-fullwidth is-small is-carefull is-dark has-border-radius-40">
+                                            <button id="consultac{{loop.index}}" class="button is-fullwidth is-small is-carefull is-dark has-border-radius-40">
                                                 <span>CONSULTER</span>
                                                 <span class="icon">
                                                     <i class="fas fa-eye"></i>
@@ -1566,15 +1112,403 @@
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="columns">
+                                    <div id="columnac{{loop.index}}" class="column is-12 is-hidden content-fichefrais">
+                                        <div class="box is-like-hero-background animate__animated animate__fadeIn">
+                                            <div class="column has-no-padding has-background-transparent">
+                                                <form onsubmit="" class="has-text-left" action="" method="POST">
+                                                    <div class="field has-addons">
+                                                        <p>
+                                                            <label class="label is-small is-aligned has-white-space-nowrap">Tarifs des distance des CV Fiscaux de votre Véhicule</label>
+                                                            <input class="input is-small has-border-radius" type="text"  value="{{ unefichefrais.idcv.cv}} CV et plus de {{ unefichefrais.idcv.distancemaxcv }}" disabled>
+                                                        </p>
+                                                    </div>
+                                                    <div class="field has-addons">
+                                                        <p class="control has-icons-left is-expanded">
+                                                            <label class="label is-small is-aligned has-white-space-nowrap">{{ unefichefrais.ETP.idfraisforfait.libellefraisforfait }}</label>
+                                                            <input class="input is-small has-border-radius-left" type="number" placeholder="{{ unefichefrais.ETP.idfraisforfait.idfraisforfait }}" value="{{ unefichefrais.ETP.quantite }}" name="qtETP" required="required" disabled>
+                                                            <span class="icon is-aligned is-small is-left">
+                                                                    <i class="fas fa-edit"></i>
+                                                                </span>
+                                                            <label class="label is-small is-aligned has-8px-margin-top">{{ unefichefrais.ETP.idfraisforfait.montantfraisforfait }}</label>
+                                                            <label class="label is-small is-aligned">{{ unefichefrais.ETP.quantite * unefichefrais.ETP.idfraisforfait.montantfraisforfait }}</label>
+                                                        </p>
+                                                        <p class="control has-icons-left is-expanded">
+                                                            <label class="label is-small is-aligned has-white-space-nowrap">{{ unefichefrais.KM.idfraisforfait.libellefraisforfait }}</label>
+                                                            <input class="input is-small" type="number" placeholder="{{ unefichefrais.KM.idfraisforfait.idfraisforfait }}" value="{{ unefichefrais.KM.quantite }}" name="qtKM" required="required" disabled>
+                                                            <span class="icon is-aligned is-small is-left">
+                                                                    <i class="fas fa-edit"></i>
+                                                                </span>
+                                                            <label class="label is-small is-aligned has-8px-margin-top">({{ unefichefrais.KM.quantite }} x {{ unefichefrais.idcv.facteurcv}}) + {{ unefichefrais.idcv.constantecv }}</label>
+                                                            <label class="label is-small is-aligned">{{ unefichefrais.KM.quantite * unefichefrais.idcv.facteurcv + unefichefrais.idcv.constantecv }}</label>
+                                                        </p>
+                                                        <p class="control has-icons-left is-expanded">
+                                                            <label class="label is-small is-aligned has-white-space-nowrap">{{ unefichefrais.NUI.idfraisforfait.libellefraisforfait }}</label>
+                                                            <input class="input is-small" type="number" placeholder="{{ unefichefrais.NUI.idfraisforfait.idfraisforfait }}" value="{{ unefichefrais.NUI.quantite }}" name="qtNUI" required="required" disabled>
+                                                            <span class="icon is-aligned is-small is-left">
+                                                                    <i class="fas fa-edit"></i>
+                                                                </span>
+                                                            <label class="label is-small is-aligned has-8px-margin-top">{{ unefichefrais.NUI.idfraisforfait.montantfraisforfait }}</label>
+                                                            <label class="label is-small is-aligned">{{ unefichefrais.NUI.quantite * unefichefrais.NUI.idfraisforfait.montantfraisforfait }}</label>
+                                                        </p>
+                                                        <p class="control has-icons-left is-expanded">
+                                                            <label class="label is-small is-aligned has-white-space-nowrap">{{ unefichefrais.REP.idfraisforfait.libellefraisforfait }}</label>
+                                                            <input class="input is-small" type="number" placeholder="{{ unefichefrais.REP.idfraisforfait.idfraisforfait }}" value="{{ unefichefrais.REP.quantite }}" name="qtREP" required="required" disabled>
+                                                            <span class="icon is-aligned is-small is-left">
+                                                                    <i class="fas fa-edit"></i>
+                                                                </span>
+                                                            <label class="label is-small is-aligned has-8px-margin-top">{{ unefichefrais.REP.idfraisforfait.montantfraisforfait }}</label>
+                                                            <label class="label is-small is-aligned">{{ unefichefrais.REP.quantite * unefichefrais.REP.idfraisforfait.montantfraisforfait }}</label>
+                                                        </p>
+                                                        <p class="control">
+                                                            <input class="is-hidden" type="text" value="{{unefichefrais.idfichefrais}}" name="idfichefrais" disabled>
+                                                            <button id="buttonsaveac{{loop.index}}" class="button is-small is-success has-no-margin-bottom" type="submit" disabled>
+                                                                <SPAN>ENREGISTRER</SPAN>
+                                                                <span id="" class="icon is-on-left">
+                                                                        <i class="fas fa-save"></i>
+                                                                    </span>
+                                                            </button>
+                                                            <label class="label is-small is-aligned has-8px-margin-top">Montant</label>
+                                                            <label class="label is-small is-aligned">Total</label>
+                                                        </p>
+                                                    </div>
+                                                </form>
+                                                <hr>
+                                                <form onsubmit="" class="has-text-left has-no-margin-bottom" action="" method="POST">
+                                                    <div class="field has-addons has-no-margin-bottom">
+                                                        <p id='inputdateac{{loop.index}}' class="control has-icons-left is-expanded">
+                                                            <label class="label is-small is-aligned has-white-space-nowrap">Date</label>
+                                                            {% if unefichefrais.lignesfraishorsforfait is defined %}
+                                                                {% for unelignefraishorsforfait in unefichefrais.lignesfraishorsforfait %}
+                                                                    <input id="inputdatefhfac{{ loop.index }}" class="input is-small has-4px-margin-bottom has-border-radius-left" type="date" value="{{ unelignefraishorsforfait.date | date("Y-m-d")}}" name="dateFHF[]" required="required" disabled>
+                                                                {% endfor %}
+                                                            {% else %}
+                                                                <input class="input is-small has-4px-margin-bottom has-border-radius-left" type="date" placeholder="Date" name="dateFHF[]" disabled>
+                                                            {% endif %}
+                                                            <span id="spandatefhfac{{ loop.index }}" class="icon is-aligned is-small is-left">
+                                                                <i class="fas fa-edit"></i>
+                                                            </span>
+
+                                                        </p>
+                                                        <p id='inputlibelleac{{loop.index}}' class="control has-icons-left is-expanded">
+                                                            <label class="label is-small is-aligned has-white-space-nowrap">Libelle</label>
+                                                            {% if unefichefrais.lignesfraishorsforfait is defined %}
+                                                                {% for unelignefraishorsforfait in unefichefrais.lignesfraishorsforfait %}
+                                                                    <input id="inputlibellefhfac{{ loop.index }}" class="input is-small has-4px-margin-bottom" type="text" placeholder="Libelle" value="{{ unelignefraishorsforfait.libelle }}" name="libelleFHF[]" required="required" disabled>
+                                                                {% endfor %}
+                                                            {% else %}
+                                                                <input class="input is-small has-4px-margin-bottom" type="text" placeholder="Libelle" name="libelleFHF[]" disabled>
+                                                            {% endif %}
+                                                            <span id="spanlibellefhfac{{ loop.index }}" class="icon is-aligned is-small is-left">
+                                                                <i class="fas fa-edit"></i>
+                                                            </span>
+
+                                                        </p>
+                                                        <p id="inputmontantac{{loop.index}}" class="control has-icons-left is-expanded">
+                                                            <label class="label is-small is-aligned has-white-space-nowrap">Montant</label>
+                                                            {% if unefichefrais.lignesfraishorsforfait is defined %}
+                                                                {% for unelignefraishorsforfait in unefichefrais.lignesfraishorsforfait %}
+                                                            <input id="inputmontantfhfac{{ loop.index }}" class="input is-small has-4px-margin-bottom has-right-button" pattern="^\d*(\.\d{0,2})?$" placeholder="Montant" value="{{ unelignefraishorsforfait.montant }}" name="montantFHF[]" required="required" disabled>
+                                                                <a id="buttondeletefhfac{{ loop.index }}" class="button buttondeletefhf is-small is-danger" disabled>
+                                                                    <span>SUPPRIMER <i class="fas fa-trash-alt"></i></span>
+                                                                </a>
+                                                                {% endfor %}
+                                                            {% else %}
+                                                            <input class="input is-small has-4px-margin-bottom" pattern="^\d*(\.\d{0,2})?$" placeholder="00.00" name="montantFHF[]" required="required" disabled>
+                                                            {% endif %}
+                                                            <span id="spanmontantfhfac{{ loop.index }}" class="icon is-aligned is-small is-left">
+                                                                <i class="fas fa-edit"></i>
+                                                            </span>
+
+                                                        </p>
+                                                        <p class="control">
+                                                            <input class="is-hidden" type="text" value="{{unefichefrais.idfichefrais}}" name="idfichefrais" disabled>
+                                                        <div class="button-div">
+                                                            <button id="buttonsavefhfac{{loop.index}}" class="button is-small is-success is-full" type="submit" disabled>
+                                                                <span>ENREGISTRER</span>
+                                                                <span class="icon is-on-left">
+                                                                    <i class="fas fa-save"></i>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                        </p>
+                                                    </div>
+                                                    <div class="field has-addons">
+                                                        <p class="control has-icons-left is-expanded">
+                                                            <label class="label is-small is-aligned has-white-space-nowrap has-2px-margin-top">
+                                                                Total
+                                                            </label>
+                                                        </p>
+                                                        <p class="control has-icons-left is-expanded">
+                                                            <label class="label is-small is-aligned has-white-space-nowrap has-2px-margin-top">
+                                                            </label>
+                                                        </p>
+                                                        <p class="control has-icons-left is-expanded">
+                                                            <a id='buttonaddac{{loop.index}}' class="button-add">
+                                                                <span class="icon is-small span-add">
+                                                                    <i class="fas fa-plus-circle"></i>
+                                                                </span>
+                                                            </a>
+                                                            <label class="label is-small is-aligned has-white-space-nowrap has-2px-margin-top">
+                                                                {% if unefichefrais.montanttotalfraishorsforfait is defined %}
+                                                                    {{ unefichefrais.montanttotalfraishorsforfait }} €
+                                                                {% else %}
+                                                                    0 €
+                                                                {% endif %}
+                                                            </label>
+                                                        </p>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="columns">
+                                    <div class="column has-14px-padding-top has-no-padding-bottom has-6px-padding-top-on-mobile">
+                                        <span class="icon is-small">
+                                            <i id="arrowac{{loop.index}}" class="fas fa-chevron-down fa-lg grow cursor-pointer"></i>
+                                        </span>
+                                        <script>
+                                            $(document).ready(function() {
+                                                $("#arrowac{{loop.index}},#addac{{ loop.index }},#consultac{{loop.index}}").click(function () {
+                                                    if ($("#arrowac{{loop.index}}").hasClass("fa-chevron-down")) {
+
+                                                        $("#arrowac{{loop.index}}").addClass("unique");
+                                                        $('#boxac{{loop.index}}').addClass('unique');
+                                                        $('#columnac{{loop.index}}').addClass('unique');
+
+                                                        if($('i[id*="arrowac"]').not("unique").hasClass('fa-chevron-up')){
+
+                                                            $('i[id*="arrowac"]').not("unique").fadeOut(150, function () {
+                                                                $('i[id*="arrowac"]').not("unique").removeClass('fa-chevron-up');
+                                                                $('div[id*="boxac"]').not("unique").addClass('is-transparent').removeClass('is-asked-to-be-modified-past').removeClass('is-asked-to-be-modified-current').height(280);
+
+                                                                $('div[id*="columnac"]').not(".unique").fadeOut(150, function () {
+                                                                    $('div[id*="columnac"]').not(".unique").addClass('is-hidden');
+
+                                                                    $('i[id*="arrowac"]').not(".unique").fadeIn(150, function () {
+                                                                        $('i[id*="arrowac"]').not(".unique").addClass('fa-chevron-down');
+                                                                    });
+                                                                });
+                                                            });
+                                                        }
+
+                                                        $('#arrowac{{loop.index}}').fadeOut(150, function () {
+                                                            $('#arrowac{{loop.index}}').removeClass('fa-chevron-down');
+
+                                                            $('#columnac{{loop.index}}').fadeIn(150, function (){
+                                                                $('#columnac{{loop.index}}').removeClass('is-hidden');
+
+                                                                $('#arrowac{{loop.index}}').fadeIn(150, function () {
+                                                                    $('#arrowac{{loop.index}}').addClass('fa-chevron-up');
+                                                                    var newHeight = 340+$("#columnac{{loop.index}}").height();
+                                                                    $('#boxac{{loop.index}}').addClass('is-asked-to-be-modified-past').height(newHeight).removeClass('is-transparent');
+
+                                                                    $("#arrowac{{loop.index}}").removeClass("unique");
+                                                                    $('#boxac{{loop.index}}').removeClass('unique');
+                                                                    $('#columnac{{loop.index}}').removeClass('unique');
+                                                                });
+                                                            });
+                                                        });
+                                                    } else {
+
+                                                        $('#arrowac{{loop.index}}').fadeOut(150, function () {
+                                                            $('#arrowac{{loop.index}}').removeClass('fa-chevron-up');
+                                                            $('#boxac{{loop.index}}').addClass('is-transparent').removeClass('is-asked-to-be-modified-past').height(280);
+
+                                                            $('#columnac{{loop.index}}').fadeOut(150, function () {
+                                                                $('#columnac{{loop.index}}').addClass('is-hidden');
+
+                                                                $('#arrowac{{loop.index}}').fadeIn(150, function () {
+                                                                    $('#arrowac{{loop.index}}').addClass('fa-chevron-down');
+                                                                });
+                                                            });
+                                                        });
+                                                    }
+                                                });
+                                            });
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div id="columnpast" class="columns is-10 is-centered is-multiline is-hidden">
+            <div class="column is-12">
+                <div class="columns is-multiline">
+                    {% for unefichefrais in fichesfraisanneepasse %}
+                        <div class="column is-3-desktop is-6-tablet is-12-mobile">
+                            <div id="boxap{{loop.index}}" class="box is-transparent is-like-une-fiche-frais animate__animated animate__fadeIn">
+                                <div class="column has-background-transparent">
+                                    <div class="is-relative">
+                                        <div class="columns">
+                                            <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px is-month-bar has-background-warning">
+                                                <span class="icon">
+                                                    <i class="fas fa-file-invoice"></i>
+                                                </span>
+                                                <span>
+                                                    <strong>{{unefichefrais.date | format_datetime(pattern="MMMM", locale="fr") | upper}} {{ unefichefrais.date | format_datetime(pattern="YYYY") }}</strong>
+                                                </span>
+                                                <span class="icon">
+                                                    <i class="fas fa-lock"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="columns is-flex-mobile">
+                                            <div class="column has-finest-padding-1024px has-6px-margin-right is-bigger-for-button-1024px">
+                                                <button id="addap{{loop.index}}" class="button is-fullwidth is-small is-info has-border-radius-40">
+                                                    <span class="icon is-on-left">
+                                                        <i class="fas fa-plus-square"></i>
+                                                    </span>
+                                                    <span>AJOUTER</span>
+                                                </button>
+                                            </div>
+                                            <div class="column has-finest-padding-1024px has-6px-margin-left is-bigger-for-button-1024px">
+                                                <button id="consultap{{loop.index}}" class="button is-fullwidth is-small is-carefull is-dark has-border-radius-40">
+                                                    <span>CONSULTER</span>
+                                                    <span class="icon">
+                                                        <i class="fas fa-eye"></i>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="columns">
+                                            <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
+                                                <div class="tags has-addons">
+                                                    <span class="tag has-text-bigger has-no-border-radius-top-left is-a-bit-transparent">
+                                                        <span class="icon">
+                                                            <i class="fas fa-calendar-alt"></i>
+                                                        </span>
+                                                        <span>Période</span>
+                                                    </span>
+                                                    <span class="tag has-text-bigger has-no-border-radius-top-right is-a-lot-transparent">
+                                                        {{unefichefrais.date | date("m/Y")}}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="columns">
+                                            <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
+                                                <div class="tags has-addons">
+                                                    <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
+                                                        <span class="icon">
+                                                            <i class="fas fa-money-check"></i>
+                                                        </span>
+                                                        <span>Justificatifs</span>
+                                                    </span>
+                                                    <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">
+                                                        {{unefichefrais.nbjustificatifs | default("aucuns")}}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="columns">
+                                            <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
+                                                <div class="tags has-addons">
+                                                    <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
+                                                        <span class="icon">
+                                                            <i class="fas fa-check-square"></i>
+                                                        </span>
+                                                        <span>Montant validé</span>
+                                                    </span>
+                                                    <span class="tag has-text-bigger has-text-success has-no-border-radius is-a-lot-transparent">
+                                                        <strong>
+                                                            + {{unefichefrais.montantvalide | default(0)}} €
+                                                        </strong>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="columns">
+                                            <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
+                                                <div class="tags has-addons">
+                                                    <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
+                                                        <span class="icon">
+                                                            <i class="fas fa-hourglass-half"></i>
+                                                        </span>
+                                                        <span>État</span>
+                                                    </span>
+                                                    <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">
+                                                        {{unefichefrais.idetat.libelleetat}}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="columns">
+                                            <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
+                                                <div class="tags has-addons">
+                                                    <span class="tag has-text-bigger has-no-border-radius is-a-bit-transparent">
+                                                        <span class="icon">
+                                                            <i class="fas fa-file-alt"></i>
+                                                        </span>
+                                                        <span>N° Fiche</span>
+                                                    </span>
+                                                    <span class="tag has-text-bigger has-no-border-radius is-a-lot-transparent">
+                                                        {{unefichefrais.idfichefrais}}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="columns">
+                                            <div class="column has-no-padding-bottom has-2px-padding-top has-finest-padding-1024px">
+                                                <div class="tags has-addons">
+                                                    <span class="tag has-text-bigger is-dark has-no-border-radius">
+                                                        <span class="icon">
+                                                            <i class="fas fa-money-bill"></i>
+                                                        </span>
+                                                        <span>Frais</span>
+                                                    </span>
+                                                    <span class="tag has-text-bigger has-text-danger has-no-border-radius is-a-lot-transparent">
+                                                        <strong>
+                                                            - {{ unefichefrais.montanttotalfraisforfait }} €
+                                                        </strong>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="columns">
+                                            <div class="column has-2px-padding-top has-finest-padding-1024px">
+                                                <div class="tags has-addons">
+                                                    <span class="tag has-text-bigger is-dark has-no-border-radius-bottom-left">
+                                                        <span class="icon">
+                                                            <i class="fas fa-money-bill"></i>
+                                                        </span>
+                                                        <span>Hors frais</span>
+                                                    </span>
+                                                    <span class="tag has-text-bigger has-text-danger has-border-radius-bottom-right is-a-lot-transparent">
+                                                        <strong>
+                                                            {% if unefichefrais.montanttotalfraishorsforfait is defined %}
+                                                                - {{ unefichefrais.montanttotalfraishorsforfait }} €
+                                                            {% else %}
+                                                                - 0 €
+                                                            {% endif %}
+                                                        </strong>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="columns">
                                         <div id="columnap{{loop.index}}" class="column is-12 is-hidden content-fichefrais">
                                             <div class="box is-like-hero-background animate__animated animate__fadeIn">
                                                 <div class="column has-no-padding has-background-transparent">
-                                                    <form onsubmit="return formSubmit(this);" class="has-text-left" action="{{path('setfraisforfait')}}" method="POST">
+                                                    <form onsubmit="" class="has-text-left" action="">
+                                                        <div class="field has-addons">
+                                                            <p>
+                                                                <label class="label is-small is-aligned has-white-space-nowrap">Tarifs des distance des CV Fiscaux de votre Véhicule</label>
+                                                                <input class="input is-small has-border-radius" type="text"  value="{{ unefichefrais.idcv.cv}} CV et plus de {{ unefichefrais.idcv.distancemaxcv }}" disabled>
+                                                            </p>
+                                                        </div>
                                                         <div class="field has-addons">
                                                             <p class="control has-icons-left is-expanded">
                                                                 <label class="label is-small is-aligned has-white-space-nowrap">{{ unefichefrais.ETP.idfraisforfait.libellefraisforfait }}</label>
-                                                                <input class="input is-small" type="number" placeholder="{{ unefichefrais.ETP.idfraisforfait.idfraisforfait }}" value="{{ unefichefrais.ETP.quantite }}" name="qtETP" required="required">
+                                                                <input class="input is-small has-border-radius-left" type="number" placeholder="{{ unefichefrais.ETP.idfraisforfait.idfraisforfait }}" value="{{ unefichefrais.ETP.quantite }}" name="qtETP" required="required" disabled>
                                                                 <span class="icon is-aligned is-small is-left">
                                                                     <i class="fas fa-edit"></i>
                                                                 </span>
@@ -1583,16 +1517,16 @@
                                                             </p>
                                                             <p class="control has-icons-left is-expanded">
                                                                 <label class="label is-small is-aligned has-white-space-nowrap">{{ unefichefrais.KM.idfraisforfait.libellefraisforfait }}</label>
-                                                                <input class="input is-small" type="number" placeholder="{{ unefichefrais.KM.idfraisforfait.idfraisforfait }}" value="{{ unefichefrais.KM.quantite }}" name="qtKM" required="required">
+                                                                <input class="input is-small" type="number" placeholder="{{ unefichefrais.KM.idfraisforfait.idfraisforfait }}" value="{{ unefichefrais.KM.quantite }}" name="qtKM" required="required" disabled>
                                                                 <span class="icon is-aligned is-small is-left">
                                                                     <i class="fas fa-edit"></i>
                                                                 </span>
-                                                                <label class="label is-small is-aligned has-8px-margin-top">{{ unefichefrais.KM.idfraisforfait.montantfraisforfait }}</label>
-                                                                <label class="label is-small is-aligned">{{ unefichefrais.KM.quantite * unefichefrais.KM.idfraisforfait.montantfraisforfait }}</label>
+                                                                <label class="label is-small is-aligned has-8px-margin-top">({{ unefichefrais.KM.quantite }} x {{ unefichefrais.idcv.facteurcv}}) + {{ unefichefrais.idcv.constantecv }}</label>
+                                                                <label class="label is-small is-aligned">{{ unefichefrais.KM.quantite * unefichefrais.idcv.facteurcv + unefichefrais.idcv.constantecv }}</label>
                                                             </p>
                                                             <p class="control has-icons-left is-expanded">
                                                                 <label class="label is-small is-aligned has-white-space-nowrap">{{ unefichefrais.NUI.idfraisforfait.libellefraisforfait }}</label>
-                                                                <input class="input is-small" type="number" placeholder="{{ unefichefrais.NUI.idfraisforfait.idfraisforfait }}" value="{{ unefichefrais.NUI.quantite }}" name="qtNUI" required="required">
+                                                                <input class="input is-small" type="number" placeholder="{{ unefichefrais.NUI.idfraisforfait.idfraisforfait }}" value="{{ unefichefrais.NUI.quantite }}" name="qtNUI" required="required" disabled>
                                                                 <span class="icon is-aligned is-small is-left">
                                                                     <i class="fas fa-edit"></i>
                                                                 </span>
@@ -1601,7 +1535,7 @@
                                                             </p>
                                                             <p class="control has-icons-left is-expanded">
                                                                 <label class="label is-small is-aligned has-white-space-nowrap">{{ unefichefrais.REP.idfraisforfait.libellefraisforfait }}</label>
-                                                                <input class="input is-small" type="number" placeholder="{{ unefichefrais.REP.idfraisforfait.idfraisforfait }}" value="{{ unefichefrais.REP.quantite }}" name="qtREP" required="required">
+                                                                <input class="input is-small" type="number" placeholder="{{ unefichefrais.REP.idfraisforfait.idfraisforfait }}" value="{{ unefichefrais.REP.quantite }}" name="qtREP" required="required" disabled>
                                                                 <span class="icon is-aligned is-small is-left">
                                                                     <i class="fas fa-edit"></i>
                                                                 </span>
@@ -1610,7 +1544,7 @@
                                                             </p>
                                                             <p class="control">
                                                                 <input class="is-hidden" type="text" value="{{unefichefrais.idfichefrais}}" name="idfichefrais">
-                                                                <button id="buttonsaveap{{loop.index}}" class="button is-small is-primary has-no-margin-bottom" type="submit" disabled>
+                                                                <button id="buttonsaveap{{loop.index}}" class="button is-small is-success has-no-margin-bottom" type="submit" disabled>
                                                                     <SPAN>ENREGISTRER</SPAN>
                                                                     <span id="" class="icon is-on-left">
                                                                         <i class="fas fa-save"></i>
@@ -1620,43 +1554,102 @@
                                                                 <label class="label is-small is-aligned">Total</label>
                                                             </p>
                                                         </div>
-                                                        <hr>
                                                     </form>
-                                                    <script>
-                                                        $(document).ready(function(){
-                                                            $('#buttonsaveap{{loop.index}}').click(function (){
-                                                                $('#buttonsaveap{{loop.index}}').removeClass('').addClass('is-loading');
-                                                            })
-                                                        })
-                                                    </script>
-                                                    <script>
-                                                        function formSubmit(form) {
-                                                            document.getElementById("buttonsaveap{{loop.index}}");
-                                                            setTimeout(function() {
-                                                                form.submit();
-                                                            }, 1000);  // 1 secondes
-                                                            return false;
-                                                        }
-                                                    </script>
-                                                    <form class="has-text-left" action="" method="POST">
-                                                    {% if unefichefrais.lignesfraishorsforfait is defined %}
-                                                        {% for unelignefraishorsforfait in unefichefrais.lignesfraishorsforfait %}
-                                                            {{ unelignefraishorsforfait.libelle }}
-                                                            - {{ unelignefraishorsforfait.montant }} €
-                                                        {% endfor %}
-                                                    {% else %}
-                                                        - 0 €
-                                                    {% endif %}
+                                                    <hr>
+                                                    <form onsubmit="" class="has-text-left has-no-margin-bottom" action="" method="POST">
+                                                        <div class="field has-addons has-no-margin-bottom">
+                                                            <p id='inputdateap{{loop.index}}' class="control has-icons-left is-expanded">
+                                                                <label class="label is-small is-aligned has-white-space-nowrap">Date</label>
+                                                                {% if unefichefrais.lignesfraishorsforfait is defined %}
+                                                                    {% for unelignefraishorsforfait in unefichefrais.lignesfraishorsforfait %}
+                                                                        <input id="inputdatefhfap{{ loop.index }}" class="input is-small has-4px-margin-bottom has-border-radius-left" type="date" value="{{ unelignefraishorsforfait.date | date("Y-m-d")}}" name="dateFHF[]" required="required" disabled>
+                                                                    {% endfor %}
+                                                                {% else %}
+                                                                    <input class="input is-small has-4px-margin-bottom has-border-radius-left" type="date" placeholder="Date" name="dateFHF[]" disabled>
+                                                                {% endif %}
+                                                                <span id="spandatefhfap{{ loop.index }}" class="icon is-aligned is-small is-left">
+                                                                <i class="fas fa-edit"></i>
+                                                            </span>
+
+                                                            </p>
+                                                            <p id='inputlibelleap{{loop.index}}' class="control has-icons-left is-expanded">
+                                                                <label class="label is-small is-aligned has-white-space-nowrap">Libelle</label>
+                                                                {% if unefichefrais.lignesfraishorsforfait is defined %}
+                                                                    {% for unelignefraishorsforfait in unefichefrais.lignesfraishorsforfait %}
+                                                                        <input id="inputlibellefhfap{{ loop.index }}" class="input is-small has-4px-margin-bottom" type="text" placeholder="Libelle" value="{{ unelignefraishorsforfait.libelle }}" name="libelleFHF[]" required="required" disabled>
+                                                                    {% endfor %}
+                                                                {% else %}
+                                                                    <input class="input is-small has-4px-margin-bottom" type="text" placeholder="Libelle" name="libelleFHF[]" disabled>
+                                                                {% endif %}
+                                                                <span id="spanlibellefhfap{{ loop.index }}" class="icon is-aligned is-small is-left">
+                                                                <i class="fas fa-edit"></i>
+                                                            </span>
+
+                                                            </p>
+                                                            <p id="inputmontantap{{loop.index}}" class="control has-icons-left is-expanded">
+                                                                <label class="label is-small is-aligned has-white-space-nowrap">Montant</label>
+                                                                {% if unefichefrais.lignesfraishorsforfait is defined %}
+                                                                    {% for unelignefraishorsforfait in unefichefrais.lignesfraishorsforfait %}
+                                                                        <input id="inputmontantfhfap{{ loop.index }}" class="input is-small has-4px-margin-bottom has-right-button" pattern="^\d*(\.\d{0,2})?$" placeholder="Montant" value="{{ unelignefraishorsforfait.montant }}" name="montantFHF[]" required="required" disabled>
+                                                                        <a id="buttondeletefhfac{{ loop.index }}" class="button buttondeletefhf is-small is-danger" disabled>
+                                                                            <span>SUPPRIMER <i class="fas fa-trash-alt"></i></span>
+                                                                        </a>
+                                                                    {% endfor %}
+                                                                {% else %}
+                                                                    <input class="input is-small has-4px-margin-bottom" pattern="^\d*(\.\d{0,2})?$" placeholder="00.00" name="montantFHF[]" required="required" disabled>
+                                                                {% endif %}
+                                                                <span id="spanmontantfhfap{{ loop.index }}" class="icon is-aligned is-small is-left">
+                                                                <i class="fas fa-edit"></i>
+                                                            </span>
+
+                                                            </p>
+                                                            <p class="control">
+                                                                <input class="is-hidden" type="text" value="{{unefichefrais.idfichefrais}}" name="idfichefrais" disabled>
+                                                            <div class="button-div">
+                                                                <button id="buttonsavefhfap{{loop.index}}" class="button is-small is-success is-full" type="submit" disabled>
+                                                                    <span>ENREGISTRER</span>
+                                                                    <span class="icon is-on-left">
+                                                                    <i class="fas fa-save"></i>
+                                                                </span>
+                                                                </button>
+                                                            </div>
+                                                            </p>
+                                                        </div>
+                                                        <div class="field has-addons">
+                                                            <p class="control has-icons-left is-expanded">
+                                                                <label class="label is-small is-aligned has-white-space-nowrap has-2px-margin-top">
+                                                                    Total
+                                                                </label>
+                                                            </p>
+                                                            <p class="control has-icons-left is-expanded">
+                                                                <label class="label is-small is-aligned has-white-space-nowrap has-2px-margin-top">
+                                                                </label>
+                                                            </p>
+                                                            <p class="control has-icons-left is-expanded">
+                                                                <a id='buttonaddap{{loop.index}}' class="button-add">
+                                                                <span class="icon is-small span-add">
+                                                                    <i class="fas fa-plus-circle"></i>
+                                                                </span>
+                                                                </a>
+                                                                <label class="label is-small is-aligned has-white-space-nowrap has-2px-margin-top">
+                                                                    {% if unefichefrais.montanttotalfraishorsforfait is defined %}
+                                                                        {{ unefichefrais.montanttotalfraishorsforfait }} €
+                                                                    {% else %}
+                                                                        0 €
+                                                                    {% endif %}
+                                                                </label>
+                                                            </p>
+                                                        </div>
                                                     </form>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="columns">
-                                        <div class="column has-no-padding-bottom has-2px-padding-top has-6px-padding-top-on-mobile">
-                                        <span class="icon is-small">
-                                        <i id="arrowap{{loop.index}}" class="fas fa-chevron-down fa-lg grow cursor-pointer"></i>
-                                        </span>
+                                        <div class="column has-14px-padding-top has-no-padding-bottom has-2px-padding-top has-6px-padding-top-on-mobile">
+                                            <span class="icon is-small">
+                                                <i id="arrowap{{loop.index}}" class="fas fa-chevron-down fa-lg grow cursor-pointer"></i>
+                                            </span>
                                             <script>
                                                 $(document).ready(function() {
                                                     $("#arrowap{{loop.index}},#addap{{ loop.index }},#consultap{{loop.index}}").click(function () {
@@ -1670,7 +1663,7 @@
 
                                                                 $('i[id*="arrowap"]').not("unique").fadeOut(150, function () {
                                                                     $('i[id*="arrowap"]').not("unique").removeClass('fa-chevron-up');
-                                                                    $('div[id*="boxap"]').not("unique").addClass('is-transparent').removeClass('is-asked-to-be-modified-past').removeClass('is-asked-to-be-modified-current');
+                                                                    $('div[id*="boxap"]').not("unique").addClass('is-transparent').removeClass('is-asked-to-be-modified-past').removeClass('is-asked-to-be-modified-current').height(280);
 
                                                                     $('div[id*="columnap"]').not(".unique").fadeOut(150, function () {
                                                                         $('div[id*="columnap"]').not(".unique").addClass('is-hidden');
@@ -1690,7 +1683,8 @@
 
                                                                     $('#arrowap{{loop.index}}').fadeIn(150, function () {
                                                                         $('#arrowap{{loop.index}}').addClass('fa-chevron-up');
-                                                                        $('#boxap{{loop.index}}').addClass('is-asked-to-be-modified-past').removeClass('is-transparent');
+                                                                        var newHeight = 340+$("#columnap{{loop.index}}").height();
+                                                                        $('#boxap{{loop.index}}').addClass('is-asked-to-be-modified-past').height(newHeight).removeClass('is-transparent');
 
                                                                         $("#arrowap{{loop.index}}").removeClass('unique');
                                                                         $('#boxap{{loop.index}}').removeClass('unique');
@@ -1702,7 +1696,7 @@
 
                                                             $('#arrowap{{loop.index}}').fadeOut(150, function () {
                                                                 $('#arrowap{{loop.index}}').removeClass('fa-chevron-up');
-                                                                $('#boxap{{loop.index}}').addClass('is-transparent').removeClass('is-asked-to-be-modified-past');
+                                                                $('#boxap{{loop.index}}').addClass('is-transparent').removeClass('is-asked-to-be-modified-past').height(280);
 
                                                                 $('#columnap{{loop.index}}').fadeOut(150, function () {
                                                                     $('#columnap{{loop.index}}').addClass('is-hidden');
@@ -1715,58 +1709,6 @@
                                                         }
                                                     });
                                                 });
-                                                /*function openBox""""(){
-                                                    const theBox = document.getElementById("box"""");
-                                                    const theArrow = document.getElementById("arrow""""");
-                                                    const theModifyingColumn = document.getElementById("column"""")
-                                                    const allModifyingColumnsShown = document.getElementsByClassName("id_modfyingColumns column is-12")
-                                                    const allBoxesDown = document.getElementsByClassName("id-boxes box is-like-une-fiche-frais is-asked-to-be-modified");
-                                                    const allArrowsUp = document.getElementsByClassName("id_arrows fas fa-chevron-up fa-lg grow");
-                                                    if(theArrow.classList.contains("fa-chevron-down")){
-                                                        [].forEach.call(allBoxesDown, function(oneBoxDown){
-                                                            oneBoxDown.classList.remove("is-asked-to-be-modified");
-                                                            oneBoxDown.classList.add("is-transparent")
-                                                        });
-                                                        [].forEach.call(allArrowsUp,function(oneArrowUp){
-                                                            setTimeout(() => {
-                                                                oneArrowUp.classList.remove("fa-chevron-up");
-                                                            }, 200);
-                                                            setTimeout(() => {
-                                                                oneArrowUp.classList.add("fa-chevron-down");
-                                                                oneArrowUp.classList.add("fadeIn");
-                                                            }, 300);
-                                                            });
-                                                        [].forEach.call(allModifyingColumnsShown,function(oneModifyingColumnDown){
-                                                            oneModifyingColumnDown.classList.add("is-hidden");
-                                                        });
-                                                        theBox.classList.remove("is-transparent")
-                                                        theBox.classList.add("is-asked-to-be-modified");
-                                                        setTimeout(() => {
-                                                            theArrow.classList.remove("fa-chevron-down");
-                                                            theArrow.classList.remove("fadeIn");
-                                                        }, 200);
-                                                        setTimeout(() => {
-                                                            theArrow.classList.add("fa-chevron-up");
-                                                            theModifyingColumn.classList.remove("is-hidden")
-                                                        }, 300);
-                                                    }
-                                                    else{
-                                                        theModifyingColumn.classList.add("fadeOut")
-                                                        setTimeout(()=>{
-                                                            theModifyingColumn.classList.remove("fadeOut")
-                                                            theBox.classList.remove("is-asked-to-be-modified");
-                                                            theBox.classList.add("is-transparent")
-                                                            theModifyingColumn.classList.add("is-hidden")
-                                                        }, 300)
-                                                        setTimeout(() => {
-                                                            theArrow.classList.remove("fa-chevron-up");
-                                                        }, 500);
-                                                        setTimeout(() => {
-                                                            theArrow.classList.add("fa-chevron-down");
-                                                            theArrow.classList.add("fadeIn");
-                                                        }, 500);
-                                                    }
-                                                }*/
                                             </script>
                                         </div>
                                     </div>
